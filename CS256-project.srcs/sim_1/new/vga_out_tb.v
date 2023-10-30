@@ -25,14 +25,16 @@ module vga_out_tb;
     reg [3:0] red; reg [3:0] green; reg [3:0] blue;
     
     wire [3:0] pix_r; wire [3:0] pix_g; wire [3:0] pix_b;
-    wire hsync; wire vsync;
+    wire hsync; wire vsync; wire [10:0] curr_x; wire [9:0] curr_y;
     
-    vga_out uut (.clk(clk), .rst(rst), .red(red), .green(green), .blue(blue), .pix_r(pix_r), .pix_g(pix_g), .pix_b(pix_b), .hsync(hsync), .vsync(vsync));
+    vga_out uut (.clk(clk), .rst(rst), .red(red), .green(green), .blue(blue),
+                 .pix_r(pix_r), .pix_g(pix_g), .pix_b(pix_b),
+                 .hsync(hsync), .vsync(vsync), .curr_x(curr_x), .curr_y(curr_y));
     
     initial begin 
         clk = 1'b0;
-        rst = 1'b1;
-        #15 rst = 1'b0;
+        rst = 1'b0;
+        #15 rst = 1'b1;
     end 
     always #5 clk = ~clk;
     
