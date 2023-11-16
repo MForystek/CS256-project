@@ -1,7 +1,0 @@
-Running: xsim.dir/vga_out_tb_behav/xsimk -simmode gui -wdb vga_out_tb_behav.wdb -simrunnum 0 -socket 47735
-Design successfully loaded
-Design Loading Memory Usage: 44836 KB (Peak: 44956 KB)
-Design Loading CPU Usage: 40 ms
-Simulation completed
-Simulation Memory Usage: 126832 KB (Peak: 184104 KB)
-Simulation CPU Usage: 40 ms

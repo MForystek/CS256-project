@@ -71,6 +71,9 @@ proc create_report { reportName command } {
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 32
+set_msg_config -id {Common 17-41} -limit 10000000
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
@@ -89,6 +92,7 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
+  /rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/constants.v
   /rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/drawcon.v
   /rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/vga_out.v
   /rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v
