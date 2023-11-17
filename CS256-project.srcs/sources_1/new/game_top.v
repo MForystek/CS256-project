@@ -95,7 +95,7 @@ module game_top(
         genvar i; genvar j;
         for (i = 0; i < `CANNONS_NUM; i = i + 1) begin
             for (j = 0; j < `BULLETS_PER_CANNON; j = j + 1) begin
-                bullet #(.FROM_CANNON(i)) bullet (
+                bullet #(.FROM_CANNON(i), .BULLET_NUM(j)) bullet (
                     .logclk(logclk[16]), .rst(rst), .cannons_on(cannons_on),
                     .bullet_pos_x(bullet_pos_x[i][j]), .bullet_pos_y(bullet_pos_y[i][j]));
                 assign all_bullet_pos_x[11*`BULLETS_PER_CANNON*i+11*j +: 11] = bullet_pos_x[i][j];
@@ -114,12 +114,12 @@ module game_top(
 endmodule
 
 
-module bullet #(parameter FROM_CANNON = 0)(
+module bullet #(parameter FROM_CANNON = 0, parameter BULLET_NUM = 0)(
     input logclk, input rst, input [`CANNONS_NUM-1:0] cannons_on,
     output reg [10:0] bullet_pos_x, output [9:0] bullet_pos_y
     );
     
-    localparam [5:0] DELAY = 6'd60 / `BULLETS_PER_CANNON;
+    localparam [5:0] DELAY = 6'd60 / `BULLETS_PER_CANNON * BULLET_NUM;
     reg [5:0] bullet_timer;
     
     always @ (posedge logclk) begin

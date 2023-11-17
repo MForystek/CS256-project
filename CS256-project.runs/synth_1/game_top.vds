@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Sat Nov 18 02:04:33 2023
-# Process ID: 550168
+# Start of session at: Sat Nov 18 02:11:01 2023
+# Process ID: 570710
 # Current directory: /rhome/forystmj/CS256-project/CS256-project.runs/synth_1
 # Command line: vivado -log game_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source game_top.tcl
 # Log file: /rhome/forystmj/CS256-project/CS256-project.runs/synth_1/game_top.vds
@@ -17,29 +17,133 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 550194
+INFO: [Synth 8-7075] Helper process launched with PID 570735
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2513.773 ; gain = 0.000 ; free physical = 1420800 ; free virtual = 1511914
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2523.695 ; gain = 0.000 ; free physical = 1420272 ; free virtual = 1511427
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'game_top' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v:23]
 INFO: [Synth 8-6157] synthesizing module 'bullet' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v:117]
 	Parameter FROM_CANNON bound to: 0 - type: integer 
-	Parameter DELAY bound to: 6'b001010 
+	Parameter BULLET_NUM bound to: 0 - type: integer 
+	Parameter DELAY bound to: 6'b000000 
 INFO: [Synth 8-6155] done synthesizing module 'bullet' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v:117]
 INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized0' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v:117]
-	Parameter FROM_CANNON bound to: 1 - type: integer 
+	Parameter FROM_CANNON bound to: 0 - type: integer 
+	Parameter BULLET_NUM bound to: 1 - type: integer 
 	Parameter DELAY bound to: 6'b001010 
 INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized0' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v:117]
 INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized1' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v:117]
-	Parameter FROM_CANNON bound to: 2 - type: integer 
-	Parameter DELAY bound to: 6'b001010 
+	Parameter FROM_CANNON bound to: 0 - type: integer 
+	Parameter BULLET_NUM bound to: 2 - type: integer 
+	Parameter DELAY bound to: 6'b010100 
 INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized1' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v:117]
 INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized2' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v:117]
-	Parameter FROM_CANNON bound to: 3 - type: integer 
-	Parameter DELAY bound to: 6'b001010 
+	Parameter FROM_CANNON bound to: 0 - type: integer 
+	Parameter BULLET_NUM bound to: 3 - type: integer 
+	Parameter DELAY bound to: 6'b011110 
 INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized2' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v:117]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [/rhome/forystmj/CS256-project/CS256-project.runs/synth_1/.Xil/Vivado-550168-8d920e292c80/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (2#1) [/rhome/forystmj/CS256-project/CS256-project.runs/synth_1/.Xil/Vivado-550168-8d920e292c80/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized3' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v:117]
+	Parameter FROM_CANNON bound to: 0 - type: integer 
+	Parameter BULLET_NUM bound to: 4 - type: integer 
+	Parameter DELAY bound to: 6'b101000 
+INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized3' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v:117]
+INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized4' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v:117]
+	Parameter FROM_CANNON bound to: 0 - type: integer 
+	Parameter BULLET_NUM bound to: 5 - type: integer 
+	Parameter DELAY bound to: 6'b110010 
+INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized4' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v:117]
+INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized5' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v:117]
+	Parameter FROM_CANNON bound to: 1 - type: integer 
+	Parameter BULLET_NUM bound to: 0 - type: integer 
+	Parameter DELAY bound to: 6'b000000 
+INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized5' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v:117]
+INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized6' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v:117]
+	Parameter FROM_CANNON bound to: 1 - type: integer 
+	Parameter BULLET_NUM bound to: 1 - type: integer 
+	Parameter DELAY bound to: 6'b001010 
+INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized6' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v:117]
+INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized7' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v:117]
+	Parameter FROM_CANNON bound to: 1 - type: integer 
+	Parameter BULLET_NUM bound to: 2 - type: integer 
+	Parameter DELAY bound to: 6'b010100 
+INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized7' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v:117]
+INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized8' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v:117]
+	Parameter FROM_CANNON bound to: 1 - type: integer 
+	Parameter BULLET_NUM bound to: 3 - type: integer 
+	Parameter DELAY bound to: 6'b011110 
+INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized8' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v:117]
+INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized9' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v:117]
+	Parameter FROM_CANNON bound to: 1 - type: integer 
+	Parameter BULLET_NUM bound to: 4 - type: integer 
+	Parameter DELAY bound to: 6'b101000 
+INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized9' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v:117]
+INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized10' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v:117]
+	Parameter FROM_CANNON bound to: 1 - type: integer 
+	Parameter BULLET_NUM bound to: 5 - type: integer 
+	Parameter DELAY bound to: 6'b110010 
+INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized10' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v:117]
+INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized11' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v:117]
+	Parameter FROM_CANNON bound to: 2 - type: integer 
+	Parameter BULLET_NUM bound to: 0 - type: integer 
+	Parameter DELAY bound to: 6'b000000 
+INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized11' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v:117]
+INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized12' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v:117]
+	Parameter FROM_CANNON bound to: 2 - type: integer 
+	Parameter BULLET_NUM bound to: 1 - type: integer 
+	Parameter DELAY bound to: 6'b001010 
+INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized12' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v:117]
+INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized13' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v:117]
+	Parameter FROM_CANNON bound to: 2 - type: integer 
+	Parameter BULLET_NUM bound to: 2 - type: integer 
+	Parameter DELAY bound to: 6'b010100 
+INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized13' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v:117]
+INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized14' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v:117]
+	Parameter FROM_CANNON bound to: 2 - type: integer 
+	Parameter BULLET_NUM bound to: 3 - type: integer 
+	Parameter DELAY bound to: 6'b011110 
+INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized14' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v:117]
+INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized15' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v:117]
+	Parameter FROM_CANNON bound to: 2 - type: integer 
+	Parameter BULLET_NUM bound to: 4 - type: integer 
+	Parameter DELAY bound to: 6'b101000 
+INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized15' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v:117]
+INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized16' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v:117]
+	Parameter FROM_CANNON bound to: 2 - type: integer 
+	Parameter BULLET_NUM bound to: 5 - type: integer 
+	Parameter DELAY bound to: 6'b110010 
+INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized16' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v:117]
+INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized17' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v:117]
+	Parameter FROM_CANNON bound to: 3 - type: integer 
+	Parameter BULLET_NUM bound to: 0 - type: integer 
+	Parameter DELAY bound to: 6'b000000 
+INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized17' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v:117]
+INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized18' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v:117]
+	Parameter FROM_CANNON bound to: 3 - type: integer 
+	Parameter BULLET_NUM bound to: 1 - type: integer 
+	Parameter DELAY bound to: 6'b001010 
+INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized18' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v:117]
+INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized19' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v:117]
+	Parameter FROM_CANNON bound to: 3 - type: integer 
+	Parameter BULLET_NUM bound to: 2 - type: integer 
+	Parameter DELAY bound to: 6'b010100 
+INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized19' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v:117]
+INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized20' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v:117]
+	Parameter FROM_CANNON bound to: 3 - type: integer 
+	Parameter BULLET_NUM bound to: 3 - type: integer 
+	Parameter DELAY bound to: 6'b011110 
+INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized20' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v:117]
+INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized21' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v:117]
+	Parameter FROM_CANNON bound to: 3 - type: integer 
+	Parameter BULLET_NUM bound to: 4 - type: integer 
+	Parameter DELAY bound to: 6'b101000 
+INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized21' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v:117]
+INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized22' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v:117]
+	Parameter FROM_CANNON bound to: 3 - type: integer 
+	Parameter BULLET_NUM bound to: 5 - type: integer 
+	Parameter DELAY bound to: 6'b110010 
+INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized22' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v:117]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [/rhome/forystmj/CS256-project/CS256-project.runs/synth_1/.Xil/Vivado-570710-8d920e292c80/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (2#1) [/rhome/forystmj/CS256-project/CS256-project.runs/synth_1/.Xil/Vivado-570710-8d920e292c80/realtime/clk_wiz_0_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'vga_out' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/vga_out.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'vga_out' (3#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/vga_out.v:23]
 INFO: [Synth 8-6157] synthesizing module 'drawcon' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/drawcon.v:23]
@@ -57,18 +161,18 @@ INFO: [Synth 8-6155] done synthesizing module 'bullet_draw' (4#1) [/rhome/foryst
 INFO: [Synth 8-6155] done synthesizing module 'drawcon' (5#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/drawcon.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'game_top' (6#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v:23]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2513.773 ; gain = 0.000 ; free physical = 1421241 ; free virtual = 1512356
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2523.695 ; gain = 0.000 ; free physical = 1420677 ; free virtual = 1511833
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2527.582 ; gain = 13.809 ; free physical = 1420460 ; free virtual = 1511575
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2526.598 ; gain = 2.902 ; free physical = 1421496 ; free virtual = 1512653
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2527.582 ; gain = 13.809 ; free physical = 1420460 ; free virtual = 1511575
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2526.598 ; gain = 2.902 ; free physical = 1421496 ; free virtual = 1512653
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2527.582 ; gain = 0.000 ; free physical = 1420504 ; free virtual = 1511620
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2526.598 ; gain = 0.000 ; free physical = 1421493 ; free virtual = 1512649
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -81,20 +185,20 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/game_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2696.332 ; gain = 0.000 ; free physical = 1420991 ; free virtual = 1512107
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2693.379 ; gain = 0.000 ; free physical = 1420986 ; free virtual = 1512143
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2696.332 ; gain = 0.000 ; free physical = 1420991 ; free virtual = 1512107
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2693.379 ; gain = 0.000 ; free physical = 1420986 ; free virtual = 1512143
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2696.332 ; gain = 182.559 ; free physical = 1420605 ; free virtual = 1511720
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2693.379 ; gain = 169.684 ; free physical = 1421389 ; free virtual = 1512545
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2696.332 ; gain = 182.559 ; free physical = 1420605 ; free virtual = 1511720
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2693.379 ; gain = 169.684 ; free physical = 1421389 ; free virtual = 1512545
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -103,42 +207,26 @@ Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  /rhome/for
 Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  /rhome/forystmj/CS256-project/CS256-project.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 5).
 Applied set_property KEEP_HIERARCHY = SOFT for clock_wizard. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2696.332 ; gain = 182.559 ; free physical = 1420606 ; free virtual = 1511721
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2693.379 ; gain = 169.684 ; free physical = 1421389 ; free virtual = 1512545
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2696.332 ; gain = 182.559 ; free physical = 1420780 ; free virtual = 1511895
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2693.379 ; gain = 169.684 ; free physical = 1422048 ; free virtual = 1513204
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-223] decloning instance 'genblk1[0].genblk1[0].bullet' (bullet) to 'genblk1[0].genblk1[1].bullet'
-INFO: [Synth 8-223] decloning instance 'genblk1[0].genblk1[0].bullet' (bullet) to 'genblk1[0].genblk1[2].bullet'
-INFO: [Synth 8-223] decloning instance 'genblk1[0].genblk1[0].bullet' (bullet) to 'genblk1[0].genblk1[3].bullet'
-INFO: [Synth 8-223] decloning instance 'genblk1[0].genblk1[0].bullet' (bullet) to 'genblk1[0].genblk1[4].bullet'
-INFO: [Synth 8-223] decloning instance 'genblk1[0].genblk1[0].bullet' (bullet) to 'genblk1[0].genblk1[5].bullet'
-INFO: [Synth 8-223] decloning instance 'genblk1[1].genblk1[0].bullet' (bullet__parameterized0) to 'genblk1[1].genblk1[1].bullet'
-INFO: [Synth 8-223] decloning instance 'genblk1[1].genblk1[0].bullet' (bullet__parameterized0) to 'genblk1[1].genblk1[2].bullet'
-INFO: [Synth 8-223] decloning instance 'genblk1[1].genblk1[0].bullet' (bullet__parameterized0) to 'genblk1[1].genblk1[3].bullet'
-INFO: [Synth 8-223] decloning instance 'genblk1[1].genblk1[0].bullet' (bullet__parameterized0) to 'genblk1[1].genblk1[4].bullet'
-INFO: [Synth 8-223] decloning instance 'genblk1[1].genblk1[0].bullet' (bullet__parameterized0) to 'genblk1[1].genblk1[5].bullet'
-INFO: [Synth 8-223] decloning instance 'genblk1[2].genblk1[0].bullet' (bullet__parameterized1) to 'genblk1[2].genblk1[1].bullet'
-INFO: [Synth 8-223] decloning instance 'genblk1[2].genblk1[0].bullet' (bullet__parameterized1) to 'genblk1[2].genblk1[2].bullet'
-INFO: [Synth 8-223] decloning instance 'genblk1[2].genblk1[0].bullet' (bullet__parameterized1) to 'genblk1[2].genblk1[3].bullet'
-INFO: [Synth 8-223] decloning instance 'genblk1[2].genblk1[0].bullet' (bullet__parameterized1) to 'genblk1[2].genblk1[4].bullet'
-INFO: [Synth 8-223] decloning instance 'genblk1[2].genblk1[0].bullet' (bullet__parameterized1) to 'genblk1[2].genblk1[5].bullet'
-INFO: [Synth 8-223] decloning instance 'genblk1[3].genblk1[0].bullet' (bullet__parameterized2) to 'genblk1[3].genblk1[1].bullet'
-INFO: [Synth 8-223] decloning instance 'genblk1[3].genblk1[0].bullet' (bullet__parameterized2) to 'genblk1[3].genblk1[2].bullet'
-INFO: [Synth 8-223] decloning instance 'genblk1[3].genblk1[0].bullet' (bullet__parameterized2) to 'genblk1[3].genblk1[3].bullet'
-INFO: [Synth 8-223] decloning instance 'genblk1[3].genblk1[0].bullet' (bullet__parameterized2) to 'genblk1[3].genblk1[4].bullet'
-INFO: [Synth 8-223] decloning instance 'genblk1[3].genblk1[0].bullet' (bullet__parameterized2) to 'genblk1[3].genblk1[5].bullet'
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input   11 Bit       Adders := 33    
+	   2 Input   11 Bit       Adders := 53    
 	   2 Input   10 Bit       Adders := 29    
+	   2 Input    6 Bit       Adders := 8     
+	   2 Input    5 Bit       Adders := 8     
 	   2 Input    4 Bit       Adders := 4     
 +---Registers : 
-	               11 Bit    Registers := 7     
+	               11 Bit    Registers := 27    
 	               10 Bit    Registers := 3     
+	                6 Bit    Registers := 8     
+	                5 Bit    Registers := 8     
 	                4 Bit    Registers := 4     
 +---Muxes : 
 	   2 Input   11 Bit        Muxes := 4     
@@ -164,25 +252,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 2696.332 ; gain = 182.559 ; free physical = 1421391 ; free virtual = 1512510
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2693.379 ; gain = 169.684 ; free physical = 1422162 ; free virtual = 1513323
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2696.332 ; gain = 182.559 ; free physical = 1420982 ; free virtual = 1512103
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2693.379 ; gain = 169.684 ; free physical = 1420873 ; free virtual = 1512033
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2696.332 ; gain = 182.559 ; free physical = 1420922 ; free virtual = 1512052
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2693.379 ; gain = 169.684 ; free physical = 1421900 ; free virtual = 1513061
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2696.332 ; gain = 182.559 ; free physical = 1421006 ; free virtual = 1512139
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 2693.379 ; gain = 169.684 ; free physical = 1420084 ; free virtual = 1511244
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -200,37 +288,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2696.332 ; gain = 182.559 ; free physical = 1421082 ; free virtual = 1512215
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 2693.379 ; gain = 169.684 ; free physical = 1420833 ; free virtual = 1511994
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2696.332 ; gain = 182.559 ; free physical = 1421082 ; free virtual = 1512215
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 2693.379 ; gain = 169.684 ; free physical = 1420820 ; free virtual = 1511981
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 2696.332 ; gain = 182.559 ; free physical = 1420999 ; free virtual = 1512132
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 2693.379 ; gain = 169.684 ; free physical = 1420789 ; free virtual = 1511949
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 2696.332 ; gain = 182.559 ; free physical = 1420999 ; free virtual = 1512132
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 2693.379 ; gain = 169.684 ; free physical = 1420789 ; free virtual = 1511949
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 2696.332 ; gain = 182.559 ; free physical = 1420998 ; free virtual = 1512132
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 2693.379 ; gain = 169.684 ; free physical = 1420789 ; free virtual = 1511949
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 2696.332 ; gain = 182.559 ; free physical = 1420998 ; free virtual = 1512131
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 2693.379 ; gain = 169.684 ; free physical = 1420789 ; free virtual = 1511949
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -250,37 +338,37 @@ Report Cell Usage:
 |1     |clk_wiz |     1|
 |2     |BUFG    |     1|
 |3     |CARRY4  |   205|
-|4     |LUT1    |    43|
-|5     |LUT2    |   539|
-|6     |LUT3    |    38|
-|7     |LUT4    |   337|
-|8     |LUT5    |   191|
-|9     |LUT6    |   125|
-|10    |FDRE    |   116|
-|11    |FDSE    |    16|
+|4     |LUT1    |    79|
+|5     |LUT2    |   617|
+|6     |LUT3    |   102|
+|7     |LUT4    |   428|
+|8     |LUT5    |   248|
+|9     |LUT6    |   245|
+|10    |FDRE    |   324|
+|11    |FDSE    |    76|
 |12    |IBUF    |    10|
 |13    |OBUF    |    14|
 +------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 2696.332 ; gain = 182.559 ; free physical = 1420998 ; free virtual = 1512131
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 2693.379 ; gain = 169.684 ; free physical = 1420789 ; free virtual = 1511949
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 2696.332 ; gain = 13.809 ; free physical = 1421045 ; free virtual = 1512178
-Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 2696.332 ; gain = 182.559 ; free physical = 1421045 ; free virtual = 1512178
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2693.379 ; gain = 2.902 ; free physical = 1420832 ; free virtual = 1511993
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 2693.379 ; gain = 169.684 ; free physical = 1420832 ; free virtual = 1511993
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2696.332 ; gain = 0.000 ; free physical = 1421145 ; free virtual = 1512278
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2693.379 ; gain = 0.000 ; free physical = 1420923 ; free virtual = 1512084
 INFO: [Netlist 29-17] Analyzing 205 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2696.332 ; gain = 0.000 ; free physical = 1420445 ; free virtual = 1511578
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2699.316 ; gain = 0.000 ; free physical = 1421660 ; free virtual = 1512821
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-53 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+73 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 2696.332 ; gain = 191.172 ; free physical = 1420820 ; free virtual = 1511953
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 2699.316 ; gain = 184.234 ; free physical = 1421987 ; free virtual = 1513148
 INFO: [Common 17-1381] The checkpoint '/rhome/forystmj/CS256-project/CS256-project.runs/synth_1/game_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file game_top_utilization_synth.rpt -pb game_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Nov 18 02:05:09 2023...
+INFO: [Common 17-206] Exiting Vivado at Sat Nov 18 02:11:39 2023...
