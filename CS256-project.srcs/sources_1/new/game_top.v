@@ -122,6 +122,7 @@ module bullet #(parameter FROM_CANNON = 0, parameter BULLET_NUM = 0)(
     localparam [5:0] DELAY = 6'd60 / `BULLETS_PER_CANNON * BULLET_NUM;
     reg [5:0] bullet_timer;
     
+    
     always @ (posedge logclk) begin
         if (!rst || !cannons_on[FROM_CANNON])
             bullet_timer <= 6'd0;
