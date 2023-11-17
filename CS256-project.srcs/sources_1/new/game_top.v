@@ -125,7 +125,7 @@ module bullet #(parameter FROM_CANNON = 0, parameter BULLET_NUM = 0)(
     always @ (posedge logclk) begin
         if (!rst || !cannons_on[FROM_CANNON])
             bullet_timer <= 6'd0;
-        else if (bullet_timer < DELAY)
+        else if (bullet_timer < DELAY && bullet_pos_x == `CANNON_OFFSET_X + `CANNON_WIDTH - `BULLET_WIDTH)
             bullet_timer <= bullet_timer + 1'b1;
         
         if (!rst || bullet_pos_x >= `WIDTH - `FRAME_WIDTH - 11'd1 
