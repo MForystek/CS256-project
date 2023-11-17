@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-| Date         : Sat Nov 18 01:42:56 2023
+| Date         : Sat Nov 18 02:05:49 2023
 | Host         : 8d920e292c80 running 64-bit Ubuntu 20.04.6 LTS
 | Command      : report_control_sets -verbose -file game_top_control_sets_placed.rpt
 | Design       : game_top
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |    12 |
-|    Minimum number of control sets                        |    12 |
+| Total control sets                                       |    16 |
+|    Minimum number of control sets                        |    16 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    68 |
+| Unused register locations in slices containing registers |    84 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,9 +39,9 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |    12 |
+| Total control sets |    16 |
 | >= 0 to < 4        |     0 |
-| >= 4 to < 6        |     1 |
+| >= 4 to < 6        |     5 |
 | >= 6 to < 8        |     1 |
 | >= 8 to < 10       |     4 |
 | >= 10 to < 12      |     5 |
@@ -60,31 +60,35 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | No           | No                    | No                     |               0 |            0 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              64 |           24 |
-| Yes          | No                    | No                     |              17 |           10 |
+| No           | Yes                   | No                     |              64 |           23 |
+| Yes          | No                    | No                     |              17 |            9 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              35 |           14 |
+| Yes          | Yes                   | No                     |              51 |           15 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+-----------------------------+-----------------------+----------------------------------------------------------+------------------+----------------+--------------+
-|         Clock Signal        |     Enable Signal     |                     Set/Reset Signal                     | Slice Load Count | Bel Load Count | Bels / Slice |
-+-----------------------------+-----------------------+----------------------------------------------------------+------------------+----------------+--------------+
-|  logclk_reg_BUFG[16]        | block_pos_x           | block_pos_x[10]_i_1_n_0                                  |                2 |              4 |         2.00 |
-|  logclk_reg_BUFG[16]        | block_pos_x           |                                                          |                4 |              7 |         1.75 |
-|  logclk_reg_BUFG[16]        |                       | genblk1[3].genblk1[0].bullet/bullet_pos_x[10]_i_1__2_n_0 |                4 |              9 |         2.25 |
-|  logclk_reg_BUFG[16]        |                       | genblk1[2].genblk1[0].bullet/bullet_pos_x[10]_i_1__1_n_0 |                4 |              9 |         2.25 |
-|  logclk_reg_BUFG[16]        |                       | genblk1[0].genblk1[0].bullet/bullet_pos_x[10]_i_1_n_0    |                4 |              9 |         2.25 |
-|  logclk_reg_BUFG[16]        |                       | genblk1[1].genblk1[0].bullet/bullet_pos_x[10]_i_1__0_n_0 |                3 |              9 |         3.00 |
-|  clock_wizard/inst/clk_out1 | vga/curr_y0           | vga/logclk1                                              |                5 |             10 |         2.00 |
-|  clock_wizard/inst/clk_out1 | vga/vcount[9]_i_2_n_0 | vga/vcount[9]_i_1_n_0                                    |                4 |             10 |         2.50 |
-|  logclk_reg_BUFG[16]        | block_pos_y           |                                                          |                6 |             10 |         1.67 |
-|  clock_wizard/inst/clk_out1 |                       | vga/hcount[10]_i_1_n_0                                   |                4 |             11 |         2.75 |
-|  clock_wizard/inst/clk_out1 | vga/curr_x0           | vga/logclk1                                              |                3 |             11 |         3.67 |
-|  clock_wizard/inst/clk_out2 |                       | logclk[0]_i_1_n_0                                        |                5 |             17 |         3.40 |
-+-----------------------------+-----------------------+----------------------------------------------------------+------------------+----------------+--------------+
++-----------------------------+---------------------------------------------------------+----------------------------------------------------------+------------------+----------------+--------------+
+|         Clock Signal        |                      Enable Signal                      |                     Set/Reset Signal                     | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------------------+---------------------------------------------------------+----------------------------------------------------------+------------------+----------------+--------------+
+|  logclk_reg_BUFG[16]        | genblk1[3].genblk1[0].bullet/sel                        | genblk1[3].genblk1[0].bullet/bullet_timer[3]_i_1__2_n_0  |                1 |              4 |         4.00 |
+|  logclk_reg_BUFG[16]        | block_pos_y                                             | block_pos_y[6]_i_1_n_0                                   |                2 |              4 |         2.00 |
+|  logclk_reg_BUFG[16]        | genblk1[1].genblk1[0].bullet/bullet_timer[3]_i_2__0_n_0 | genblk1[1].genblk1[0].bullet/bullet_timer[3]_i_1__0_n_0  |                1 |              4 |         4.00 |
+|  logclk_reg_BUFG[16]        | genblk1[0].genblk1[0].bullet/bullet_timer[3]_i_2_n_0    | genblk1[0].genblk1[0].bullet/bullet_timer[3]_i_1_n_0     |                1 |              4 |         4.00 |
+|  logclk_reg_BUFG[16]        | genblk1[2].genblk1[0].bullet/bullet_timer[3]_i_2__1_n_0 | genblk1[2].genblk1[0].bullet/bullet_timer[3]_i_1__1_n_0  |                1 |              4 |         4.00 |
+|  logclk_reg_BUFG[16]        | block_pos_y                                             |                                                          |                3 |              6 |         2.00 |
+|  logclk_reg_BUFG[16]        |                                                         | genblk1[0].genblk1[0].bullet/bullet_pos_x[10]_i_1_n_0    |                4 |              9 |         2.25 |
+|  logclk_reg_BUFG[16]        |                                                         | genblk1[2].genblk1[0].bullet/bullet_pos_x[10]_i_1__1_n_0 |                3 |              9 |         3.00 |
+|  logclk_reg_BUFG[16]        |                                                         | genblk1[3].genblk1[0].bullet/bullet_pos_x[10]_i_1__2_n_0 |                4 |              9 |         2.25 |
+|  logclk_reg_BUFG[16]        |                                                         | genblk1[1].genblk1[0].bullet/bullet_pos_x[10]_i_1__0_n_0 |                3 |              9 |         3.00 |
+|  clock_wizard/inst/clk_out1 | vga/vcount[9]_i_2_n_0                                   | vga/vcount[9]_i_1_n_0                                    |                3 |             10 |         3.33 |
+|  clock_wizard/inst/clk_out1 | vga/curr_y0                                             | vga/logclk1                                              |                3 |             10 |         3.33 |
+|  clock_wizard/inst/clk_out1 |                                                         | vga/hcount[10]_i_1_n_0                                   |                4 |             11 |         2.75 |
+|  clock_wizard/inst/clk_out1 | vga/curr_x0                                             | vga/logclk1                                              |                3 |             11 |         3.67 |
+|  logclk_reg_BUFG[16]        | block_pos_x                                             |                                                          |                6 |             11 |         1.83 |
+|  clock_wizard/inst/clk_out2 |                                                         | logclk[0]_i_1_n_0                                        |                5 |             17 |         3.40 |
++-----------------------------+---------------------------------------------------------+----------------------------------------------------------+------------------+----------------+--------------+
 
 

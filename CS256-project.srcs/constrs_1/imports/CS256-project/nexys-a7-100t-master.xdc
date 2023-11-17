@@ -130,6 +130,7 @@ set_property -dict { PACKAGE_PIN P18   IOSTANDARD LVCMOS33 } [get_ports { btn_d 
 #set_property -dict { PACKAGE_PIN A18   IOSTANDARD LVCMOS33 } [get_ports { XA_N[4] }]; #IO_L10N_T1_AD11N_15 Sch=xa_n[4]
 #set_property -dict { PACKAGE_PIN B18   IOSTANDARD LVCMOS33 } [get_ports { XA_P[4] }]; #IO_L10P_T1_AD11P_15 Sch=xa_p[4]
 
+
 ##VGA Connector
 set_property -dict { PACKAGE_PIN A3    IOSTANDARD LVCMOS33 } [get_ports { pix_r[0] }]; #IO_L8N_T1_AD14N_35 Sch=vga_r[0]
 set_property -dict { PACKAGE_PIN B4    IOSTANDARD LVCMOS33 } [get_ports { pix_r[1] }]; #IO_L7N_T1_AD6N_35 Sch=vga_r[1]
