@@ -44,3 +44,9 @@
 `define BULLET_WIDTH 11'd50
 `define BULLET_HEIGHT 10'd18
 `define BULLET_SPEED 4'd12
+
+// ENEMIES
+`define ENEMIES_PER_CANNON 6
+`define ENEMY_WIDTH 11'd20
+`define ENEMY_HEIGHT 10'd50
+`define ENEMY_SPEED 4'd3

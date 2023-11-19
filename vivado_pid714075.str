@@ -1,0 +1,1376 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:47 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 714075
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Sat Nov 18 14:52:49 AST 2023
+Time zone: 	Arabian Standard Time (Asia/Riyadh)
+
+OS: Ubuntu
+OS Version: 5.15.0-87-generic
+OS Architecture: amd64
+Available processors (cores): 128
+
+Display: 1.0
+Screen size: 1707x904
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.2 64-bit
+Java home: 	/sw/workstations/apps/linux-ubuntu20.04-broadwell/xilinx/2020.2/gcc-9.3.0/u6ynmf6wlzv3korshbgj5smxvcsywk2v/Vivado/2020.2/tps/lnx64/jre11.0.2
+Java executable location: 	/sw/workstations/apps/linux-ubuntu20.04-broadwell/xilinx/2020.2/gcc-9.3.0/u6ynmf6wlzv3korshbgj5smxvcsywk2v/Vivado/2020.2/tps/lnx64/jre11.0.2/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	forystmj
+User home directory: /rhome/forystmj
+User working directory: /rhome/forystmj/CS256-project
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /sw/workstations/apps/linux-ubuntu20.04-broadwell/xilinx/2020.2/gcc-9.3.0/u6ynmf6wlzv3korshbgj5smxvcsywk2v/Vivado
+HDI_APPROOT: /sw/workstations/apps/linux-ubuntu20.04-broadwell/xilinx/2020.2/gcc-9.3.0/u6ynmf6wlzv3korshbgj5smxvcsywk2v/Vivado/2020.2
+RDI_DATADIR: /sw/workstations/apps/linux-ubuntu20.04-broadwell/xilinx/2020.2/gcc-9.3.0/u6ynmf6wlzv3korshbgj5smxvcsywk2v/Vivado/2020.2/data
+RDI_BINDIR: /sw/workstations/apps/linux-ubuntu20.04-broadwell/xilinx/2020.2/gcc-9.3.0/u6ynmf6wlzv3korshbgj5smxvcsywk2v/Vivado/2020.2/bin
+
+Vivado preferences file location: /home/kasm-user/.Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: /home/kasm-user/.Xilinx/Vivado/2020.2/
+Vivado layouts directory: /home/kasm-user/.Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	/sw/workstations/apps/linux-ubuntu20.04-broadwell/xilinx/2020.2/gcc-9.3.0/u6ynmf6wlzv3korshbgj5smxvcsywk2v/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	/rhome/forystmj/CS256-project/vivado.log
+Vivado journal file location: 	/rhome/forystmj/CS256-project/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-714075-8d920e292c80
+
+Xilinx Environment Variables
+----------------------------
+KAUST_XILINX: /sw/workstations/apps/linux-ubuntu20.04-broadwell/xilinx/2020.2/gcc-9.3.0/u6ynmf6wlzv3korshbgj5smxvcsywk2v
+XILINX: /sw/workstations/apps/linux-ubuntu20.04-broadwell/xilinx/2020.2/gcc-9.3.0/u6ynmf6wlzv3korshbgj5smxvcsywk2v/Vivado/2020.2/ids_lite/ISE
+XILINXD_LICENSE_FILE: 21001@wthflexsr02.kaust.edu.sa
+XILINX_DSP: /sw/workstations/apps/linux-ubuntu20.04-broadwell/xilinx/2020.2/gcc-9.3.0/u6ynmf6wlzv3korshbgj5smxvcsywk2v/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: /sw/workstations/apps/linux-ubuntu20.04-broadwell/xilinx/2020.2/gcc-9.3.0/u6ynmf6wlzv3korshbgj5smxvcsywk2v/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: /sw/workstations/apps/linux-ubuntu20.04-broadwell/xilinx/2020.2/gcc-9.3.0/u6ynmf6wlzv3korshbgj5smxvcsywk2v/Vivado/2020.2
+XILINX_SDK: /sw/workstations/apps/linux-ubuntu20.04-broadwell/xilinx/2020.2/gcc-9.3.0/u6ynmf6wlzv3korshbgj5smxvcsywk2v/Vitis/2020.2
+XILINX_VITIS: /sw/workstations/apps/linux-ubuntu20.04-broadwell/xilinx/2020.2/gcc-9.3.0/u6ynmf6wlzv3korshbgj5smxvcsywk2v/Vitis/2020.2
+XILINX_VIVADO: /sw/workstations/apps/linux-ubuntu20.04-broadwell/xilinx/2020.2/gcc-9.3.0/u6ynmf6wlzv3korshbgj5smxvcsywk2v/Vivado/2020.2
+XILINX_VIVADO_HLS: /sw/workstations/apps/linux-ubuntu20.04-broadwell/xilinx/2020.2/gcc-9.3.0/u6ynmf6wlzv3korshbgj5smxvcsywk2v/Vivado/2020.2
+
+
+GUI allocated memory:	185 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,643 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "/rhome/forystmj/CS256-project/CS256-project.xpr", 0); // r
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// [GUI Memory]: 106 MB (+108998kb) [00:00:05]
+// [Engine Memory]: 1,630 MB (+1557858kb) [00:00:05]
+// bz (cr):  Open Project : addNotify
+// Opening Vivado Project: /rhome/forystmj/CS256-project/CS256-project.xpr. Version: Vivado v2020.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project /rhome/forystmj/CS256-project/CS256-project.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,648 MB. GUI used memory: 64 MB. Current time: 11/18/23, 2:52:50 PM AST
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 122 MB (+10801kb) [00:00:09]
+// [Engine Memory]: 1,725 MB (+14027kb) [00:00:09]
+// WARNING: HEventQueue.dispatchEvent() is taking  1897 ms.
+// Tcl Message: open_project /rhome/forystmj/CS256-project/CS256-project.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/sw/workstations/apps/linux-ubuntu20.04-broadwell/xilinx/2020.2/gcc-9.3.0/u6ynmf6wlzv3korshbgj5smxvcsywk2v/Vivado/2020.2/data/ip'. 
+// Tcl Message: INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'. 
+// Project name: CS256-project; location: /rhome/forystmj/CS256-project; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bz
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 136 MB (+8248kb) [00:00:20]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v), vga : vga_out (vga_out.v)]", 4, false, false, false, false, false, true); // D - Double Click
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v), drawcon : drawcon (drawcon.v)]", 5, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v), drawcon : drawcon (drawcon.v), genblk1[0].genblk1[4].bullet_draw : bullet_draw (drawcon.v)]", 10, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 13 seconds
+selectCodeEditor("drawcon.v", 52, 86); // bP
+// Elapsed time: 13 seconds
+selectCodeEditor("drawcon.v", 56, 126); // bP
+selectCodeEditor("drawcon.v", 56, 143); // bP
+selectCodeEditor("drawcon.v", 268, 180); // bP
+selectCodeEditor("drawcon.v", 153, 176); // bP
+selectCodeEditor("drawcon.v", 153, 176, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 21 seconds
+selectCodeEditor("drawcon.v", 295, 294); // bP
+// Elapsed time: 62 seconds
+selectCodeEditor("drawcon.v", 126, 130); // bP
+selectCodeEditor("drawcon.v", 126, 130, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("drawcon.v", 176, 489); // bP
+selectCodeEditor("drawcon.v", 176, 489, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("drawcon.v", 27, 471); // bP
+selectCodeEditor("drawcon.v", 296, 243); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("drawcon.v", 294, 248); // bP
+// Elapsed time: 47 seconds
+selectCodeEditor("drawcon.v", 63, 180); // bP
+selectCodeEditor("drawcon.v", 57, 173); // bP
+// Elapsed time: 13 seconds
+selectCodeEditor("drawcon.v", 70, 336); // bP
+// Elapsed time: 819 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "game_top.v", 0); // m
+// Elapsed time: 33 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog]", 1); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, constants.v]", 2, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, constants.v]", 2, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("constants.v", 146, 421); // bP
+selectCodeEditor("constants.v", 146, 421); // bP
+selectCodeEditor("constants.v", 146, 421); // bP
+selectCodeEditor("constants.v", 146, 421); // bP
+// HMemoryUtils.trashcanNow. Engine heap size: 1,821 MB. GUI used memory: 77 MB. Current time: 11/18/23, 3:10:55 PM AST
+// [Engine Memory]: 1,821 MB (+9764kb) [00:18:25]
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "game_top.v", 0); // m
+selectCodeEditor("game_top.v", 293, 313); // bP
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 77 MB. Current time: 11/18/23, 3:40:55 PM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 69 MB. Current time: 11/18/23, 4:10:55 PM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/18/23, 4:40:55 PM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/18/23, 5:10:55 PM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/18/23, 5:40:55 PM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/18/23, 6:10:55 PM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/18/23, 6:40:55 PM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/18/23, 7:10:55 PM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/18/23, 7:40:55 PM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/18/23, 8:10:56 PM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/18/23, 8:40:56 PM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/18/23, 9:10:56 PM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/18/23, 9:40:56 PM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 93 MB. Current time: 11/18/23, 10:10:56 PM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/18/23, 10:40:56 PM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/18/23, 11:10:56 PM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/18/23, 11:40:56 PM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/19/23, 12:10:56 AM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/19/23, 12:40:56 AM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/19/23, 1:10:56 AM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/19/23, 1:40:56 AM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/19/23, 2:10:56 AM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/19/23, 2:40:56 AM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/19/23, 3:10:56 AM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/19/23, 3:40:56 AM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/19/23, 4:10:56 AM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/19/23, 4:40:56 AM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/19/23, 5:10:56 AM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/19/23, 5:40:57 AM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/19/23, 6:10:57 AM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/19/23, 6:40:57 AM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/19/23, 7:10:57 AM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/19/23, 7:40:57 AM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/19/23, 8:10:57 AM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/19/23, 8:40:57 AM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/19/23, 9:10:57 AM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/19/23, 9:40:57 AM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/19/23, 10:10:57 AM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/19/23, 10:40:57 AM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/19/23, 11:10:57 AM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/19/23, 11:40:57 AM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/19/23, 12:10:57 PM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/19/23, 12:40:57 PM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/19/23, 1:10:57 PM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/19/23, 1:40:57 PM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/19/23, 2:10:57 PM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/19/23, 2:40:57 PM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/19/23, 3:10:58 PM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/19/23, 3:40:58 PM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/19/23, 4:10:58 PM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/19/23, 4:40:58 PM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/19/23, 5:10:58 PM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/19/23, 5:40:58 PM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/19/23, 6:10:58 PM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/19/23, 6:40:58 PM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/19/23, 7:10:58 PM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/19/23, 7:40:58 PM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/19/23, 8:10:58 PM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/19/23, 8:40:58 PM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/19/23, 9:10:58 PM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/19/23, 9:40:58 PM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/19/23, 10:10:58 PM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/19/23, 10:40:58 PM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/19/23, 11:10:58 PM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 68 MB. Current time: 11/19/23, 11:40:58 PM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 65 MB. Current time: 11/20/23, 12:10:58 AM AST
+// Elapsed time: 118850 seconds
+selectCodeEditor("game_top.v", 328, 116); // bP
+selectCodeEditor("game_top.v", 328, 116); // bP
+selectCodeEditor("game_top.v", 328, 116); // bP
+selectCodeEditor("game_top.v", 328, 116); // bP
+selectCodeEditor("game_top.v", 328, 116); // bP
+selectCodeEditor("game_top.v", 328, 116); // bP
+// Elapsed time: 11 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ac
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ah
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ak
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ac
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "bullet"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create Source File"); // F
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 11 seconds
+dismissDialog("Add Sources"); // c
+// Tcl Message: close [ open /rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files /rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v 
+// I (cr): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "Yes"); // JButton
+dismissDialog("Define Module"); // I
+// HMemoryUtils.trashcanNow. Engine heap size: 1,849 MB. GUI used memory: 67 MB. Current time: 11/20/23, 12:12:38 AM AST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("game_top.v", 67, 321); // bP
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bullet (bullet.v)]", 71, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bullet (bullet.v)]", 71, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("bullet.v", 72, 320); // bP
+typeControlKey((HResource) null, "bullet.v", 'v'); // bP
+selectCodeEditor("bullet.v", 12, 304); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 23 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "drawcon.v", 1); // m
+// HMemoryUtils.trashcanNow. Engine heap size: 1,909 MB. GUI used memory: 68 MB. Current time: 11/20/23, 12:13:33 AM AST
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "game_top.v", 0); // m
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 1,925 MB (+14427kb) [33:21:03]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 10 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v), drawcon : drawcon (drawcon.v)]", 6); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v), drawcon : drawcon (drawcon.v)]", 6); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v), drawcon : drawcon (drawcon.v), genblk1[0].genblk1[0].bullet_draw : bullet_draw (drawcon.v)]", 7, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v), drawcon : drawcon (drawcon.v), genblk1[0].genblk1[0].bullet_draw : bullet_draw (drawcon.v)]", 7, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v), drawcon : drawcon (drawcon.v), genblk1[0].genblk1[5].bullet_draw : bullet_draw (drawcon.v)]", 12, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v), drawcon : drawcon (drawcon.v), genblk1[0].genblk1[5].bullet_draw : bullet_draw (drawcon.v)]", 12, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v), drawcon : drawcon (drawcon.v), genblk1[0].genblk1[5].bullet_draw : bullet_draw (drawcon.v)]", 12, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v), drawcon : drawcon (drawcon.v), genblk1[0].genblk1[5].bullet_draw : bullet_draw (drawcon.v)]", 12, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v), drawcon : drawcon (drawcon.v), genblk1[0].genblk1[5].bullet_draw : bullet_draw (drawcon.v)]", 12, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v), drawcon : drawcon (drawcon.v), genblk1[0].genblk1[5].bullet_draw : bullet_draw (drawcon.v)]", 12, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v), drawcon : drawcon (drawcon.v), genblk1[0].genblk1[5].bullet_draw : bullet_draw (drawcon.v)]", 12, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v), genblk1[0].genblk1[5].bullet : bullet (bullet.v)]", 44, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v), genblk1[0].genblk1[5].bullet : bullet (bullet.v)]", 44, false, false, false, false, false, true); // D - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "drawcon.v", 1); // m
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ac
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ah
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ah
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ak
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ac
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "bullet_draw"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create Source File"); // F
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 10 seconds
+dismissDialog("Add Sources"); // c
+// Tcl Message: close [ open /rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet_draw.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files /rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet_draw.v 
+// I (cr): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "Yes"); // JButton
+dismissDialog("Define Module"); // I
+selectCodeEditor("drawcon.v", 1, 128); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,968 MB. GUI used memory: 68 MB. Current time: 11/20/23, 12:14:39 AM AST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v), drawcon : drawcon (drawcon.v), genblk1[0].genblk1[0].bullet_draw : bullet_draw (bullet_draw.v)]", 7, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v), drawcon : drawcon (drawcon.v), genblk1[0].genblk1[0].bullet_draw : bullet_draw (bullet_draw.v)]", 7, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("bullet_draw.v", 69, 326); // bP
+typeControlKey((HResource) null, "bullet_draw.v", 'v'); // bP
+selectCodeEditor("bullet_draw.v", 83, 76); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 24 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "game_top.v", 0); // m
+// Elapsed time: 46 seconds
+selectCodeEditor("game_top.v", 382, 82); // bP
+floatFrame(PAResourceOtoP.PAViews_CODE, "game_top.v"); // az
+// PAResourceOtoP.PAViews_CODE: Code: float view
+floatFrame(PAResourceOtoP.PAViews_CODE, "drawcon.v"); // az
+// PAResourceOtoP.PAViews_CODE: Code: float view
+selectCodeEditor("game_top.v", 316, 345); // bP
+typeControlKey((HResource) null, "game_top.v", 'c'); // bP
+typeControlKey((HResource) null, "game_top.v", 'v'); // bP
+// Elapsed time: 25 seconds
+selectCodeEditor("game_top.v", 48, 384); // bP
+selectCodeEditor("game_top.v", 48, 384, false, false, false, false, true); // bP - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 2,029 MB (+7682kb) [33:24:35]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,029 MB. GUI used memory: 70 MB. Current time: 11/20/23, 12:17:19 AM AST
+// Elapsed time: 20 seconds
+selectCodeEditor("drawcon.v", 78, 185); // bP
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("game_top.v", 101, 339); // bP
+// Elapsed time: 63 seconds
+selectCodeEditor("game_top.v", 27, 52); // bP
+typeControlKey((HResource) null, "game_top.v", 'c'); // bP
+selectCodeEditor("game_top.v", 60, 384); // bP
+typeControlKey((HResource) null, "game_top.v", 'v'); // bP
+typeControlKey(null, null, 'z');
+selectCodeEditor("game_top.v", 105, 308); // bP
+typeControlKey((HResource) null, "game_top.v", 'c'); // bP
+selectCodeEditor("game_top.v", 48, 379); // bP
+typeControlKey((HResource) null, "game_top.v", 'v'); // bP
+selectCodeEditor("game_top.v", 140, 189); // bP
+selectCodeEditor("game_top.v", 140, 189, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("game_top.v", 373, 230); // bP
+// Elapsed time: 14 seconds
+selectCodeEditor("constants.v", 214, 333); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 88 seconds
+selectCodeEditor("game_top.v", 239, 183); // bP
+selectCodeEditor("game_top.v", 239, 183, false, false, false, false, true); // bP - Double Click
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("constants.v", 119, 83); // bP
+selectCodeEditor("constants.v", 119, 83, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 29 seconds
+selectCodeEditor("constants.v", 94, 64); // bP
+selectCodeEditor("game_top.v", 251, 186); // bP
+selectCodeEditor("game_top.v", 251, 186, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("constants.v", 173, 292); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Elapsed time: 10 seconds
+selectCodeEditor("game_top.v", 381, 186); // bP
+// HMemoryUtils.trashcanNow. Engine heap size: 2,068 MB. GUI used memory: 70 MB. Current time: 11/20/23, 12:22:09 AM AST
+// Elapsed time: 11 seconds
+selectCodeEditor("game_top.v", 244, 228); // bP
+selectCodeEditor("game_top.v", 115, 292); // bP
+// Elapsed time: 38 seconds
+selectCodeEditor("game_top.v", 129, 279); // bP
+// Elapsed time: 22 seconds
+selectCodeEditor("game_top.v", 252, 281); // bP
+// Elapsed time: 27 seconds
+selectCodeEditor("game_top.v", 37, 499); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bullet.v", 1); // m
+selectCodeEditor("bullet.v", 0, 202); // bP
+typeControlKey((HResource) null, "bullet.v", 'c'); // bP
+typeControlKey((HResource) null, "game_top.v", 'v'); // bP
+selectCodeEditor("game_top.v", 78, 91); // bP
+selectCodeEditor("game_top.v", 78, 91, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 12 seconds
+selectCodeEditor("game_top.v", 423, 95); // bP
+selectCodeEditor("game_top.v", 136, 212); // bP
+selectCodeEditor("game_top.v", 136, 212, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 50 seconds
+selectCodeEditor("game_top.v", 198, 111); // bP
+selectCodeEditor("game_top.v", 198, 111); // bP
+selectCodeEditor("game_top.v", 312, 169); // bP
+selectCodeEditor("game_top.v", 312, 169, true, false, false, false, false); // bP - Shift Key
+selectCodeEditor("game_top.v", 450, 167); // bP
+typeControlKey((HResource) null, "game_top.v", 'c'); // bP
+selectCodeEditor("game_top.v", 133, 188); // bP
+selectCodeEditor("game_top.v", 257, 247); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("game_top.v", 329, 248); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("game_top.v", 695, 272); // bP
+typeControlKey((HResource) null, "game_top.v", 'v'); // bP
+selectCodeEditor("game_top.v", 516, 337); // bP
+typeControlKey((HResource) null, "game_top.v", 'v'); // bP
+selectCodeEditor("game_top.v", 492, 370); // bP
+typeControlKey((HResource) null, "game_top.v", 'v'); // bP
+selectCodeEditor("game_top.v", 309, 353); // bP
+// Elapsed time: 42 seconds
+selectCodeEditor("game_top.v", 345, 376); // bP
+typeControlKey((HResource) null, "game_top.v", 'v'); // bP
+selectCodeEditor("game_top.v", 912, 428); // bP
+typeControlKey((HResource) null, "game_top.v", 'v'); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("game_top.v", 138, 184); // bP
+selectCodeEditor("game_top.v", 124, 257); // bP
+typeControlKey((HResource) null, "game_top.v", 'c'); // bP
+selectCodeEditor("game_top.v", 158, 278); // bP
+typeControlKey((HResource) null, "game_top.v", 'v'); // bP
+selectCodeEditor("game_top.v", 127, 292); // bP
+typeControlKey((HResource) null, "game_top.v", 'v'); // bP
+selectCodeEditor("game_top.v", 103, 260); // bP
+selectCodeEditor("game_top.v", 103, 260, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "game_top.v", 'c'); // bP
+selectCodeEditor("game_top.v", 207, 293); // bP
+selectCodeEditor("game_top.v", 207, 293, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "game_top.v", 'v'); // bP
+selectCodeEditor("game_top.v", 297, 274); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("game_top.v", 197, 127); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("game_top.v", 225, 306); // bP
+// Elapsed time: 16 seconds
+selectCodeEditor("game_top.v", 271, 286); // bP
+// Elapsed time: 13 seconds
+selectCodeEditor("game_top.v", 210, 115); // bP
+selectCodeEditor("game_top.v", 210, 115, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "game_top.v", 'c'); // bP
+selectCodeEditor("game_top.v", 447, 445); // bP
+selectCodeEditor("game_top.v", 447, 445, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "game_top.v", 'v'); // bP
+selectCodeEditor("game_top.v", 713, 440); // bP
+selectCodeEditor("game_top.v", 713, 440, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "game_top.v", 'v'); // bP
+selectCodeEditor("game_top.v", 183, 333); // bP
+selectCodeEditor("game_top.v", 171, 340); // bP
+selectCodeEditor("game_top.v", 171, 340, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "game_top.v", 'c'); // bP
+selectCodeEditor("game_top.v", 170, 354); // bP
+selectCodeEditor("game_top.v", 170, 354, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "game_top.v", 'v'); // bP
+selectCodeEditor("game_top.v", 119, 372); // bP
+selectCodeEditor("game_top.v", 119, 372, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "game_top.v", 'v'); // bP
+selectCodeEditor("game_top.v", 129, 402); // bP
+selectCodeEditor("game_top.v", 129, 402, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "game_top.v", 'v'); // bP
+selectCodeEditor("game_top.v", 230, 403); // bP
+selectCodeEditor("game_top.v", 230, 403, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "game_top.v", 'v'); // bP
+selectCodeEditor("game_top.v", 618, 354); // bP
+// Elapsed time: 24 seconds
+selectCodeEditor("game_top.v", 283, 399); // bP
+// Elapsed time: 13 seconds
+selectCodeEditor("game_top.v", 189, 365); // bP
+// Elapsed time: 83 seconds
+selectCodeEditor("game_top.v", 283, 398); // bP
+// Elapsed time: 57 seconds
+typeControlKey((HResource) null, "game_top.v", 'c'); // bP
+typeControlKey((HResource) null, "game_top.v", 'v'); // bP
+// Elapsed time: 35 seconds
+selectCodeEditor("game_top.v", 219, 272); // bP
+selectCodeEditor("game_top.v", 226, 276); // bP
+selectCodeEditor("game_top.v", 237, 289); // bP
+selectCodeEditor("game_top.v", 228, 276); // bP
+// Elapsed time: 29 seconds
+selectCodeEditor("game_top.v", 386, 292); // bP
+selectCodeEditor("game_top.v", 386, 292); // bP
+selectCodeEditor("game_top.v", 386, 292, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("game_top.v", 189, 366); // bP
+typeControlKey((HResource) null, "game_top.v", 'c'); // bP
+selectCodeEditor("game_top.v", 384, 285); // bP
+typeControlKey((HResource) null, "game_top.v", 'v'); // bP
+selectCodeEditor("game_top.v", 254, 230); // bP
+// Elapsed time: 49 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "constants.v", 0); // m
+// Elapsed time: 64 seconds
+selectCodeEditor("game_top.v", 551, 292); // bP
+selectCodeEditor("game_top.v", 684, 232); // bP
+selectCodeEditor("game_top.v", 258, 230); // bP
+selectCodeEditor("game_top.v", 258, 230, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("game_top.v", 456, 327); // bP
+// Elapsed time: 15 seconds
+selectCodeEditor("game_top.v", 390, 366); // bP
+// Elapsed time: 13 seconds
+selectCodeEditor("game_top.v", 395, 307); // bP
+selectCodeEditor("game_top.v", 113, 260); // bP
+// Elapsed time: 29 seconds
+selectCodeEditor("game_top.v", 213, 126); // bP
+selectCodeEditor("game_top.v", 213, 126); // bP
+// Elapsed time: 91 seconds
+selectCodeEditor("game_top.v", 716, 101); // bP
+selectCodeEditor("game_top.v", 461, 113); // bP
+selectCodeEditor("game_top.v", 441, 96); // bP
+selectCodeEditor("game_top.v", 771, 100); // bP
+selectCodeEditor("game_top.v", 250, 110); // bP
+selectCodeEditor("game_top.v", 417, 112); // bP
+// Elapsed time: 32 seconds
+selectCodeEditor("game_top.v", 229, 348); // bP
+// Elapsed time: 16 seconds
+selectCodeEditor("game_top.v", 247, 351); // bP
+typeControlKey((HResource) null, "game_top.v", 'c'); // bP
+selectCodeEditor("game_top.v", 549, 365); // bP
+typeControlKey((HResource) null, "game_top.v", 'v'); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("game_top.v", 85, 368); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("game_top.v", 283, 400); // bP
+selectCodeEditor("game_top.v", 55, 448); // bP
+selectCodeEditor("game_top.v", 113, 438); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 53 seconds
+selectCodeEditor("game_top.v", 244, 440); // bP
+selectCodeEditor("game_top.v", 174, 442); // bP
+selectCodeEditor("game_top.v", 286, 441); // bP
+selectCodeEditor("game_top.v", 359, 438); // bP
+selectCodeEditor("game_top.v", 359, 438, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("game_top.v", 457, 442); // bP
+selectCodeEditor("game_top.v", 457, 442, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("game_top.v", 637, 439); // bP
+selectCodeEditor("game_top.v", 637, 439, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("game_top.v", 669, 439); // bP
+selectCodeEditor("game_top.v", 669, 439, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("game_top.v", 816, 439); // bP
+selectCodeEditor("game_top.v", 816, 439, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("game_top.v", 942, 441); // bP
+selectCodeEditor("game_top.v", 942, 441, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("game_top.v", 862, 413); // bP
+selectCodeEditor("game_top.v", 115, 278); // bP
+// Elapsed time: 23 seconds
+selectCodeEditor("game_top.v", 217, 322); // bP
+// Elapsed time: 19 seconds
+selectCodeEditor("game_top.v", 367, 202); // bP
+// Elapsed time: 552 seconds
+selectCodeEditor("game_top.v", 651, 460); // bP
+selectCodeEditor("game_top.v", 610, 469); // bP
+typeControlKey((HResource) null, "game_top.v", 'c'); // bP
+selectCodeEditor("game_top.v", 901, 457); // bP
+typeControlKey((HResource) null, "game_top.v", 'v'); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("game_top.v", 337, 379); // bP
+selectCodeEditor("game_top.v", 763, 401); // bP
+selectCodeEditor("game_top.v", 143, 398); // bP
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// HMemoryUtils.trashcanNow. Engine heap size: 2,085 MB. GUI used memory: 71 MB. Current time: 11/20/23, 12:52:09 AM AST
+selectCodeEditor("game_top.v", 461, 384); // bP
+selectCodeEditor("game_top.v", 158, 83); // bP
+selectCodeEditor("game_top.v", 158, 83, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("game_top.v", 158, 83); // bP
+selectCodeEditor("game_top.v", 216, 142); // bP
+// Elapsed time: 53 seconds
+selectCodeEditor("game_top.v", 140, 278); // bP
+selectCodeEditor("game_top.v", 164, 443); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bullet.v", 1); // m
+selectCodeEditor("bullet.v", 135, 206); // bP
+selectCodeEditor("bullet.v", 170, 298); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,102 MB. GUI used memory: 71 MB. Current time: 11/20/23, 12:53:54 AM AST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 2,134 MB (+3298kb) [34:01:25]
+// Elapsed time: 20 seconds
+selectCodeEditor("game_top.v", 135, 272); // bP
+// HMemoryUtils.trashcanNow. Engine heap size: 2,134 MB. GUI used memory: 71 MB. Current time: 11/20/23, 12:54:09 AM AST
+// Elapsed time: 37 seconds
+selectCodeEditor("game_top.v", 252, 300); // bP
+selectCodeEditor("game_top.v", 138, 368); // bP
+selectCodeEditor("game_top.v", 399, 366); // bP
+// Elapsed time: 60 seconds
+selectCodeEditor("game_top.v", 61, 382); // bP
+selectCodeEditor("game_top.v", 349, 382); // bP
+selectCodeEditor("game_top.v", 151, 399); // bP
+// Elapsed time: 19 seconds
+selectCodeEditor("game_top.v", 139, 410); // bP
+// Elapsed time: 42 seconds
+selectCodeEditor("game_top.v", 119, 428); // bP
+// Elapsed time: 39 seconds
+selectCodeEditor("game_top.v", 132, 400); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("game_top.v", 115, 452); // bP
+// Elapsed time: 16 seconds
+selectCodeEditor("game_top.v", 189, 114); // bP
+// Elapsed time: 21 seconds
+selectCodeEditor("game_top.v", 138, 363); // bP
+selectCodeEditor("game_top.v", 153, 323); // bP
+// Elapsed time: 27 seconds
+selectCodeEditor("game_top.v", 162, 332); // bP
+selectCodeEditor("game_top.v", 731, 162); // bP
+typeControlKey((HResource) null, "game_top.v", 'v'); // bP
+selectCodeEditor("game_top.v", 259, 328); // bP
+selectCodeEditor("game_top.v", 233, 368); // bP
+selectCodeEditor("game_top.v", 119, 402); // bP
+// Elapsed time: 20 seconds
+selectCodeEditor("game_top.v", 346, 306); // bP
+typeControlKey((HResource) null, "game_top.v", 'c'); // bP
+selectCodeEditor("game_top.v", 212, 414); // bP
+typeControlKey((HResource) null, "game_top.v", 'v'); // bP
+selectCodeEditor("game_top.v", 700, 174); // bP
+// Elapsed time: 15 seconds
+selectCodeEditor("game_top.v", 717, 94); // bP
+typeControlKey((HResource) null, "game_top.v", 'v'); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 54 seconds
+selectCodeEditor("game_top.v", 244, 126); // bP
+selectCodeEditor("game_top.v", 366, 126); // bP
+selectCodeEditor("game_top.v", 371, 126); // bP
+selectCodeEditor("game_top.v", 121, 124); // bP
+typeControlKey((HResource) null, "game_top.v", 'v'); // bP
+// Elapsed time: 14 seconds
+selectCodeEditor("game_top.v", 422, 396); // bP
+selectCodeEditor("game_top.v", 431, 393); // bP
+selectCodeEditor("game_top.v", 188, 324); // bP
+// Elapsed time: 78 seconds
+selectCodeEditor("game_top.v", 245, 320); // bP
+typeControlKey((HResource) null, "game_top.v", 'c'); // bP
+selectCodeEditor("game_top.v", 603, 323); // bP
+typeControlKey((HResource) null, "game_top.v", 'v'); // bP
+// Elapsed time: 24 seconds
+selectCodeEditor("game_top.v", 143, 316); // bP
+selectCodeEditor("game_top.v", 905, 319); // bP
+// Elapsed time: 30 seconds
+selectCodeEditor("game_top.v", 253, 326); // bP
+typeControlKey((HResource) null, "game_top.v", 'c'); // bP
+selectCodeEditor("game_top.v", 360, 340); // bP
+typeControlKey((HResource) null, "game_top.v", 'v'); // bP
+// Elapsed time: 30 seconds
+selectCodeEditor("game_top.v", 677, 335); // bP
+// Elapsed time: 29 seconds
+selectCodeEditor("game_top.v", 356, 341); // bP
+typeControlKey((HResource) null, "game_top.v", 'c'); // bP
+selectCodeEditor("game_top.v", 904, 338); // bP
+typeControlKey((HResource) null, "game_top.v", 'v'); // bP
+selectCodeEditor("game_top.v", 220, 350); // bP
+// Elapsed time: 38 seconds
+selectCodeEditor("game_top.v", 92, 382); // bP
+selectCodeEditor("game_top.v", 84, 384); // bP
+selectCodeEditor("game_top.v", 372, 408); // bP
+// Elapsed time: 41 seconds
+selectCodeEditor("game_top.v", 865, 106); // bP
+// Elapsed time: 37 seconds
+selectCodeEditor("game_top.v", 134, 327); // bP
+selectCodeEditor("game_top.v", 211, 300); // bP
+selectCodeEditor("game_top.v", 25, 64); // bP
+// Elapsed time: 26 seconds
+selectCodeEditor("game_top.v", 191, 96); // bP
+selectCodeEditor("game_top.v", 83, 291); // bP
+// Elapsed time: 10 seconds
+typeControlKey((HResource) null, "game_top.v", 'c'); // bP
+selectCodeEditor("game_top.v", 136, 89); // bP
+typeControlKey((HResource) null, "game_top.v", 'v'); // bP
+selectCodeEditor("game_top.v", 58, 215); // bP
+selectCodeEditor("game_top.v", 101, 216); // bP
+selectCodeEditor("game_top.v", 154, 52); // bP
+typeControlKey((HResource) null, "game_top.v", 'v'); // bP
+selectCodeEditor("game_top.v", 846, 203); // bP
+// Elapsed time: 15 seconds
+selectCodeEditor("game_top.v", 379, 351); // bP
+// Elapsed time: 17 seconds
+selectCodeEditor("game_top.v", 202, 99); // bP
+selectCodeEditor("game_top.v", 22, 202); // bP
+selectCodeEditor("game_top.v", 23, 214); // bP
+selectCodeEditor("game_top.v", 23, 230); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("game_top.v", 77, 421); // bP
+// HMemoryUtils.trashcanNow. Engine heap size: 2,167 MB. GUI used memory: 69 MB. Current time: 11/20/23, 1:09:29 AM AST
+// Elapsed time: 16 seconds
+selectCodeEditor("game_top.v", 215, 233); // bP
+// Elapsed time: 44 seconds
+selectCodeEditor("game_top.v", 112, 61); // bP
+selectCodeEditor("game_top.v", 114, 98); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("game_top.v", 168, 158); // bP
+// Elapsed time: 307 seconds
+selectCodeEditor("game_top.v", 67, 472); // bP
+selectCodeEditor("game_top.v", 193, 316); // bP
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ac
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ah
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ak
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ac
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "enemy"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create Source File"); // F
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 10 seconds
+dismissDialog("Add Sources"); // c
+// Tcl Message: close [ open /rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files /rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v 
+// I (cr): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "Yes"); // JButton
+dismissDialog("Define Module"); // I
+// HMemoryUtils.trashcanNow. Engine heap size: 2,191 MB. GUI used memory: 69 MB. Current time: 11/20/23, 1:16:09 AM AST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("game_top.v", 1, 112); // bP
+selectCodeEditor("game_top.v", 196, 134); // bP
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, enemy (enemy.v)]", 95, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, enemy (enemy.v)]", 95, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("enemy.v", 64, 325); // bP
+typeControlKey((HResource) null, "enemy.v", 'v'); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("game_top.v", 91, 488); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 2,248 MB (+7594kb) [34:24:11]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,248 MB. GUI used memory: 70 MB. Current time: 11/20/23, 1:16:54 AM AST
+// Elapsed time: 21 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v), drawcon : drawcon (drawcon.v)]", 6); // D
+// HMemoryUtils.trashcanNow. Engine heap size: 2,264 MB. GUI used memory: 70 MB. Current time: 11/20/23, 1:46:54 AM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,264 MB. GUI used memory: 70 MB. Current time: 11/20/23, 2:16:54 AM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,264 MB. GUI used memory: 69 MB. Current time: 11/20/23, 2:46:54 AM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,264 MB. GUI used memory: 69 MB. Current time: 11/20/23, 3:16:54 AM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,264 MB. GUI used memory: 69 MB. Current time: 11/20/23, 3:46:54 AM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,264 MB. GUI used memory: 69 MB. Current time: 11/20/23, 4:16:54 AM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,264 MB. GUI used memory: 69 MB. Current time: 11/20/23, 4:46:54 AM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,264 MB. GUI used memory: 69 MB. Current time: 11/20/23, 5:16:54 AM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,264 MB. GUI used memory: 69 MB. Current time: 11/20/23, 5:46:54 AM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,264 MB. GUI used memory: 69 MB. Current time: 11/20/23, 6:16:54 AM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,264 MB. GUI used memory: 69 MB. Current time: 11/20/23, 6:46:54 AM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,264 MB. GUI used memory: 69 MB. Current time: 11/20/23, 7:16:54 AM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,264 MB. GUI used memory: 69 MB. Current time: 11/20/23, 7:46:54 AM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,264 MB. GUI used memory: 69 MB. Current time: 11/20/23, 8:16:54 AM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,264 MB. GUI used memory: 69 MB. Current time: 11/20/23, 8:46:55 AM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,264 MB. GUI used memory: 69 MB. Current time: 11/20/23, 9:16:55 AM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,264 MB. GUI used memory: 69 MB. Current time: 11/20/23, 9:46:55 AM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,264 MB. GUI used memory: 69 MB. Current time: 11/20/23, 10:16:55 AM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,264 MB. GUI used memory: 69 MB. Current time: 11/20/23, 10:46:55 AM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,264 MB. GUI used memory: 69 MB. Current time: 11/20/23, 11:16:55 AM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,264 MB. GUI used memory: 69 MB. Current time: 11/20/23, 11:46:55 AM AST
+// Elapsed time: 38128 seconds
+selectCodeEditor("enemy.v", 376, 246); // bP
+selectCodeEditor("enemy.v", 376, 246); // bP
+selectCodeEditor("enemy.v", 376, 246); // bP
+selectCodeEditor("enemy.v", 376, 246); // bP
+selectCodeEditor("enemy.v", 376, 246); // bP
+selectCodeEditor("enemy.v", 376, 246); // bP
+selectCodeEditor("enemy.v", 376, 246); // bP
+selectCodeEditor("enemy.v", 376, 246); // bP
+selectCodeEditor("enemy.v", 376, 246); // bP
+selectCodeEditor("enemy.v", 376, 246); // bP
+selectCodeEditor("enemy.v", 376, 246); // bP
+selectCodeEditor("enemy.v", 376, 246); // bP
+// Elapsed time: 53 seconds
+selectCodeEditor("enemy.v", 246, 131); // bP
+// Elapsed time: 16 seconds
+selectCodeEditor("enemy.v", 402, 202); // bP
+selectCodeEditor("enemy.v", 511, 201); // bP
+selectCodeEditor("enemy.v", 511, 201); // bP
+selectCodeEditor("enemy.v", 511, 201); // bP
+selectCodeEditor("enemy.v", 511, 201); // bP
+selectCodeEditor("enemy.v", 511, 201); // bP
+selectCodeEditor("enemy.v", 511, 201); // bP
+selectCodeEditor("enemy.v", 511, 201); // bP
+selectCodeEditor("enemy.v", 511, 201); // bP
+selectCodeEditor("enemy.v", 511, 201); // bP
+selectCodeEditor("enemy.v", 511, 201); // bP
+selectCodeEditor("enemy.v", 511, 201); // bP
+selectCodeEditor("enemy.v", 511, 201); // bP
+selectCodeEditor("enemy.v", 511, 201); // bP
+selectCodeEditor("enemy.v", 511, 201); // bP
+selectCodeEditor("enemy.v", 511, 201); // bP
+selectCodeEditor("enemy.v", 511, 201); // bP
+selectCodeEditor("enemy.v", 511, 201); // bP
+selectCodeEditor("enemy.v", 511, 201); // bP
+selectCodeEditor("enemy.v", 511, 201); // bP
+selectCodeEditor("enemy.v", 511, 201); // bP
+selectCodeEditor("enemy.v", 90, 234); // bP
+typeControlKey((HResource) null, "enemy.v", 'v'); // bP
+// Elapsed time: 72 seconds
+selectCodeEditor("enemy.v", 223, 129); // bP
+selectCodeEditor("enemy.v", 223, 129, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("enemy.v", 223, 129); // bP
+selectCodeEditor("enemy.v", 60, 126); // bP
+selectCodeEditor("enemy.v", 244, 140); // bP
+// Elapsed time: 12 seconds
+selectCodeEditor("enemy.v", 244, 142); // bP
+selectCodeEditor("enemy.v", 238, 153); // bP
+selectCodeEditor("enemy.v", 196, 140); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,272 MB. GUI used memory: 70 MB. Current time: 11/20/23, 11:56:10 AM AST
+// Elapsed time: 15 seconds
+selectCodeEditor("enemy.v", 244, 218); // bP
+selectCodeEditor("enemy.v", 396, 251); // bP
+// Elapsed time: 46 seconds
+selectCodeEditor("enemy.v", 396, 251); // bP
+selectCodeEditor("enemy.v", 31, 293); // bP
+selectCodeEditor("enemy.v", 112, 199); // bP
+selectCodeEditor("enemy.v", 56, 212); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("enemy.v", 240, 157); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("enemy.v", 243, 218); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,298 MB. GUI used memory: 70 MB. Current time: 11/20/23, 11:58:00 AM AST
+// Elapsed time: 19 seconds
+selectCodeEditor("enemy.v", 124, 170); // bP
+selectCodeEditor("enemy.v", 77, 275); // bP
+// Elapsed time: 194 seconds
+selectCodeEditor("enemy.v", 188, 295); // bP
+selectCodeEditor("enemy.v", 165, 270); // bP
+selectCodeEditor("enemy.v", 188, 169); // bP
+typeControlKey((HResource) null, "enemy.v", 'v'); // bP
+selectCodeEditor("enemy.v", 139, 190); // bP
+selectCodeEditor("enemy.v", 334, 256); // bP
+selectCodeEditor("enemy.v", 292, 154); // bP
+// Elapsed time: 20 seconds
+selectCodeEditor("enemy.v", 452, 135); // bP
+selectCodeEditor("enemy.v", 453, 126); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("enemy.v", 150, 295); // bP
+selectCodeEditor("enemy.v", 508, 170); // bP
+selectCodeEditor("enemy.v", 76, 292); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 57 seconds
+selectCodeEditor("game_top.v", 475, 226); // bP
+// Elapsed time: 52 seconds
+selectCodeEditor("game_top.v", 326, 247); // bP
+selectCodeEditor("game_top.v", 149, 246); // bP
+typeControlKey((HResource) null, "game_top.v", 'v'); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,322 MB. GUI used memory: 70 MB. Current time: 11/20/23, 12:04:45 PM AST
+// Elapsed time: 10 seconds
+selectCodeEditor("game_top.v", 91, 246); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,346 MB. GUI used memory: 70 MB. Current time: 11/20/23, 12:05:00 PM AST
+// Elapsed time: 10 seconds
+selectCodeEditor("enemy.v", 540, 280); // bP
+selectCodeEditor("enemy.v", 106, 294); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 2,362 MB (+2258kb) [45:12:34]
+// Elapsed time: 42 seconds
+selectCodeEditor("game_top.v", 589, 383); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,370 MB. GUI used memory: 70 MB. Current time: 11/20/23, 12:07:15 PM AST
+// Elapsed time: 143 seconds
+selectCodeEditor("drawcon.v", 112, 396); // bP
+typeControlKey((HResource) null, "drawcon.v", 'c'); // bP
+selectCodeEditor("drawcon.v", 127, 401); // bP
+typeControlKey((HResource) null, "drawcon.v", 'v'); // bP
+selectCodeEditor("drawcon.v", 107, 108); // bP
+// Elapsed time: 28 seconds
+selectCodeEditor("drawcon.v", 365, 138); // bP
+selectCodeEditor("drawcon.v", 365, 138); // bP
+selectCodeEditor("drawcon.v", 360, 142); // bP
+selectCodeEditor("drawcon.v", 360, 142, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "drawcon.v", 'c'); // bP
+selectCodeEditor("drawcon.v", 360, 160); // bP
+selectCodeEditor("drawcon.v", 360, 160, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "drawcon.v", 'v'); // bP
+selectCodeEditor("drawcon.v", 360, 172); // bP
+selectCodeEditor("drawcon.v", 360, 172, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "drawcon.v", 'v'); // bP
+selectCodeEditor("drawcon.v", 301, 246); // bP
+selectCodeEditor("drawcon.v", 301, 246, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "drawcon.v", 'v'); // bP
+selectCodeEditor("drawcon.v", 413, 290); // bP
+selectCodeEditor("drawcon.v", 413, 290, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "drawcon.v", 'v'); // bP
+selectCodeEditor("drawcon.v", 413, 307); // bP
+selectCodeEditor("drawcon.v", 413, 307, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "drawcon.v", 'v'); // bP
+selectCodeEditor("drawcon.v", 486, 336); // bP
+selectCodeEditor("drawcon.v", 486, 336, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "drawcon.v", 'v'); // bP
+selectCodeEditor("drawcon.v", 486, 351); // bP
+selectCodeEditor("drawcon.v", 486, 351, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "drawcon.v", 'v'); // bP
+selectCodeEditor("drawcon.v", 154, 259); // bP
+// Elapsed time: 14 seconds
+selectCodeEditor("drawcon.v", 205, 336); // bP
+// Elapsed time: 25 seconds
+selectCodeEditor("drawcon.v", 363, 332); // bP
+selectCodeEditor("drawcon.v", 326, 334); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("drawcon.v", 304, 189); // bP
+// Elapsed time: 24 seconds
+selectCodeEditor("drawcon.v", 149, 160); // bP
+// Elapsed time: 16 seconds
+selectCodeEditor("drawcon.v", 951, 144); // bP
+typeControlKey((HResource) null, "drawcon.v", 'c'); // bP
+typeControlKey((HResource) null, "drawcon.v", 'v'); // bP
+selectCodeEditor("drawcon.v", 233, 157); // bP
+// Elapsed time: 24 seconds
+selectCodeEditor("drawcon.v", 685, 154); // bP
+selectCodeEditor("drawcon.v", 608, 340); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,394 MB. GUI used memory: 70 MB. Current time: 11/20/23, 12:11:35 PM AST
+selectCodeEditor("game_top.v", 389, 143); // bP
+selectCodeEditor("game_top.v", 663, 448); // bP
+typeControlKey((HResource) null, "game_top.v", 'c'); // bP
+typeControlKey((HResource) null, "game_top.v", 'v'); // bP
+selectCodeEditor("game_top.v", 219, 459); // bP
+// Elapsed time: 23 seconds
+selectCodeEditor("game_top.v", 385, 142); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 21 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ac
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ah
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ak
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ac
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "enemy_draw"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create Source File"); // F
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 10 seconds
+dismissDialog("Add Sources"); // c
+// Tcl Message: close [ open /rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy_draw.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files /rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy_draw.v 
+// I (cr): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "Yes"); // JButton
+dismissDialog("Define Module"); // I
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bullet_draw.v", 2); // m
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("bullet_draw.v", 198, 185); // bP
+// HMemoryUtils.trashcanNow. Engine heap size: 2,427 MB. GUI used memory: 70 MB. Current time: 11/20/23, 12:12:55 PM AST
+selectCodeEditor("bullet_draw.v", 0, 113); // bP
+typeControlKey((HResource) null, "bullet_draw.v", 'c'); // bP
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v), drawcon : drawcon (drawcon.v)]", 6); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v), drawcon : drawcon (drawcon.v), genblk2[2].genblk1[5].enemy_draw : enemy_draw (enemy_draw.v)]", 56, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v), drawcon : drawcon (drawcon.v), genblk2[2].genblk1[5].enemy_draw : enemy_draw (enemy_draw.v)]", 56, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("enemy_draw.v", 138, 332); // bP
+typeControlKey((HResource) null, "enemy_draw.v", 'v'); // bP
+selectCodeEditor("enemy_draw.v", 93, 118); // bP
+// Elapsed time: 20 seconds
+selectCodeEditor("enemy_draw.v", 136, 76); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("enemy_draw.v", 158, 141); // bP
+// Elapsed time: 31 seconds
+selectCodeEditor("enemy_draw.v", 118, 242); // bP
+// Elapsed time: 12 seconds
+selectCodeEditor("enemy_draw.v", 187, 190); // bP
+selectCodeEditor("enemy_draw.v", 141, 214); // bP
+selectCodeEditor("enemy_draw.v", 427, 247); // bP
+// Elapsed time: 52 seconds
+selectCodeEditor("enemy_draw.v", 248, 222); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("enemy_draw.v", 396, 80); // bP
+// Elapsed time: 19 seconds
+selectCodeEditor("enemy_draw.v", 162, 263); // bP
+selectCodeEditor("enemy_draw.v", 358, 262); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,459 MB. GUI used memory: 70 MB. Current time: 11/20/23, 12:16:35 PM AST
+// Elapsed time: 37 seconds
+selectCodeEditor("enemy_draw.v", 161, 263); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 39 seconds
+selectCodeEditor("drawcon.v", 946, 382); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("game_top.v", 653, 463); // bP
+// Elapsed time: 22 seconds
+selectCodeEditor("game_top.v", 61, 141); // bP
+typeControlKey((HResource) null, "game_top.v", 'c'); // bP
+typeControlKey((HResource) null, "drawcon.v", 'v'); // bP
+// Elapsed time: 20 seconds
+selectCodeEditor("drawcon.v", 117, 395); // bP
+typeControlKey((HResource) null, "drawcon.v", 'v'); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 2,483 MB (+3006kb) [45:26:04]
+selectCodeEditor("game_top.v", 376, 144); // bP
+selectCodeEditor("game_top.v", 376, 144); // bP
+// HMemoryUtils.trashcanNow. Engine heap size: 2,491 MB. GUI used memory: 70 MB. Current time: 11/20/23, 12:18:50 PM AST
+selectCodeEditor("game_top.v", 50, 182); // bP
+selectCodeEditor("game_top.v", 63, 128); // bP
+typeControlKey((HResource) null, "game_top.v", 'v'); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 25 seconds
+selectCodeEditor("drawcon.v", 617, 232); // bP
+// Elapsed time: 19 seconds
+selectCodeEditor("drawcon.v", 97, 156); // bP
+// Elapsed time: 26 seconds
+selectCodeEditor("drawcon.v", 513, 213); // bP
+// Elapsed time: 13 seconds
+selectCodeEditor("drawcon.v", 295, 265); // bP
+// Elapsed time: 18 seconds
+selectCodeEditor("drawcon.v", 455, 249); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,515 MB. GUI used memory: 70 MB. Current time: 11/20/23, 12:20:50 PM AST
+// Elapsed time: 25 seconds
+selectCodeEditor("game_top.v", 599, 260); // bP
+// Elapsed time: 18 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "enemy.v", 3); // m
+selectCodeEditor("enemy.v", 455, 189); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "enemy_draw.v", 4); // m
+// HMemoryUtils.trashcanNow. Engine heap size: 2,543 MB. GUI used memory: 70 MB. Current time: 11/20/23, 12:21:50 PM AST
+// Elapsed time: 19 seconds
+selectCodeEditor("game_top.v", 627, 440); // bP
+// Elapsed time: 525 seconds
+selectCodeEditor("drawcon.v", 537, 158); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("drawcon.v", 437, 251); // bP
+selectCodeEditor("drawcon.v", 437, 251); // bP
+// Elapsed time: 13 seconds
+selectCodeEditor("drawcon.v", 161, 220); // bP
+selectCodeEditor("drawcon.v", 197, 141); // bP
+selectCodeEditor("drawcon.v", 78, 236); // bP
+typeControlKey((HResource) null, "drawcon.v", 'c'); // bP
+selectCodeEditor("drawcon.v", 66, 156); // bP
+typeControlKey((HResource) null, "drawcon.v", 'v'); // bP
+selectCodeEditor("drawcon.v", 243, 154); // bP
+// Elapsed time: 17 seconds
+selectCodeEditor("drawcon.v", 78, 216); // bP
+typeControlKey((HResource) null, "drawcon.v", 'c'); // bP
+selectCodeEditor("drawcon.v", 82, 200); // bP
+typeControlKey((HResource) null, "drawcon.v", 'c'); // bP
+selectCodeEditor("drawcon.v", 83, 204); // bP
+selectCodeEditor("drawcon.v", 83, 204, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("drawcon.v", 57, 146); // bP
+selectCodeEditor("drawcon.v", 57, 146, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "drawcon.v", 'c'); // bP
+selectCodeEditor("drawcon.v", 92, 200); // bP
+typeControlKey((HResource) null, "drawcon.v", 'v'); // bP
+selectCodeEditor("drawcon.v", 113, 213); // bP
+selectCodeEditor("drawcon.v", 267, 231); // bP
+selectCodeEditor("drawcon.v", 185, 246); // bP
+selectCodeEditor("drawcon.v", 77, 350); // bP
+typeControlKey((HResource) null, "drawcon.v", 'c'); // bP
+selectCodeEditor("drawcon.v", 92, 354); // bP
+typeControlKey((HResource) null, "drawcon.v", 'v'); // bP
+selectCodeEditor("drawcon.v", 265, 384); // bP
+selectCodeEditor("drawcon.v", 177, 400); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectCodeEditor("drawcon.v", 424, 335); // bP
+selectCodeEditor("drawcon.v", 424, 335); // bP
+// Elapsed time: 822 seconds
+selectCodeEditor("drawcon.v", 293, 190); // bP
+selectCodeEditor("drawcon.v", 293, 190); // bP
+selectCodeEditor("drawcon.v", 268, 293); // bP
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ac
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ah
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ak
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ac
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "cannon_draw"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create Source File"); // F
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 12 seconds
+dismissDialog("Add Sources"); // c
+// Tcl Message: close [ open /rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/cannon_draw.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files /rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/cannon_draw.v 
+// I (cr): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "Yes"); // JButton
+dismissDialog("Define Module"); // I
+// HMemoryUtils.trashcanNow. Engine heap size: 2,567 MB. GUI used memory: 71 MB. Current time: 11/20/23, 12:47:10 PM AST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cannon_draw (cannon_draw.v)]", 119, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cannon_draw (cannon_draw.v)]", 119, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 17 seconds
+selectCodeEditor("cannon_draw.v", 333, 148); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bullet_draw.v", 2); // m
+selectCodeEditor("bullet_draw.v", 309, 250); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cannon_draw.v", 5); // m
+selectCodeEditor("drawcon.v", 693, 354); // bP
+typeControlKey((HResource) null, "drawcon.v", 'c'); // bP
+selectCodeEditor("cannon_draw.v", 150, 303); // bP
+typeControlKey((HResource) null, "cannon_draw.v", 'v'); // bP
+floatFrame(PAResourceOtoP.PAViews_CODE, "cannon_draw.v *"); // az
+// PAResourceOtoP.PAViews_CODE: Code: float view
+maximizeFrame(PAResourceOtoP.PAViews_CODE, "cannon_draw.v *"); // az
+selectCodeEditor("cannon_draw.v", 225, 122); // bP
+selectCodeEditor("cannon_draw.v", 225, 122); // bP
+selectCodeEditor("cannon_draw.v", 225, 122); // bP
+selectCodeEditor("cannon_draw.v", 225, 122); // bP
+selectCodeEditor("cannon_draw.v", 225, 122); // bP
+selectCodeEditor("cannon_draw.v", 225, 122); // bP
+selectCodeEditor("cannon_draw.v", 225, 122); // bP
+selectCodeEditor("cannon_draw.v", 225, 122); // bP
+selectCodeEditor("cannon_draw.v", 225, 122); // bP
+selectCodeEditor("cannon_draw.v", 225, 122); // bP
+selectCodeEditor("cannon_draw.v", 225, 122); // bP
+selectCodeEditor("cannon_draw.v", 225, 122); // bP
+selectCodeEditor("cannon_draw.v", 225, 122); // bP
+selectCodeEditor("cannon_draw.v", 225, 122); // bP
+selectCodeEditor("cannon_draw.v", 104, 224); // bP
+selectCodeEditor("cannon_draw.v", 46, 109); // bP
+selectCodeEditor("cannon_draw.v", 72, 90); // bP
+// Elapsed time: 57 seconds
+selectCodeEditor("cannon_draw.v", 127, 78); // bP
+// Elapsed time: 30 seconds
+selectCodeEditor("cannon_draw.v", 392, 282); // bP
+// Elapsed time: 21 seconds
+selectCodeEditor("cannon_draw.v", 508, 262); // bP
+// Elapsed time: 13 seconds
+selectCodeEditor("cannon_draw.v", 612, 246); // bP
+selectCodeEditor("cannon_draw.v", 166, 173); // bP
+selectCodeEditor("cannon_draw.v", 689, 398); // bP
+selectCodeEditor("cannon_draw.v", 123, 346); // bP
+selectCodeEditor("cannon_draw.v", 370, 354); // bP
+// Elapsed time: 13 seconds
+selectCodeEditor("cannon_draw.v", 210, 115); // bP
+selectCodeEditor("cannon_draw.v", 333, 96); // bP
+selectCodeEditor("cannon_draw.v", 212, 322); // bP
+// Elapsed time: 32 seconds
+selectCodeEditor("cannon_draw.v", 231, 433); // bP
+// Elapsed time: 291 seconds
+selectCodeEditor("cannon_draw.v", 200, 426); // bP
+// Elapsed time: 18 seconds
+selectCodeEditor("drawcon.v", 324, 286); // bP
+selectCodeEditor("drawcon.v", 397, 290); // bP
+// Elapsed time: 25 seconds
+selectCodeEditor("drawcon.v", 397, 290); // bP
+selectCodeEditor("drawcon.v", 397, 290); // bP
+selectCodeEditor("drawcon.v", 512, 473); // bP
+typeControlKey((HResource) null, "drawcon.v", 'c'); // bP
+selectCodeEditor("drawcon.v", 29, 119); // bP
+typeControlKey((HResource) null, "drawcon.v", 'v'); // bP
+selectCodeEditor("drawcon.v", 153, 112); // bP
+// Elapsed time: 25 seconds
+selectCodeEditor("drawcon.v", 181, 112); // bP
+selectCodeEditor("drawcon.v", 345, 185); // bP
+// Elapsed time: 31 seconds
+selectCodeEditor("drawcon.v", 203, 214); // bP
+selectCodeEditor("cannon_draw.v", 350, 332); // bP
+selectCodeEditor("cannon_draw.v", 350, 332); // bP
+selectCodeEditor("cannon_draw.v", 350, 332); // bP
+// Elapsed time: 52 seconds
+selectCodeEditor("drawcon.v", 345, 147); // bP
+// Elapsed time: 40 seconds
+selectCodeEditor("drawcon.v", 337, 138); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("drawcon.v", 433, 144); // bP
+selectCodeEditor("drawcon.v", 433, 144); // bP
+selectCodeEditor("drawcon.v", 196, 305); // bP
+selectCodeEditor("drawcon.v", 79, 295); // bP
+// Elapsed time: 61 seconds
+selectCodeEditor("drawcon.v", 215, 343); // bP
+selectCodeEditor("drawcon.v", 207, 355); // bP
+selectCodeEditor("drawcon.v", 207, 355); // bP
+// Elapsed time: 114 seconds
+selectCodeEditor("cannon_draw.v", 207, 261); // bP
+// Elapsed time: 137 seconds
+selectCodeEditor("drawcon.v", 270, 199); // bP
+// Elapsed time: 13 seconds
+selectCodeEditor("drawcon.v", 357, 199); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("drawcon.v", 697, 386); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 2,608 MB (+566kb) [46:13:38]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 16 seconds
+selectCodeEditor("drawcon.v", 311, 202); // bP
+// HMemoryUtils.trashcanNow. Engine heap size: 2,624 MB. GUI used memory: 71 MB. Current time: 11/20/23, 1:06:25 PM AST
+// Elapsed time: 46 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("drawcon.v", 145, 228); // bP
+selectCodeEditor("drawcon.v", 361, 217); // bP
+selectCodeEditor("drawcon.v", 353, 236); // bP
+// Elapsed time: 41 seconds
+selectCodeEditor("drawcon.v", 433, 306); // bP
+selectCodeEditor("drawcon.v", 216, 246); // bP
+selectCodeEditor("drawcon.v", 216, 246, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("drawcon.v", 170, 244); // bP
+// Elapsed time: 22 seconds
+selectCodeEditor("drawcon.v", 322, 233); // bP
+// Elapsed time: 18 seconds
+selectCodeEditor("drawcon.v", 170, 315); // bP
+selectCodeEditor("drawcon.v", 334, 202); // bP
+selectCodeEditor("drawcon.v", 334, 202); // bP
+// Elapsed time: 34 seconds
+selectCodeEditor("drawcon.v", 58, 67); // bP
+typeControlKey((HResource) null, "drawcon.v", 'c'); // bP
+selectCodeEditor("drawcon.v", 405, 234); // bP
+selectCodeEditor("drawcon.v", 101, 248); // bP
+// Elapsed time: 12 seconds
+selectCodeEditor("drawcon.v", 509, 246); // bP
+selectCodeEditor("drawcon.v", 83, 258); // bP
+typeControlKey((HResource) null, "drawcon.v", 'c'); // bP
+selectCodeEditor("drawcon.v", 421, 324); // bP
+typeControlKey((HResource) null, "drawcon.v", 'v'); // bP
+selectCodeEditor("drawcon.v", 203, 289); // bP
+// Elapsed time: 13 seconds
+selectCodeEditor("drawcon.v", 420, 430); // bP
+typeControlKey((HResource) null, "drawcon.v", 'v'); // bP
+selectCodeEditor("drawcon.v", 237, 408); // bP
+selectCodeEditor("drawcon.v", 225, 401); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 16 seconds
+selectCodeEditor("cannon_draw.v", 482, 298); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,656 MB. GUI used memory: 71 MB. Current time: 11/20/23, 1:10:40 PM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,672 MB. GUI used memory: 71 MB. Current time: 11/20/23, 1:40:40 PM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,672 MB. GUI used memory: 71 MB. Current time: 11/20/23, 2:10:40 PM AST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,672 MB. GUI used memory: 71 MB. Current time: 11/20/23, 2:40:40 PM AST
+// Elapsed time: 6539 seconds
+selectCodeEditor("game_top.v", 712, 38); // bP
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (cr): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Run Synthesis"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs synth_1 -jobs 64 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Mon Nov 20 14:59:55 2023] Launched synth_1... Run output will be captured here: /rhome/forystmj/CS256-project/CS256-project.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 9 seconds
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 71 seconds
+selectCodeEditor("drawcon.v", 23, 265); // bP
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Synthesis Completed: addNotify
+// Elapsed time: 63 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs impl_1 -jobs 64 
+// Tcl Message: [Mon Nov 20 15:02:12 2023] Launched impl_1... Run output will be captured here: /rhome/forystmj/CS256-project/CS256-project.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Implementation Completed: addNotify
+// Elapsed time: 85 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// cD (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // cD
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 64 
+// Tcl Message: [Mon Nov 20 15:03:40 2023] Launched impl_1... Run output will be captured here: /rhome/forystmj/CS256-project/CS256-project.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 48 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // ag

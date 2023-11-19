@@ -103,40 +103,40 @@ module game_top(
             end
         end
     endgenerate
+
+// ----------------------------------------------------------------------------------------------------------    
+// Generating enemies 
+// ----------------------------------------------------------------------------------------------------------    
+    wire [10:0] enemy_pos_x [`CANNONS_NUM-1:0][`ENEMIES_PER_CANNON-1:0];
+    wire [9:0] enemy_pos_y [`CANNONS_NUM-1:0][`ENEMIES_PER_CANNON-1:0];
+    
+    wire [11*`CANNONS_NUM*`ENEMIES_PER_CANNON-1:0] all_enemy_pos_x;
+    wire [10*`CANNONS_NUM*`ENEMIES_PER_CANNON-1:0] all_enemy_pos_y;
+    
+    wire [`CANNONS_NUM*`ENEMIES_PER_CANNON-1:0] killed;
+    
+    generate
+        genvar k; genvar l;
+        for (k = 0; k < `CANNONS_NUM; k = k + 1) begin
+            for (l = 0; l < `ENEMIES_PER_CANNON; l = l + 1) begin
+                enemy #(.TOWARDS_CANNON(k), .ENEMY_NUM(l)) enemy ( // TODO - check if 11*`BULLETS_PER_CANNON*k +: 11*`BULLETS_PER_CANNON returns values in the correct range
+                    .logclk(logclk[16]), .rst(rst),
+                    .line_bullet_pos_x(all_bullet_pos_x[11*`BULLETS_PER_CANNON*k +: 11*`BULLETS_PER_CANNON]),
+                    .enemy_pos_x(enemy_pos_x[k][l]), .enemy_pos_y(enemy_pos_y[k][l]),
+                    .killed(killed[`ENEMIES_PER_CANNON*k + l]));
+                assign all_enemy_pos_x[11*`ENEMIES_PER_CANNON*k+11*l +: 11] = enemy_pos_x[k][l];
+                assign all_enemy_pos_y[10*`ENEMIES_PER_CANNON*k+10*l +: 10] = enemy_pos_y[k][l];
+            end
+        end
+    endgenerate
     
 // ----------------------------------------------------------------------------------------------------------    
-// Drawcon instance 
+// Instanciating Drawcon 
 // ----------------------------------------------------------------------------------------------------------    
     drawcon drawcon(.block_pos_x(block_pos_x), .block_pos_y(block_pos_y),
                     .all_bullet_pos_x(all_bullet_pos_x), .all_bullet_pos_y(all_bullet_pos_y),
+                    .all_enemy_pos_x(all_enemy_pos_x), .all_enemy_pos_y(all_enemy_pos_y),
+                    .killed(killed),
                     .draw_x(curr_x), .draw_y(curr_y),
                     .r(red), .g(green), .b(blue)); 
-endmodule
-
-
-module bullet #(parameter FROM_CANNON = 0, parameter BULLET_NUM = 0)(
-    input logclk, input rst, input [`CANNONS_NUM-1:0] cannons_on,
-    output reg [10:0] bullet_pos_x, output [9:0] bullet_pos_y
-    );
-    
-    localparam [5:0] DELAY = 6'd60 / `BULLETS_PER_CANNON * BULLET_NUM;
-    reg [5:0] bullet_timer;
-    
-    
-    always @ (posedge logclk) begin
-        if (!rst || !cannons_on[FROM_CANNON])
-            bullet_timer <= 6'd0;
-        else if (bullet_timer < DELAY && bullet_pos_x == `CANNON_OFFSET_X + `CANNON_WIDTH - `BULLET_WIDTH)
-            bullet_timer <= bullet_timer + 1'b1;
-        
-        if (!rst || bullet_pos_x >= `WIDTH - `FRAME_WIDTH - 11'd1 
-            || (bullet_pos_x == `CANNON_OFFSET_X + `CANNON_WIDTH - `BULLET_WIDTH 
-                && (!cannons_on[FROM_CANNON] || (cannons_on[FROM_CANNON] && bullet_timer < DELAY))))
-            bullet_pos_x <= `CANNON_OFFSET_X + `CANNON_WIDTH - `BULLET_WIDTH;
-        else
-            bullet_pos_x <= bullet_pos_x + `BULLET_SPEED;
-    end
-    
-    assign bullet_pos_y = `CANNON_OFFSET_Y + `CANNON_HEIGHT*FROM_CANNON + `CANNON_DISTANCE*FROM_CANNON + (`CANNON_HEIGHT - `BULLET_HEIGHT) / 2;
-
 endmodule
