@@ -1930,3 +1930,457 @@ selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bullet.
 selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "drawcon.v", 2); // m
 selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "game_top.v", 1); // m
 selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "enemy.v", 6); // m
+// Elapsed time: 110 seconds
+selectCodeEditor("enemy.v", 511, 356); // bP
+// Elapsed time: 62 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bullet.v", 4); // m
+// Elapsed time: 17 seconds
+selectButton(PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV, (String) null); // E
+// Run Command: PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV
+selectButton(PAResourceOtoP.PlanAheadTab_SHOW_FLOW_NAVIGATOR, "Flow Navigator"); // C
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "enemy.v", 6); // m
+selectCodeEditor("enemy.v", 928, 218); // bP
+// Elapsed time: 64 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bullet.v", 4); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "enemy.v", 6); // m
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bullet.v", 4); // m
+// [Engine Memory]: 3,029 MB (+386kb) [49:05:31]
+// Elapsed time: 63 seconds
+selectCodeEditor("bullet.v", 113, 445); // bP
+// Elapsed time: 24 seconds
+selectCodeEditor("bullet.v", 41, 303); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cannon_draw.v", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bullet.v", 4); // m
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,045 MB. GUI used memory: 74 MB. Current time: 11/20/23, 3:59:50 PM AST
+// Elapsed time: 25 seconds
+selectCodeEditor("bullet.v", 83, 354); // bP
+typeControlKey((HResource) null, "bullet.v", 'c'); // bP
+selectCodeEditor("bullet.v", 259, 302); // bP
+typeControlKey((HResource) null, "bullet.v", 'v'); // bP
+selectCodeEditor("bullet.v", 308, 350); // bP
+selectCodeEditor("bullet.v", 203, 353); // bP
+selectCodeEditor("bullet.v", 148, 379); // bP
+selectCodeEditor("bullet.v", 148, 379, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("bullet.v", 315, 355); // bP
+selectCodeEditor("bullet.v", 314, 368); // bP
+selectCodeEditor("bullet.v", 404, 310); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "game_top.v", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "drawcon.v", 2); // m
+selectCodeEditor("drawcon.v", 208, 275); // bP
+selectCodeEditor("drawcon.v", 208, 275); // bP
+selectCodeEditor("drawcon.v", 208, 275); // bP
+selectCodeEditor("drawcon.v", 112, 276); // bP
+selectCodeEditor("drawcon.v", 112, 276, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 15 seconds
+selectCodeEditor("drawcon.v", 104, 272); // bP
+selectCodeEditor("drawcon.v", 76, 306); // bP
+selectCodeEditor("drawcon.v", 76, 306, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("drawcon.v", 61, 307); // bP
+selectCodeEditor("drawcon.v", 61, 307, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("drawcon.v", 191, 262); // bP
+selectCodeEditor("drawcon.v", 46, 262); // bP
+selectCodeEditor("drawcon.v", 46, 262, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 47 seconds
+selectCodeEditor("drawcon.v", 183, 232); // bP
+selectCodeEditor("drawcon.v", 53, 262); // bP
+selectCodeEditor("drawcon.v", 53, 262, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "drawcon.v", 'v'); // bP
+selectCodeEditor("drawcon.v", 50, 230); // bP
+selectCodeEditor("drawcon.v", 50, 230, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("drawcon.v", 73, 230); // bP
+selectCodeEditor("drawcon.v", 73, 230, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("drawcon.v", 104, 223); // bP
+selectCodeEditor("drawcon.v", 117, 305); // bP
+// Elapsed time: 26 seconds
+selectCodeEditor("drawcon.v", 190, 547); // bP
+selectCodeEditor("drawcon.v", 190, 547, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("drawcon.v", 190, 547); // bP
+selectCodeEditor("drawcon.v", 190, 547); // bP
+selectCodeEditor("drawcon.v", 190, 547); // bP
+selectCodeEditor("drawcon.v", 190, 547); // bP
+selectCodeEditor("drawcon.v", 190, 547); // bP
+selectCodeEditor("drawcon.v", 190, 547); // bP
+selectCodeEditor("drawcon.v", 190, 547); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cannon_draw.v", 3); // m
+// HMemoryUtils.trashcanNow. Engine heap size: 3,077 MB. GUI used memory: 74 MB. Current time: 11/20/23, 4:03:35 PM AST
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bullet.v", 4); // m
+selectCodeEditor("bullet.v", 43, 306); // bP
+selectCodeEditor("bullet.v", 43, 306, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("bullet.v", 130, 309); // bP
+selectCodeEditor("bullet.v", 130, 309, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("bullet.v", 411, 306); // bP
+// Elapsed time: 69 seconds
+selectCodeEditor("bullet.v", 117, 396); // bP
+selectCodeEditor("bullet.v", 181, 330); // bP
+selectCodeEditor("bullet.v", 197, 324); // bP
+typeControlKey((HResource) null, "bullet.v", 'v'); // bP
+selectCodeEditor("bullet.v", 123, 398); // bP
+selectCodeEditor("bullet.v", 829, 288); // bP
+selectCodeEditor("bullet.v", 192, 413); // bP
+selectCodeEditor("bullet.v", 89, 298); // bP
+// Elapsed time: 55 seconds
+selectCodeEditor("bullet.v", 139, 412); // bP
+typeControlKey((HResource) null, "bullet.v", 'c'); // bP
+selectCodeEditor("bullet.v", 231, 292); // bP
+typeControlKey((HResource) null, "bullet.v", 'v'); // bP
+selectCodeEditor("bullet.v", 399, 292); // bP
+selectCodeEditor("bullet.v", 555, 292); // bP
+selectCodeEditor("bullet.v", 155, 291); // bP
+selectCodeEditor("bullet.v", 155, 291, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 28 seconds
+selectCodeEditor("bullet.v", 138, 409); // bP
+// Elapsed time: 66 seconds
+selectCodeEditor("bullet.v", 565, 295); // bP
+// Elapsed time: 17 seconds
+selectCodeEditor("bullet.v", 139, 456); // bP
+typeControlKey((HResource) null, "bullet.v", 'c'); // bP
+selectCodeEditor("bullet.v", 250, 306); // bP
+typeControlKey((HResource) null, "bullet.v", 'v'); // bP
+selectCodeEditor("bullet.v", 134, 460); // bP
+selectCodeEditor("bullet.v", 133, 456); // bP
+selectCodeEditor("bullet.v", 133, 456); // bP
+// Elapsed time: 14 seconds
+selectCodeEditor("bullet.v", 27, 306); // bP
+// Elapsed time: 41 seconds
+selectCodeEditor("bullet.v", 113, 469); // bP
+selectCodeEditor("bullet.v", 513, 204); // bP
+// Elapsed time: 22 seconds
+selectCodeEditor("bullet.v", 465, 275); // bP
+typeControlKey((HResource) null, "bullet.v", 'c'); // bP
+selectCodeEditor("bullet.v", 377, 218); // bP
+typeControlKey((HResource) null, "bullet.v", 'v'); // bP
+selectCodeEditor("bullet.v", 463, 277); // bP
+selectCodeEditor("bullet.v", 25, 232); // bP
+selectCodeEditor("bullet.v", 190, 249); // bP
+selectCodeEditor("bullet.v", 226, 426); // bP
+selectCodeEditor("bullet.v", 197, 454); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("bullet.v", 87, 430); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("bullet.v", 307, 431); // bP
+selectCodeEditor("bullet.v", 122, 520); // bP
+// Elapsed time: 26 seconds
+selectCodeEditor("bullet.v", 67, 388); // bP
+selectCodeEditor("bullet.v", 65, 394); // bP
+// Elapsed time: 17 seconds
+selectCodeEditor("bullet.v", 52, 398); // bP
+selectCodeEditor("bullet.v", 582, 231); // bP
+typeControlKey((HResource) null, "bullet.v", 'v'); // bP
+selectCodeEditor("bullet.v", 486, 264); // bP
+selectCodeEditor("bullet.v", 221, 208); // bP
+selectCodeEditor("bullet.v", 432, 296); // bP
+selectCodeEditor("bullet.v", 325, 547); // bP
+selectCodeEditor("bullet.v", 350, 426); // bP
+selectCodeEditor("bullet.v", 591, 426); // bP
+selectCodeEditor("bullet.v", 591, 426, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("bullet.v", 422, 378); // bP
+selectCodeEditor("bullet.v", 634, 398); // bP
+selectCodeEditor("bullet.v", 425, 576); // bP
+selectCodeEditor("bullet.v", 411, 486); // bP
+selectCodeEditor("bullet.v", 305, 457); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 75 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bullet_draw.v", 5); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "enemy.v", 6); // m
+selectCodeEditor("enemy.v", 493, 216); // bP
+// Elapsed time: 16 seconds
+selectCodeEditor("enemy.v", 535, 366); // bP
+selectCodeEditor("enemy.v", 531, 367); // bP
+typeControlKey((HResource) null, "enemy.v", 'c'); // bP
+selectCodeEditor("enemy.v", 278, 155); // bP
+typeControlKey((HResource) null, "enemy.v", 'v'); // bP
+selectCodeEditor("enemy.v", 203, 162); // bP
+selectCodeEditor("enemy.v", 203, 162, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "enemy.v", 'c'); // bP
+// Elapsed time: 12 seconds
+selectCodeEditor("enemy.v", 388, 314); // bP
+selectCodeEditor("enemy.v", 491, 320); // bP
+selectCodeEditor("enemy.v", 532, 322); // bP
+typeControlKey((HResource) null, "enemy.v", 'v'); // bP
+selectCodeEditor("enemy.v", 247, 365); // bP
+typeControlKey((HResource) null, "enemy.v", 'v'); // bP
+selectCodeEditor("enemy.v", 481, 363); // bP
+typeControlKey((HResource) null, "enemy.v", 'v'); // bP
+selectCodeEditor("enemy.v", 189, 379); // bP
+typeControlKey((HResource) null, "enemy.v", 'v'); // bP
+// Elapsed time: 22 seconds
+selectCodeEditor("enemy.v", 279, 188); // bP
+selectCodeEditor("enemy.v", 676, 173); // bP
+selectCodeEditor("enemy.v", 688, 209); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 17 seconds
+selectCodeEditor("enemy.v", 688, 209); // bP
+selectCodeEditor("enemy.v", 572, 272); // bP
+// HMemoryUtils.trashcanNow. Engine heap size: 3,109 MB. GUI used memory: 74 MB. Current time: 11/20/23, 4:16:00 PM AST
+selectCodeEditor("enemy.v", 81, 190); // bP
+// Elapsed time: 43 seconds
+selectCodeEditor("enemy.v", 52, 232); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 26 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bullet_draw.v", 5); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bullet.v", 4); // m
+selectCodeEditor("bullet.v", 50, 266); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "enemy.v", 6); // m
+selectCodeEditor("enemy.v", 55, 268); // bP
+// HMemoryUtils.trashcanNow. Engine heap size: 3,142 MB. GUI used memory: 74 MB. Current time: 11/20/23, 4:17:40 PM AST
+// Elapsed time: 63 seconds
+selectCodeEditor("enemy.v", 249, 246); // bP
+// Elapsed time: 12 seconds
+selectCodeEditor("enemy.v", 90, 200); // bP
+// Elapsed time: 20 seconds
+selectCodeEditor("enemy.v", 83, 276); // bP
+selectCodeEditor("enemy.v", 160, 256); // bP
+// Elapsed time: 185 seconds
+selectCodeEditor("enemy.v", 304, 265); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("enemy.v", 263, 263); // bP
+selectCodeEditor("enemy.v", 656, 326); // bP
+selectCodeEditor("enemy.v", 147, 307); // bP
+selectCodeEditor("enemy.v", 306, 300); // bP
+selectCodeEditor("enemy.v", 144, 292); // bP
+// Elapsed time: 29 seconds
+selectCodeEditor("enemy.v", 350, 290); // bP
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bullet.v", 4); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "enemy.v", 6); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bullet.v", 4); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "enemy.v", 6); // m
+// Elapsed time: 14 seconds
+selectCodeEditor("enemy.v", 55, 232); // bP
+selectCodeEditor("enemy.v", 183, 180); // bP
+// Elapsed time: 82 seconds
+selectCodeEditor("enemy.v", 65, 205); // bP
+selectCodeEditor("enemy.v", 155, 336); // bP
+// Elapsed time: 15 seconds
+selectCodeEditor("enemy.v", 242, 378); // bP
+typeControlKey((HResource) null, "enemy.v", 'c'); // bP
+selectCodeEditor("enemy.v", 339, 340); // bP
+typeControlKey((HResource) null, "enemy.v", 'v'); // bP
+// Elapsed time: 54 seconds
+selectCodeEditor("enemy.v", 263, 333); // bP
+selectCodeEditor("enemy.v", 261, 334); // bP
+typeControlKey((HResource) null, "enemy.v", 'c'); // bP
+selectCodeEditor("enemy.v", 734, 334); // bP
+typeControlKey((HResource) null, "enemy.v", 'v'); // bP
+// Elapsed time: 19 seconds
+selectCodeEditor("enemy.v", 131, 196); // bP
+selectCodeEditor("enemy.v", 916, 344); // bP
+selectCodeEditor("enemy.v", 916, 352); // bP
+// Elapsed time: 17 seconds
+selectCodeEditor("enemy.v", 580, 410); // bP
+typeControlKey((HResource) null, "enemy.v", 'c'); // bP
+selectCodeEditor("enemy.v", 349, 372); // bP
+typeControlKey((HResource) null, "enemy.v", 'v'); // bP
+selectCodeEditor("enemy.v", 490, 364); // bP
+selectCodeEditor("enemy.v", 600, 363); // bP
+selectCodeEditor("enemy.v", 497, 352); // bP
+typeControlKey((HResource) null, "enemy.v", 'c'); // bP
+selectCodeEditor("enemy.v", 667, 368); // bP
+typeControlKey((HResource) null, "enemy.v", 'v'); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("enemy.v", 272, 368); // bP
+typeControlKey((HResource) null, "enemy.v", 'c'); // bP
+selectCodeEditor("enemy.v", 840, 370); // bP
+typeControlKey((HResource) null, "enemy.v", 'v'); // bP
+// Elapsed time: 34 seconds
+selectCodeEditor("enemy.v", 50, 206); // bP
+selectCodeEditor("enemy.v", 50, 206, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 31 seconds
+selectCodeEditor("enemy.v", 104, 357); // bP
+selectCodeEditor("enemy.v", 104, 357, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("enemy.v", 104, 358); // bP
+selectCodeEditor("enemy.v", 104, 374); // bP
+selectCodeEditor("enemy.v", 104, 374, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("enemy.v", 130, 339); // bP
+typeControlKey((HResource) null, "enemy.v", 'v'); // bP
+selectCodeEditor("enemy.v", 35, 347); // bP
+selectCodeEditor("enemy.v", 31, 348); // bP
+selectCodeEditor("enemy.v", 162, 214); // bP
+selectCodeEditor("enemy.v", 152, 212); // bP
+typeControlKey((HResource) null, "enemy.v", 'v'); // bP
+selectCodeEditor("enemy.v", 138, 295); // bP
+selectCodeEditor("enemy.v", 650, 294); // bP
+selectCodeEditor("enemy.v", 545, 322); // bP
+selectCodeEditor("enemy.v", 141, 384); // bP
+// Elapsed time: 29 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 23 seconds
+selectCodeEditor("enemy.v", 269, 381); // bP
+// HMemoryUtils.trashcanNow. Engine heap size: 3,174 MB. GUI used memory: 74 MB. Current time: 11/20/23, 4:31:20 PM AST
+// Elapsed time: 36 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// cD (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cA' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // cD
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 64 
+// Tcl Message: [Mon Nov 20 16:31:57 2023] Launched synth_1... Run output will be captured here: /rhome/forystmj/CS256-project/CS256-project.runs/synth_1/runme.log [Mon Nov 20 16:31:57 2023] Launched impl_1... Run output will be captured here: /rhome/forystmj/CS256-project/CS256-project.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 289 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // ag

@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-| Date         : Mon Nov 20 15:43:06 2023
+| Date         : Mon Nov 20 16:33:31 2023
 | Host         : 8d920e292c80 running 64-bit Ubuntu 20.04.6 LTS
 | Command      : report_utilization -file game_top_utilization_synth.rpt -pb game_top_utilization_synth.pb
 | Design       : game_top
@@ -30,8 +30,8 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             | 8335 |     0 |     63400 | 13.15 |
-|   LUT as Logic          | 8335 |     0 |     63400 | 13.15 |
+| Slice LUTs*             | 8512 |     0 |     63400 | 13.43 |
+|   LUT as Logic          | 8512 |     0 |     63400 | 13.43 |
 |   LUT as Memory         |    0 |     0 |     19000 |  0.00 |
 | Slice Registers         |  888 |     0 |    126800 |  0.70 |
 |   Register as Flip Flop |  888 |     0 |    126800 |  0.70 |
@@ -146,14 +146,14 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT4     | 5583 |                 LUT |
-| LUT2     | 3688 |                 LUT |
-| LUT6     | 2528 |                 LUT |
+| LUT4     | 5414 |                 LUT |
+| LUT2     | 2954 |                 LUT |
+| LUT6     | 2424 |                 LUT |
 | CARRY4   | 1997 |          CarryLogic |
-| LUT5     |  813 |                 LUT |
+| LUT5     | 1960 |                 LUT |
 | FDRE     |  570 |        Flop & Latch |
-| LUT1     |  523 |                 LUT |
-| LUT3     |  478 |                 LUT |
+| LUT3     |  512 |                 LUT |
+| LUT1     |  331 |                 LUT |
 | FDSE     |  318 |        Flop & Latch |
 | OBUF     |   14 |                  IO |
 | IBUF     |   10 |                  IO |

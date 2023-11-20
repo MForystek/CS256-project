@@ -35,19 +35,17 @@ module drawcon(
     
 // ----------------------------------------------------------------------------------------------------------    
 // Frame
-// ----------------------------------------------------------------------------------------------------------        
-    wire [11:0] frame_rgb;
-    assign draw_frame = draw_x < `FRAME_WIDTH || draw_x > `WIDTH - `FRAME_WIDTH 
+// ----------------------------------------------------------------------------------------------------------
+    wire draw_frame = draw_x < `FRAME_WIDTH || draw_x > `WIDTH - `FRAME_WIDTH 
                      || draw_y < `FRAME_HEIGHT || draw_y > `HEIGHT - `FRAME_HEIGHT;
-    assign frame_rgb = draw_frame ? 12'hFFF : 12'h000;
+    wire [11:0] frame_rgb = draw_frame ? 12'hFFF : 12'h000;
     
 // ----------------------------------------------------------------------------------------------------------
 // Moving block
 // ----------------------------------------------------------------------------------------------------------
-    wire [11:0] block_rgb;
-    assign draw_block = draw_x >= block_pos_x && draw_x <= block_pos_x + `BLOCK_WIDTH
+    wire draw_block = draw_x >= block_pos_x && draw_x <= block_pos_x + `BLOCK_WIDTH
                      && draw_y >= block_pos_y && draw_y <= block_pos_y + `BLOCK_HEIGHT;
-    assign block_rgb = draw_block ? 12'hE22 : 12'h000;
+    wire [11:0] block_rgb = draw_block ? 12'hE22 : 12'h000;
     
 // ----------------------------------------------------------------------------------------------------------    
 // Cannons

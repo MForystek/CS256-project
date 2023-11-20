@@ -21,6 +21,7 @@
 
 
 // TO TEST - Enemies go back to the start point when their enemy_pos_x + enemy_width intersects with the bullet_pos_x + bullet_width
+// TODO - Enemy doesn't get killed if still is in his starting position
 // TODO - Bullets go back to the start point when their bullet_pos_x + bullet_width intersects with the enemy_pos_x + enemy_width
 // TODO - Game ends when the enemy_pos_x + enemt_width intersects with the cannon_pos_x + cannon_width
 // TODO - Figure out the way for random timer for group of enemies
@@ -32,7 +33,11 @@ module enemy #(parameter TOWARDS_CANNON = 0, parameter ENEMY_NUM = 0)(
     );
     
     localparam [5:0] DELAY = 6'd60 / `ENEMIES_PER_CANNON * ENEMY_NUM;
+    localparam [11:0] STARTING_POS_X = `WIDTH - `ENEMY_WIDTH;
     reg [5:0] enemy_timer;
+    
+    reg hit_from_left;
+    reg hit_from_right;
     
     integer i;
     always @ (posedge logclk) begin
@@ -40,9 +45,13 @@ module enemy #(parameter TOWARDS_CANNON = 0, parameter ENEMY_NUM = 0)(
             killed <= 1'b0;
         else begin
             for (i = 0; i < `BULLETS_PER_CANNON; i = i + 1) begin
-                if ((enemy_pos_x <= line_bullet_pos_x[11*i +: 11] && enemy_pos_x >= line_bullet_pos_x[11*i +: 11] - `BULLET_WIDTH) 
-                 || (enemy_pos_x + `ENEMY_WIDTH >= line_bullet_pos_x[11*i +: 11] - `BULLET_WIDTH && enemy_pos_x + `ENEMY_WIDTH <= line_bullet_pos_x[11*i +: 11]))
-                 killed <= 1'b1;
+                hit_from_left = enemy_pos_x <= line_bullet_pos_x[11*i +: 11] + `BULLET_WIDTH 
+                             && enemy_pos_x + `ENEMY_WIDTH >= line_bullet_pos_x[11*i +: 11] + `BULLET_WIDTH;
+                hit_from_right = enemy_pos_x <= line_bullet_pos_x[11*i +: 11] 
+                              && enemy_pos_x + `ENEMY_WIDTH >= line_bullet_pos_x[11*i +: 11];
+                
+                if (enemy_pos_x != STARTING_POS_X && (hit_from_left || hit_from_right))
+                    killed <= 1'b1;
             end
         end
     end
@@ -51,11 +60,11 @@ module enemy #(parameter TOWARDS_CANNON = 0, parameter ENEMY_NUM = 0)(
     always @ (posedge logclk) begin
         if (!rst)
             enemy_timer <= 6'd0;
-        else if (enemy_timer < DELAY && enemy_pos_x == `WIDTH - `ENEMY_WIDTH)
+        else if (enemy_timer < DELAY && enemy_pos_x == STARTING_POS_X)
             enemy_timer <= enemy_timer + 1'b1;
         
-        if (!rst || enemy_pos_x <= `WIDTH - `ENEMY_WIDTH || (enemy_pos_x == `WIDTH - `ENEMY_WIDTH && enemy_timer < DELAY))
-            enemy_pos_x <= `WIDTH - `ENEMY_WIDTH;
+        if (!rst || enemy_pos_x <= STARTING_POS_X || (enemy_pos_x == STARTING_POS_X && enemy_timer < DELAY))
+            enemy_pos_x <= STARTING_POS_X;
         else
             enemy_pos_x <= enemy_pos_x - `ENEMY_SPEED;
         

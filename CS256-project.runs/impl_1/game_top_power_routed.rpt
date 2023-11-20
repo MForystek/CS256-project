@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-| Date             : Mon Nov 20 15:44:29 2023
+| Date             : Mon Nov 20 16:34:55 2023
 | Host             : 8d920e292c80 running 64-bit Ubuntu 20.04.6 LTS
 | Command          : report_power -file game_top_power_routed.rpt -pb game_top_power_summary_routed.pb -rpx game_top_power_routed.rpx
 | Design           : game_top
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.267        |
+| Total On-Chip Power (W)  | 0.276        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.169        |
+| Dynamic (W)              | 0.178        |
 | Device Static (W)        | 0.098        |
 | Effective TJA (C/W)      | 4.6          |
-| Max Ambient (C)          | 83.8         |
-| Junction Temperature (C) | 26.2         |
+| Max Ambient (C)          | 83.7         |
+| Junction Temperature (C) | 26.3         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,18 +52,18 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.001 |        6 |       --- |             --- |
-| Slice Logic    |     0.043 |    16617 |       --- |             --- |
-|   LUT as Logic |     0.042 |     8309 |     63400 |           13.11 |
+| Clocks         |    <0.001 |        6 |       --- |             --- |
+| Slice Logic    |     0.046 |    16599 |       --- |             --- |
+|   LUT as Logic |     0.046 |     8490 |     63400 |           13.39 |
 |   CARRY4       |    <0.001 |     1997 |     15850 |           12.60 |
 |   Register     |    <0.001 |      888 |    126800 |            0.70 |
 |   BUFG         |    <0.001 |        1 |        32 |            3.13 |
 |   Others       |     0.000 |      118 |       --- |             --- |
-| Signals        |     0.028 |     5109 |       --- |             --- |
+| Signals        |     0.035 |     5369 |       --- |             --- |
 | MMCM           |     0.094 |        1 |         6 |           16.67 |
 | I/O            |     0.003 |       25 |       210 |           11.90 |
 | Static Power   |     0.098 |          |           |                 |
-| Total          |     0.267 |          |           |                 |
+| Total          |     0.276 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,7 +73,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.088 |       0.073 |      0.015 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.097 |       0.082 |      0.015 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.070 |       0.052 |      0.018 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.005 |       0.001 |      0.004 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -145,7 +145,7 @@ Table of Contents
 +--------------------------------+-----------+
 | Name                           | Power (W) |
 +--------------------------------+-----------+
-| game_top                       |     0.169 |
+| game_top                       |     0.178 |
 |   clock_wizard                 |     0.094 |
 |     inst                       |     0.094 |
 |   genblk1[0].genblk1[0].bullet |     0.002 |
