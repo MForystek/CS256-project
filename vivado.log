@@ -47,3 +47,9 @@ Run output will be captured here: /rhome/forystmj/CS256-project/CS256-project.ru
 launch_runs impl_1 -to_step write_bitstream -jobs 64
 [Mon Nov 20 15:03:40 2023] Launched impl_1...
 Run output will be captured here: /rhome/forystmj/CS256-project/CS256-project.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 64
+[Mon Nov 20 15:41:24 2023] Launched synth_1...
+Run output will be captured here: /rhome/forystmj/CS256-project/CS256-project.runs/synth_1/runme.log
+[Mon Nov 20 15:41:24 2023] Launched impl_1...
+Run output will be captured here: /rhome/forystmj/CS256-project/CS256-project.runs/impl_1/runme.log

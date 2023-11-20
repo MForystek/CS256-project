@@ -28,22 +28,21 @@
 module enemy #(parameter TOWARDS_CANNON = 0, parameter ENEMY_NUM = 0)(
     input logclk, input rst, input [11*`BULLETS_PER_CANNON-1:0] line_bullet_pos_x,
     output reg [10:0] enemy_pos_x, output reg [9:0] enemy_pos_y,
-    output killed
+    output reg killed
     );
     
     localparam [5:0] DELAY = 6'd60 / `ENEMIES_PER_CANNON * ENEMY_NUM;
     reg [5:0] enemy_timer;
-    reg hit_by_bullet;
     
     integer i;
     always @ (posedge logclk) begin
         if (!rst)
-            hit_by_bullet <= 1'b0;
+            killed <= 1'b0;
         else begin
             for (i = 0; i < `BULLETS_PER_CANNON; i = i + 1) begin
                 if ((enemy_pos_x <= line_bullet_pos_x[11*i +: 11] && enemy_pos_x >= line_bullet_pos_x[11*i +: 11] - `BULLET_WIDTH) 
                  || (enemy_pos_x + `ENEMY_WIDTH >= line_bullet_pos_x[11*i +: 11] - `BULLET_WIDTH && enemy_pos_x + `ENEMY_WIDTH <= line_bullet_pos_x[11*i +: 11]))
-                 hit_by_bullet <= 1'b1;
+                 killed <= 1'b1;
             end
         end
     end
@@ -62,13 +61,11 @@ module enemy #(parameter TOWARDS_CANNON = 0, parameter ENEMY_NUM = 0)(
         
         enemy_pos_y <= `CANNON_OFFSET_Y + `CANNON_HEIGHT*TOWARDS_CANNON + `CANNON_DISTANCE*TOWARDS_CANNON + (`CANNON_HEIGHT - `ENEMY_HEIGHT) / 2;    
             
-        if (hit_by_bullet) begin
+        if (killed) begin
             enemy_pos_x <= `WIDTH;
             enemy_pos_y <= `HEIGHT;
         end
     end
-    
-    assign killed = enemy_pos_x == `WIDTH && enemy_pos_y == `HEIGHT ? 1'b1 : 1'b0;
 
 
 endmodule

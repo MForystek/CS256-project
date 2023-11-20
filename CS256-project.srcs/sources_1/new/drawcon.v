@@ -26,57 +26,28 @@ module drawcon(
     input [11*`CANNONS_NUM*`ENEMIES_PER_CANNON-1:0] all_enemy_pos_x, input [10*`CANNONS_NUM*`ENEMIES_PER_CANNON-1:0] all_enemy_pos_y,
     input [`CANNONS_NUM*`ENEMIES_PER_CANNON-1:0] killed,
     input [10:0] draw_x, input [9:0] draw_y,
-    output reg [3:0] r, output reg [3:0] g, output reg [3:0] b
+    output [3:0] r, output [3:0] g, output [3:0] b
     );
 // ----------------------------------------------------------------------------------------------------------    
-// Frame and background
+// Background
 // ----------------------------------------------------------------------------------------------------------    
-    localparam [3:0] background_r = 4'h4;
-    localparam [3:0] background_g = 4'h8;
-    localparam [3:0] background_b = 4'h5;
+    localparam [11:0] BACKGROUND_RGB = 12'h485;
     
 // ----------------------------------------------------------------------------------------------------------    
 // Frame
 // ----------------------------------------------------------------------------------------------------------        
-    reg [3:0] frame_r;
-    reg [3:0] frame_g;
-    reg [3:0] frame_b;
-    
-    assign draw_frame = draw_x < `FRAME_WIDTH || draw_x > `WIDTH - `FRAME_WIDTH || draw_y < `FRAME_HEIGHT || draw_y > `HEIGHT - `FRAME_HEIGHT;
-    
-    always @ * begin
-        if (draw_frame) begin
-            frame_r = 4'hF;
-            frame_g = 4'hF;
-            frame_b = 4'hF;
-        end else begin
-            frame_r = 4'h0;
-            frame_g = 4'h0;
-            frame_b = 4'h0;
-        end
-    end
+    wire [11:0] frame_rgb;
+    assign draw_frame = draw_x < `FRAME_WIDTH || draw_x > `WIDTH - `FRAME_WIDTH 
+                     || draw_y < `FRAME_HEIGHT || draw_y > `HEIGHT - `FRAME_HEIGHT;
+    assign frame_rgb = draw_frame ? 12'hFFF : 12'h000;
     
 // ----------------------------------------------------------------------------------------------------------
 // Moving block
 // ----------------------------------------------------------------------------------------------------------
-    reg [3:0] block_r;
-    reg [3:0] block_g;
-    reg [3:0] block_b;
-    
-    assign draw_block_x = draw_x >= block_pos_x && draw_x <= block_pos_x + `BLOCK_WIDTH;
-    assign draw_block_y = draw_y >= block_pos_y && draw_y <= block_pos_y + `BLOCK_HEIGHT;
-    
-    always @ * begin
-        if (draw_block_x && draw_block_y) begin
-            block_r = 4'hE;
-            block_g = 4'h2;
-            block_b = 4'h2; 
-        end else begin
-            block_r = 4'h0;
-            block_g = 4'h0;
-            block_b = 4'h0;
-        end
-    end
+    wire [11:0] block_rgb;
+    assign draw_block = draw_x >= block_pos_x && draw_x <= block_pos_x + `BLOCK_WIDTH
+                     && draw_y >= block_pos_y && draw_y <= block_pos_y + `BLOCK_HEIGHT;
+    assign block_rgb = draw_block ? 12'hE22 : 12'h000;
     
 // ----------------------------------------------------------------------------------------------------------    
 // Cannons
@@ -140,59 +111,30 @@ module drawcon(
 // ----------------------------------------------------------------------------------------------------------    
 // Assign final r, g, b values
 // ----------------------------------------------------------------------------------------------------------    
+    reg [11:0] rgb;
+    
     integer ii; integer jj;
-    always @ * begin    
-        r = background_r;
+    always @ * begin
+        rgb = BACKGROUND_RGB;
+        
         for (ii = 0; ii < `CANNONS_NUM; ii = ii + 1) begin
             for (jj = 0; jj < `ENEMIES_PER_CANNON; jj = jj + 1) begin
-                if (enemy_rgb[ii][jj][11:8] != 4'h0) r = enemy_rgb[ii][jj][11:8];
+                if (enemy_rgb[ii][jj] != 12'h0) rgb = enemy_rgb[ii][jj];
             end
-        end
-        for (ii = 0; ii < `CANNONS_NUM; ii = ii + 1) begin
             for (jj = 0; jj < `BULLETS_PER_CANNON; jj = jj + 1) begin
-                if (bullet_rgb[ii][jj][11:8] != 4'h0) r = bullet_rgb[ii][jj][11:8];
+                if (bullet_rgb[ii][jj] != 12'h0) rgb = bullet_rgb[ii][jj];
             end
         end
-        if (frame_r != 4'h0) r = frame_r;
-        for (ii = 0; ii < `CANNONS_NUM; ii = ii + 1) begin
-            if (cannon_rgb[ii][11:8] != 4'h0) r = cannon_rgb[ii][11:8];
-        end
-        if (block_r != 4'h0) r = block_r;
         
+        if (frame_rgb != 12'h0) rgb = frame_rgb;
         
-        g = background_g;
         for (ii = 0; ii < `CANNONS_NUM; ii = ii + 1) begin
-            for (jj = 0; jj < `BULLETS_PER_CANNON; jj = jj + 1) begin
-                if (bullet_rgb[ii][jj][7:4] != 4'h0) g = bullet_rgb[ii][jj][7:4];
-            end
+            if (cannon_rgb[ii] != 12'h0) rgb = cannon_rgb[ii];
         end
-        for (ii = 0; ii < `CANNONS_NUM; ii = ii + 1) begin
-            for (jj = 0; jj < `ENEMIES_PER_CANNON; jj = jj + 1) begin
-                if (enemy_rgb[ii][jj][7:4] != 4'h0) g = enemy_rgb[ii][jj][7:4];
-            end
-        end
-        if (frame_g != 4'h0) g = frame_g; 
-        for (ii = 0; ii < `CANNONS_NUM; ii = ii + 1) begin
-            if (cannon_rgb[ii][7:4] != 4'h0) g = cannon_rgb[ii][7:4];
-        end
-        if (block_g != 4'h0) g = block_g;        
         
-        b = background_b;
-        for (ii = 0; ii < `CANNONS_NUM; ii = ii + 1) begin
-            for (jj = 0; jj < `BULLETS_PER_CANNON; jj = jj + 1) begin
-                if (bullet_rgb[ii][jj][3:0] != 4'h0) b = bullet_rgb[ii][jj][3:0];
-            end
-        end
-        for (ii = 0; ii < `CANNONS_NUM; ii = ii + 1) begin
-            for (jj = 0; jj < `ENEMIES_PER_CANNON; jj = jj + 1) begin
-                if (enemy_rgb[ii][jj][3:0] != 4'h0) b = enemy_rgb[ii][jj][3:0];
-            end
-        end
-        if (frame_b != 4'h0) b = frame_b;
-        for (ii = 0; ii < `CANNONS_NUM; ii = ii + 1) begin
-            if (cannon_rgb[ii][3:0] != 4'h0) b = cannon_rgb[ii][3:0];
-        end
-        if (block_b != 4'h0) b = block_b;
+        if (block_rgb != 12'h0) rgb = block_rgb;
     end
+    
+    assign {r, g, b} = rgb;
     
 endmodule
