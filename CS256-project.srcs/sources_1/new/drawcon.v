@@ -21,9 +21,11 @@
 `include <constants.v>
 
 module drawcon(
-    input [10:0] block_pos_x, input [9:0] block_pos_y,
-    input [11*`CANNONS_NUM*`BULLETS_PER_CANNON-1:0] all_bullet_pos_x, input [10*`CANNONS_NUM*`BULLETS_PER_CANNON-1:0] all_bullet_pos_y,
-    input [11*`CANNONS_NUM*`ENEMIES_PER_CANNON-1:0] all_enemy_pos_x, input [10*`CANNONS_NUM*`ENEMIES_PER_CANNON-1:0] all_enemy_pos_y,
+    //input [10:0] block_pos_x, input [9:0] block_pos_y,
+    input [11*`CANNONS_NUM*`BULLETS_PER_CANNON-1:0] all_bullet_pos_x,
+    input [10*`CANNONS_NUM*`BULLETS_PER_CANNON-1:0] all_bullet_pos_y,
+    input [11*`CANNONS_NUM*`ENEMIES_PER_CANNON-1:0] all_enemy_pos_x,
+    input [10*`CANNONS_NUM*`ENEMIES_PER_CANNON-1:0] all_enemy_pos_y,
     input [`CANNONS_NUM*`ENEMIES_PER_CANNON-1:0] killed,
     input [10:0] draw_x, input [9:0] draw_y,
     output [3:0] r, output [3:0] g, output [3:0] b
@@ -43,9 +45,9 @@ module drawcon(
 // ----------------------------------------------------------------------------------------------------------
 // Moving block
 // ----------------------------------------------------------------------------------------------------------
-    wire draw_block = draw_x >= block_pos_x && draw_x <= block_pos_x + `BLOCK_WIDTH
-                     && draw_y >= block_pos_y && draw_y <= block_pos_y + `BLOCK_HEIGHT;
-    wire [11:0] block_rgb = draw_block ? 12'hE22 : 12'h000;
+//    wire draw_block = draw_x >= block_pos_x && draw_x <= block_pos_x + `BLOCK_WIDTH
+//                     && draw_y >= block_pos_y && draw_y <= block_pos_y + `BLOCK_HEIGHT;
+//    wire [11:0] block_rgb = draw_block ? 12'hE22 : 12'h000;
     
 // ----------------------------------------------------------------------------------------------------------    
 // Cannons
@@ -118,7 +120,10 @@ module drawcon(
         for (ii = 0; ii < `CANNONS_NUM; ii = ii + 1) begin
             for (jj = 0; jj < `ENEMIES_PER_CANNON; jj = jj + 1) begin
                 if (enemy_rgb[ii][jj] != 12'h0) rgb = enemy_rgb[ii][jj];
-            end
+            end 
+        end
+        
+        for (ii = 0; ii < `CANNONS_NUM; ii = ii + 1) begin
             for (jj = 0; jj < `BULLETS_PER_CANNON; jj = jj + 1) begin
                 if (bullet_rgb[ii][jj] != 12'h0) rgb = bullet_rgb[ii][jj];
             end
@@ -130,7 +135,7 @@ module drawcon(
             if (cannon_rgb[ii] != 12'h0) rgb = cannon_rgb[ii];
         end
         
-        if (block_rgb != 12'h0) rgb = block_rgb;
+        //if (block_rgb != 12'h0) rgb = block_rgb;
     end
     
     assign {r, g, b} = rgb;

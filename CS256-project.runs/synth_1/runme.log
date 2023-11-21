@@ -16,349 +16,413 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 1034788
+INFO: [Synth 8-7075] Helper process launched with PID 1836232
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2522.715 ; gain = 0.000 ; free physical = 1373539 ; free virtual = 1511033
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2522.715 ; gain = 0.000 ; free physical = 1363684 ; free virtual = 1504313
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'game_top' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v:23]
 INFO: [Synth 8-6157] synthesizing module 'bullet' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
 	Parameter FROM_CANNON bound to: 0 - type: integer 
 	Parameter BULLET_NUM bound to: 0 - type: integer 
-	Parameter DELAY bound to: 6'b000000 
-	Parameter STARTING_POS_X bound to: 12'b000010010110 
+	Parameter DELAY bound to: 7'b0000000 
 INFO: [Synth 8-6155] done synthesizing module 'bullet' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
 INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized0' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
 	Parameter FROM_CANNON bound to: 0 - type: integer 
 	Parameter BULLET_NUM bound to: 1 - type: integer 
-	Parameter DELAY bound to: 6'b000111 
-	Parameter STARTING_POS_X bound to: 12'b000010010110 
+	Parameter DELAY bound to: 7'b0011110 
 INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized0' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
 INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized1' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
 	Parameter FROM_CANNON bound to: 0 - type: integer 
 	Parameter BULLET_NUM bound to: 2 - type: integer 
-	Parameter DELAY bound to: 6'b001110 
-	Parameter STARTING_POS_X bound to: 12'b000010010110 
+	Parameter DELAY bound to: 7'b0111100 
 INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized1' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
 INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized2' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
 	Parameter FROM_CANNON bound to: 0 - type: integer 
 	Parameter BULLET_NUM bound to: 3 - type: integer 
-	Parameter DELAY bound to: 6'b010101 
-	Parameter STARTING_POS_X bound to: 12'b000010010110 
+	Parameter DELAY bound to: 7'b1011010 
 INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized2' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
 INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized3' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
-	Parameter FROM_CANNON bound to: 0 - type: integer 
-	Parameter BULLET_NUM bound to: 4 - type: integer 
-	Parameter DELAY bound to: 6'b011100 
-	Parameter STARTING_POS_X bound to: 12'b000010010110 
+	Parameter FROM_CANNON bound to: 1 - type: integer 
+	Parameter BULLET_NUM bound to: 0 - type: integer 
+	Parameter DELAY bound to: 7'b0000000 
 INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized3' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
 INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized4' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
-	Parameter FROM_CANNON bound to: 0 - type: integer 
-	Parameter BULLET_NUM bound to: 5 - type: integer 
-	Parameter DELAY bound to: 6'b100011 
-	Parameter STARTING_POS_X bound to: 12'b000010010110 
+	Parameter FROM_CANNON bound to: 1 - type: integer 
+	Parameter BULLET_NUM bound to: 1 - type: integer 
+	Parameter DELAY bound to: 7'b0011110 
 INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized4' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
 INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized5' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
-	Parameter FROM_CANNON bound to: 0 - type: integer 
-	Parameter BULLET_NUM bound to: 6 - type: integer 
-	Parameter DELAY bound to: 6'b101010 
-	Parameter STARTING_POS_X bound to: 12'b000010010110 
+	Parameter FROM_CANNON bound to: 1 - type: integer 
+	Parameter BULLET_NUM bound to: 2 - type: integer 
+	Parameter DELAY bound to: 7'b0111100 
 INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized5' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
 INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized6' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
-	Parameter FROM_CANNON bound to: 0 - type: integer 
-	Parameter BULLET_NUM bound to: 7 - type: integer 
-	Parameter DELAY bound to: 6'b110001 
-	Parameter STARTING_POS_X bound to: 12'b000010010110 
+	Parameter FROM_CANNON bound to: 1 - type: integer 
+	Parameter BULLET_NUM bound to: 3 - type: integer 
+	Parameter DELAY bound to: 7'b1011010 
 INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized6' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
 INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized7' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
-	Parameter FROM_CANNON bound to: 1 - type: integer 
+	Parameter FROM_CANNON bound to: 2 - type: integer 
 	Parameter BULLET_NUM bound to: 0 - type: integer 
-	Parameter DELAY bound to: 6'b000000 
-	Parameter STARTING_POS_X bound to: 12'b000010010110 
+	Parameter DELAY bound to: 7'b0000000 
 INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized7' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
 INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized8' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
-	Parameter FROM_CANNON bound to: 1 - type: integer 
+	Parameter FROM_CANNON bound to: 2 - type: integer 
 	Parameter BULLET_NUM bound to: 1 - type: integer 
-	Parameter DELAY bound to: 6'b000111 
-	Parameter STARTING_POS_X bound to: 12'b000010010110 
+	Parameter DELAY bound to: 7'b0011110 
 INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized8' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
 INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized9' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
-	Parameter FROM_CANNON bound to: 1 - type: integer 
+	Parameter FROM_CANNON bound to: 2 - type: integer 
 	Parameter BULLET_NUM bound to: 2 - type: integer 
-	Parameter DELAY bound to: 6'b001110 
-	Parameter STARTING_POS_X bound to: 12'b000010010110 
+	Parameter DELAY bound to: 7'b0111100 
 INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized9' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
 INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized10' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
-	Parameter FROM_CANNON bound to: 1 - type: integer 
+	Parameter FROM_CANNON bound to: 2 - type: integer 
 	Parameter BULLET_NUM bound to: 3 - type: integer 
-	Parameter DELAY bound to: 6'b010101 
-	Parameter STARTING_POS_X bound to: 12'b000010010110 
+	Parameter DELAY bound to: 7'b1011010 
 INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized10' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
 INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized11' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
-	Parameter FROM_CANNON bound to: 1 - type: integer 
-	Parameter BULLET_NUM bound to: 4 - type: integer 
-	Parameter DELAY bound to: 6'b011100 
-	Parameter STARTING_POS_X bound to: 12'b000010010110 
+	Parameter FROM_CANNON bound to: 3 - type: integer 
+	Parameter BULLET_NUM bound to: 0 - type: integer 
+	Parameter DELAY bound to: 7'b0000000 
 INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized11' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
 INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized12' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
-	Parameter FROM_CANNON bound to: 1 - type: integer 
-	Parameter BULLET_NUM bound to: 5 - type: integer 
-	Parameter DELAY bound to: 6'b100011 
-	Parameter STARTING_POS_X bound to: 12'b000010010110 
+	Parameter FROM_CANNON bound to: 3 - type: integer 
+	Parameter BULLET_NUM bound to: 1 - type: integer 
+	Parameter DELAY bound to: 7'b0011110 
 INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized12' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
 INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized13' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
-	Parameter FROM_CANNON bound to: 1 - type: integer 
-	Parameter BULLET_NUM bound to: 6 - type: integer 
-	Parameter DELAY bound to: 6'b101010 
-	Parameter STARTING_POS_X bound to: 12'b000010010110 
+	Parameter FROM_CANNON bound to: 3 - type: integer 
+	Parameter BULLET_NUM bound to: 2 - type: integer 
+	Parameter DELAY bound to: 7'b0111100 
 INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized13' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
 INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized14' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
-	Parameter FROM_CANNON bound to: 1 - type: integer 
-	Parameter BULLET_NUM bound to: 7 - type: integer 
-	Parameter DELAY bound to: 6'b110001 
-	Parameter STARTING_POS_X bound to: 12'b000010010110 
+	Parameter FROM_CANNON bound to: 3 - type: integer 
+	Parameter BULLET_NUM bound to: 3 - type: integer 
+	Parameter DELAY bound to: 7'b1011010 
 INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized14' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
-INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized15' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
-	Parameter FROM_CANNON bound to: 2 - type: integer 
-	Parameter BULLET_NUM bound to: 0 - type: integer 
-	Parameter DELAY bound to: 6'b000000 
-	Parameter STARTING_POS_X bound to: 12'b000010010110 
-INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized15' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
-INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized16' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
-	Parameter FROM_CANNON bound to: 2 - type: integer 
-	Parameter BULLET_NUM bound to: 1 - type: integer 
-	Parameter DELAY bound to: 6'b000111 
-	Parameter STARTING_POS_X bound to: 12'b000010010110 
-INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized16' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
-INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized17' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
-	Parameter FROM_CANNON bound to: 2 - type: integer 
-	Parameter BULLET_NUM bound to: 2 - type: integer 
-	Parameter DELAY bound to: 6'b001110 
-	Parameter STARTING_POS_X bound to: 12'b000010010110 
-INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized17' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
-INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized18' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
-	Parameter FROM_CANNON bound to: 2 - type: integer 
-	Parameter BULLET_NUM bound to: 3 - type: integer 
-	Parameter DELAY bound to: 6'b010101 
-	Parameter STARTING_POS_X bound to: 12'b000010010110 
-INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized18' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
-INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized19' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
-	Parameter FROM_CANNON bound to: 2 - type: integer 
-	Parameter BULLET_NUM bound to: 4 - type: integer 
-	Parameter DELAY bound to: 6'b011100 
-	Parameter STARTING_POS_X bound to: 12'b000010010110 
-INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized19' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
-INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized20' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
-	Parameter FROM_CANNON bound to: 2 - type: integer 
-	Parameter BULLET_NUM bound to: 5 - type: integer 
-	Parameter DELAY bound to: 6'b100011 
-	Parameter STARTING_POS_X bound to: 12'b000010010110 
-INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized20' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
-INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized21' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
-	Parameter FROM_CANNON bound to: 2 - type: integer 
-	Parameter BULLET_NUM bound to: 6 - type: integer 
-	Parameter DELAY bound to: 6'b101010 
-	Parameter STARTING_POS_X bound to: 12'b000010010110 
-INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized21' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
-INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized22' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
-	Parameter FROM_CANNON bound to: 2 - type: integer 
-	Parameter BULLET_NUM bound to: 7 - type: integer 
-	Parameter DELAY bound to: 6'b110001 
-	Parameter STARTING_POS_X bound to: 12'b000010010110 
-INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized22' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
-INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized23' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
-	Parameter FROM_CANNON bound to: 3 - type: integer 
-	Parameter BULLET_NUM bound to: 0 - type: integer 
-	Parameter DELAY bound to: 6'b000000 
-	Parameter STARTING_POS_X bound to: 12'b000010010110 
-INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized23' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
-INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized24' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
-	Parameter FROM_CANNON bound to: 3 - type: integer 
-	Parameter BULLET_NUM bound to: 1 - type: integer 
-	Parameter DELAY bound to: 6'b000111 
-	Parameter STARTING_POS_X bound to: 12'b000010010110 
-INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized24' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
-INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized25' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
-	Parameter FROM_CANNON bound to: 3 - type: integer 
-	Parameter BULLET_NUM bound to: 2 - type: integer 
-	Parameter DELAY bound to: 6'b001110 
-	Parameter STARTING_POS_X bound to: 12'b000010010110 
-INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized25' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
-INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized26' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
-	Parameter FROM_CANNON bound to: 3 - type: integer 
-	Parameter BULLET_NUM bound to: 3 - type: integer 
-	Parameter DELAY bound to: 6'b010101 
-	Parameter STARTING_POS_X bound to: 12'b000010010110 
-INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized26' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
-INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized27' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
-	Parameter FROM_CANNON bound to: 3 - type: integer 
-	Parameter BULLET_NUM bound to: 4 - type: integer 
-	Parameter DELAY bound to: 6'b011100 
-	Parameter STARTING_POS_X bound to: 12'b000010010110 
-INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized27' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
-INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized28' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
-	Parameter FROM_CANNON bound to: 3 - type: integer 
-	Parameter BULLET_NUM bound to: 5 - type: integer 
-	Parameter DELAY bound to: 6'b100011 
-	Parameter STARTING_POS_X bound to: 12'b000010010110 
-INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized28' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
-INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized29' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
-	Parameter FROM_CANNON bound to: 3 - type: integer 
-	Parameter BULLET_NUM bound to: 6 - type: integer 
-	Parameter DELAY bound to: 6'b101010 
-	Parameter STARTING_POS_X bound to: 12'b000010010110 
-INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized29' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
-INFO: [Synth 8-6157] synthesizing module 'bullet__parameterized30' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
-	Parameter FROM_CANNON bound to: 3 - type: integer 
-	Parameter BULLET_NUM bound to: 7 - type: integer 
-	Parameter DELAY bound to: 6'b110001 
-	Parameter STARTING_POS_X bound to: 12'b000010010110 
-INFO: [Synth 8-6155] done synthesizing module 'bullet__parameterized30' (1#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v:23]
-INFO: [Synth 8-6157] synthesizing module 'enemy' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:29]
+INFO: [Synth 8-6157] synthesizing module 'enemy' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
 	Parameter TOWARDS_CANNON bound to: 0 - type: integer 
 	Parameter ENEMY_NUM bound to: 0 - type: integer 
-	Parameter DELAY bound to: 6'b000000 
-	Parameter STARTING_POS_X bound to: 12'b010011101011 
-INFO: [Synth 8-6155] done synthesizing module 'enemy' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:29]
-INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized0' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:29]
+	Parameter DELAY bound to: 9'b000000000 
+INFO: [Synth 8-6155] done synthesizing module 'enemy' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized0' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
 	Parameter TOWARDS_CANNON bound to: 0 - type: integer 
 	Parameter ENEMY_NUM bound to: 1 - type: integer 
-	Parameter DELAY bound to: 6'b001010 
-	Parameter STARTING_POS_X bound to: 12'b010011101011 
-INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized0' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:29]
-INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized1' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:29]
+	Parameter DELAY bound to: 9'b000011111 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized0' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized1' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
 	Parameter TOWARDS_CANNON bound to: 0 - type: integer 
 	Parameter ENEMY_NUM bound to: 2 - type: integer 
-	Parameter DELAY bound to: 6'b010100 
-	Parameter STARTING_POS_X bound to: 12'b010011101011 
-INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized1' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:29]
-INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized2' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:29]
+	Parameter DELAY bound to: 9'b000111110 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized1' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized2' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
 	Parameter TOWARDS_CANNON bound to: 0 - type: integer 
 	Parameter ENEMY_NUM bound to: 3 - type: integer 
-	Parameter DELAY bound to: 6'b011110 
-	Parameter STARTING_POS_X bound to: 12'b010011101011 
-INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized2' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:29]
-INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized3' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:29]
+	Parameter DELAY bound to: 9'b001011101 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized2' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized3' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
 	Parameter TOWARDS_CANNON bound to: 0 - type: integer 
 	Parameter ENEMY_NUM bound to: 4 - type: integer 
-	Parameter DELAY bound to: 6'b101000 
-	Parameter STARTING_POS_X bound to: 12'b010011101011 
-INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized3' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:29]
-INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized4' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:29]
+	Parameter DELAY bound to: 9'b001111100 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized3' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized4' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
 	Parameter TOWARDS_CANNON bound to: 0 - type: integer 
 	Parameter ENEMY_NUM bound to: 5 - type: integer 
-	Parameter DELAY bound to: 6'b110010 
-	Parameter STARTING_POS_X bound to: 12'b010011101011 
-INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized4' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:29]
-INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized5' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:29]
+	Parameter DELAY bound to: 9'b010011011 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized4' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized5' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+	Parameter TOWARDS_CANNON bound to: 0 - type: integer 
+	Parameter ENEMY_NUM bound to: 6 - type: integer 
+	Parameter DELAY bound to: 9'b010111010 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized5' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized6' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+	Parameter TOWARDS_CANNON bound to: 0 - type: integer 
+	Parameter ENEMY_NUM bound to: 7 - type: integer 
+	Parameter DELAY bound to: 9'b011011001 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized6' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized7' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+	Parameter TOWARDS_CANNON bound to: 0 - type: integer 
+	Parameter ENEMY_NUM bound to: 8 - type: integer 
+	Parameter DELAY bound to: 9'b011111000 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized7' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized8' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+	Parameter TOWARDS_CANNON bound to: 0 - type: integer 
+	Parameter ENEMY_NUM bound to: 9 - type: integer 
+	Parameter DELAY bound to: 9'b100010111 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized8' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized9' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+	Parameter TOWARDS_CANNON bound to: 0 - type: integer 
+	Parameter ENEMY_NUM bound to: 10 - type: integer 
+	Parameter DELAY bound to: 9'b100110110 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized9' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized10' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+	Parameter TOWARDS_CANNON bound to: 0 - type: integer 
+	Parameter ENEMY_NUM bound to: 11 - type: integer 
+	Parameter DELAY bound to: 9'b101010101 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized10' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized11' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+	Parameter TOWARDS_CANNON bound to: 0 - type: integer 
+	Parameter ENEMY_NUM bound to: 12 - type: integer 
+	Parameter DELAY bound to: 9'b101110100 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized11' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized12' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+	Parameter TOWARDS_CANNON bound to: 0 - type: integer 
+	Parameter ENEMY_NUM bound to: 13 - type: integer 
+	Parameter DELAY bound to: 9'b110010011 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized12' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized13' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+	Parameter TOWARDS_CANNON bound to: 0 - type: integer 
+	Parameter ENEMY_NUM bound to: 14 - type: integer 
+	Parameter DELAY bound to: 9'b110110010 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized13' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized14' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+	Parameter TOWARDS_CANNON bound to: 0 - type: integer 
+	Parameter ENEMY_NUM bound to: 15 - type: integer 
+	Parameter DELAY bound to: 9'b111010001 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized14' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized15' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
 	Parameter TOWARDS_CANNON bound to: 1 - type: integer 
 	Parameter ENEMY_NUM bound to: 0 - type: integer 
-	Parameter DELAY bound to: 6'b000000 
-	Parameter STARTING_POS_X bound to: 12'b010011101011 
-INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized5' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:29]
-INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized6' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:29]
+	Parameter DELAY bound to: 9'b000000000 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized15' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized16' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
 	Parameter TOWARDS_CANNON bound to: 1 - type: integer 
 	Parameter ENEMY_NUM bound to: 1 - type: integer 
-	Parameter DELAY bound to: 6'b001010 
-	Parameter STARTING_POS_X bound to: 12'b010011101011 
-INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized6' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:29]
-INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized7' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:29]
+	Parameter DELAY bound to: 9'b000011111 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized16' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized17' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
 	Parameter TOWARDS_CANNON bound to: 1 - type: integer 
 	Parameter ENEMY_NUM bound to: 2 - type: integer 
-	Parameter DELAY bound to: 6'b010100 
-	Parameter STARTING_POS_X bound to: 12'b010011101011 
-INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized7' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:29]
-INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized8' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:29]
+	Parameter DELAY bound to: 9'b000111110 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized17' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized18' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
 	Parameter TOWARDS_CANNON bound to: 1 - type: integer 
 	Parameter ENEMY_NUM bound to: 3 - type: integer 
-	Parameter DELAY bound to: 6'b011110 
-	Parameter STARTING_POS_X bound to: 12'b010011101011 
-INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized8' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:29]
-INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized9' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:29]
+	Parameter DELAY bound to: 9'b001011101 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized18' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized19' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
 	Parameter TOWARDS_CANNON bound to: 1 - type: integer 
 	Parameter ENEMY_NUM bound to: 4 - type: integer 
-	Parameter DELAY bound to: 6'b101000 
-	Parameter STARTING_POS_X bound to: 12'b010011101011 
-INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized9' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:29]
-INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized10' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:29]
+	Parameter DELAY bound to: 9'b001111100 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized19' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized20' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
 	Parameter TOWARDS_CANNON bound to: 1 - type: integer 
 	Parameter ENEMY_NUM bound to: 5 - type: integer 
-	Parameter DELAY bound to: 6'b110010 
-	Parameter STARTING_POS_X bound to: 12'b010011101011 
-INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized10' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:29]
-INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized11' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:29]
+	Parameter DELAY bound to: 9'b010011011 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized20' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized21' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+	Parameter TOWARDS_CANNON bound to: 1 - type: integer 
+	Parameter ENEMY_NUM bound to: 6 - type: integer 
+	Parameter DELAY bound to: 9'b010111010 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized21' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized22' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+	Parameter TOWARDS_CANNON bound to: 1 - type: integer 
+	Parameter ENEMY_NUM bound to: 7 - type: integer 
+	Parameter DELAY bound to: 9'b011011001 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized22' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized23' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+	Parameter TOWARDS_CANNON bound to: 1 - type: integer 
+	Parameter ENEMY_NUM bound to: 8 - type: integer 
+	Parameter DELAY bound to: 9'b011111000 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized23' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized24' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+	Parameter TOWARDS_CANNON bound to: 1 - type: integer 
+	Parameter ENEMY_NUM bound to: 9 - type: integer 
+	Parameter DELAY bound to: 9'b100010111 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized24' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized25' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+	Parameter TOWARDS_CANNON bound to: 1 - type: integer 
+	Parameter ENEMY_NUM bound to: 10 - type: integer 
+	Parameter DELAY bound to: 9'b100110110 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized25' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized26' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+	Parameter TOWARDS_CANNON bound to: 1 - type: integer 
+	Parameter ENEMY_NUM bound to: 11 - type: integer 
+	Parameter DELAY bound to: 9'b101010101 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized26' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized27' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+	Parameter TOWARDS_CANNON bound to: 1 - type: integer 
+	Parameter ENEMY_NUM bound to: 12 - type: integer 
+	Parameter DELAY bound to: 9'b101110100 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized27' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized28' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+	Parameter TOWARDS_CANNON bound to: 1 - type: integer 
+	Parameter ENEMY_NUM bound to: 13 - type: integer 
+	Parameter DELAY bound to: 9'b110010011 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized28' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized29' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+	Parameter TOWARDS_CANNON bound to: 1 - type: integer 
+	Parameter ENEMY_NUM bound to: 14 - type: integer 
+	Parameter DELAY bound to: 9'b110110010 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized29' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized30' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+	Parameter TOWARDS_CANNON bound to: 1 - type: integer 
+	Parameter ENEMY_NUM bound to: 15 - type: integer 
+	Parameter DELAY bound to: 9'b111010001 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized30' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized31' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
 	Parameter TOWARDS_CANNON bound to: 2 - type: integer 
 	Parameter ENEMY_NUM bound to: 0 - type: integer 
-	Parameter DELAY bound to: 6'b000000 
-	Parameter STARTING_POS_X bound to: 12'b010011101011 
-INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized11' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:29]
-INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized12' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:29]
+	Parameter DELAY bound to: 9'b000000000 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized31' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized32' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
 	Parameter TOWARDS_CANNON bound to: 2 - type: integer 
 	Parameter ENEMY_NUM bound to: 1 - type: integer 
-	Parameter DELAY bound to: 6'b001010 
-	Parameter STARTING_POS_X bound to: 12'b010011101011 
-INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized12' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:29]
-INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized13' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:29]
+	Parameter DELAY bound to: 9'b000011111 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized32' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized33' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
 	Parameter TOWARDS_CANNON bound to: 2 - type: integer 
 	Parameter ENEMY_NUM bound to: 2 - type: integer 
-	Parameter DELAY bound to: 6'b010100 
-	Parameter STARTING_POS_X bound to: 12'b010011101011 
-INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized13' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:29]
-INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized14' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:29]
+	Parameter DELAY bound to: 9'b000111110 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized33' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized34' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
 	Parameter TOWARDS_CANNON bound to: 2 - type: integer 
 	Parameter ENEMY_NUM bound to: 3 - type: integer 
-	Parameter DELAY bound to: 6'b011110 
-	Parameter STARTING_POS_X bound to: 12'b010011101011 
-INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized14' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:29]
-INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized15' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:29]
+	Parameter DELAY bound to: 9'b001011101 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized34' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized35' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
 	Parameter TOWARDS_CANNON bound to: 2 - type: integer 
 	Parameter ENEMY_NUM bound to: 4 - type: integer 
-	Parameter DELAY bound to: 6'b101000 
-	Parameter STARTING_POS_X bound to: 12'b010011101011 
-INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized15' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:29]
-INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized16' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:29]
+	Parameter DELAY bound to: 9'b001111100 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized35' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized36' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
 	Parameter TOWARDS_CANNON bound to: 2 - type: integer 
 	Parameter ENEMY_NUM bound to: 5 - type: integer 
-	Parameter DELAY bound to: 6'b110010 
-	Parameter STARTING_POS_X bound to: 12'b010011101011 
-INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized16' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:29]
-INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized17' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:29]
+	Parameter DELAY bound to: 9'b010011011 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized36' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized37' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+	Parameter TOWARDS_CANNON bound to: 2 - type: integer 
+	Parameter ENEMY_NUM bound to: 6 - type: integer 
+	Parameter DELAY bound to: 9'b010111010 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized37' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized38' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+	Parameter TOWARDS_CANNON bound to: 2 - type: integer 
+	Parameter ENEMY_NUM bound to: 7 - type: integer 
+	Parameter DELAY bound to: 9'b011011001 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized38' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized39' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+	Parameter TOWARDS_CANNON bound to: 2 - type: integer 
+	Parameter ENEMY_NUM bound to: 8 - type: integer 
+	Parameter DELAY bound to: 9'b011111000 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized39' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized40' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+	Parameter TOWARDS_CANNON bound to: 2 - type: integer 
+	Parameter ENEMY_NUM bound to: 9 - type: integer 
+	Parameter DELAY bound to: 9'b100010111 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized40' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized41' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+	Parameter TOWARDS_CANNON bound to: 2 - type: integer 
+	Parameter ENEMY_NUM bound to: 10 - type: integer 
+	Parameter DELAY bound to: 9'b100110110 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized41' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized42' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+	Parameter TOWARDS_CANNON bound to: 2 - type: integer 
+	Parameter ENEMY_NUM bound to: 11 - type: integer 
+	Parameter DELAY bound to: 9'b101010101 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized42' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized43' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+	Parameter TOWARDS_CANNON bound to: 2 - type: integer 
+	Parameter ENEMY_NUM bound to: 12 - type: integer 
+	Parameter DELAY bound to: 9'b101110100 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized43' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized44' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+	Parameter TOWARDS_CANNON bound to: 2 - type: integer 
+	Parameter ENEMY_NUM bound to: 13 - type: integer 
+	Parameter DELAY bound to: 9'b110010011 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized44' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized45' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+	Parameter TOWARDS_CANNON bound to: 2 - type: integer 
+	Parameter ENEMY_NUM bound to: 14 - type: integer 
+	Parameter DELAY bound to: 9'b110110010 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized45' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized46' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+	Parameter TOWARDS_CANNON bound to: 2 - type: integer 
+	Parameter ENEMY_NUM bound to: 15 - type: integer 
+	Parameter DELAY bound to: 9'b111010001 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized46' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized47' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
 	Parameter TOWARDS_CANNON bound to: 3 - type: integer 
 	Parameter ENEMY_NUM bound to: 0 - type: integer 
-	Parameter DELAY bound to: 6'b000000 
-	Parameter STARTING_POS_X bound to: 12'b010011101011 
-INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized17' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:29]
-INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized18' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:29]
+	Parameter DELAY bound to: 9'b000000000 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized47' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized48' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
 	Parameter TOWARDS_CANNON bound to: 3 - type: integer 
 	Parameter ENEMY_NUM bound to: 1 - type: integer 
-	Parameter DELAY bound to: 6'b001010 
-	Parameter STARTING_POS_X bound to: 12'b010011101011 
-INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized18' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:29]
-INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized19' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:29]
+	Parameter DELAY bound to: 9'b000011111 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized48' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized49' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
 	Parameter TOWARDS_CANNON bound to: 3 - type: integer 
 	Parameter ENEMY_NUM bound to: 2 - type: integer 
-	Parameter DELAY bound to: 6'b010100 
-	Parameter STARTING_POS_X bound to: 12'b010011101011 
-INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized19' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:29]
-INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized20' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:29]
+	Parameter DELAY bound to: 9'b000111110 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized49' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized50' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
 	Parameter TOWARDS_CANNON bound to: 3 - type: integer 
 	Parameter ENEMY_NUM bound to: 3 - type: integer 
-	Parameter DELAY bound to: 6'b011110 
-	Parameter STARTING_POS_X bound to: 12'b010011101011 
-INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized20' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:29]
-INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized21' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:29]
+	Parameter DELAY bound to: 9'b001011101 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized50' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized51' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
 	Parameter TOWARDS_CANNON bound to: 3 - type: integer 
 	Parameter ENEMY_NUM bound to: 4 - type: integer 
-	Parameter DELAY bound to: 6'b101000 
-	Parameter STARTING_POS_X bound to: 12'b010011101011 
-INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized21' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:29]
-INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized22' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:29]
+	Parameter DELAY bound to: 9'b001111100 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized51' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized52' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
 	Parameter TOWARDS_CANNON bound to: 3 - type: integer 
 	Parameter ENEMY_NUM bound to: 5 - type: integer 
-	Parameter DELAY bound to: 6'b110010 
-	Parameter STARTING_POS_X bound to: 12'b010011101011 
-INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized22' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:29]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [/rhome/forystmj/CS256-project/CS256-project.runs/synth_1/.Xil/Vivado-1034763-8d920e292c80/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (3#1) [/rhome/forystmj/CS256-project/CS256-project.runs/synth_1/.Xil/Vivado-1034763-8d920e292c80/realtime/clk_wiz_0_stub.v:5]
+	Parameter DELAY bound to: 9'b010011011 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized52' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized53' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+	Parameter TOWARDS_CANNON bound to: 3 - type: integer 
+	Parameter ENEMY_NUM bound to: 6 - type: integer 
+	Parameter DELAY bound to: 9'b010111010 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized53' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized54' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+	Parameter TOWARDS_CANNON bound to: 3 - type: integer 
+	Parameter ENEMY_NUM bound to: 7 - type: integer 
+	Parameter DELAY bound to: 9'b011011001 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized54' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized55' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+	Parameter TOWARDS_CANNON bound to: 3 - type: integer 
+	Parameter ENEMY_NUM bound to: 8 - type: integer 
+	Parameter DELAY bound to: 9'b011111000 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized55' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized56' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+	Parameter TOWARDS_CANNON bound to: 3 - type: integer 
+	Parameter ENEMY_NUM bound to: 9 - type: integer 
+	Parameter DELAY bound to: 9'b100010111 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized56' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized57' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+	Parameter TOWARDS_CANNON bound to: 3 - type: integer 
+	Parameter ENEMY_NUM bound to: 10 - type: integer 
+	Parameter DELAY bound to: 9'b100110110 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized57' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized58' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+	Parameter TOWARDS_CANNON bound to: 3 - type: integer 
+	Parameter ENEMY_NUM bound to: 11 - type: integer 
+	Parameter DELAY bound to: 9'b101010101 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized58' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized59' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+	Parameter TOWARDS_CANNON bound to: 3 - type: integer 
+	Parameter ENEMY_NUM bound to: 12 - type: integer 
+	Parameter DELAY bound to: 9'b101110100 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized59' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized60' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+	Parameter TOWARDS_CANNON bound to: 3 - type: integer 
+	Parameter ENEMY_NUM bound to: 13 - type: integer 
+	Parameter DELAY bound to: 9'b110010011 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized60' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized61' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+	Parameter TOWARDS_CANNON bound to: 3 - type: integer 
+	Parameter ENEMY_NUM bound to: 14 - type: integer 
+	Parameter DELAY bound to: 9'b110110010 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized61' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'enemy__parameterized62' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+	Parameter TOWARDS_CANNON bound to: 3 - type: integer 
+	Parameter ENEMY_NUM bound to: 15 - type: integer 
+	Parameter DELAY bound to: 9'b111010001 
+INFO: [Synth 8-6155] done synthesizing module 'enemy__parameterized62' (2#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v:27]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [/rhome/forystmj/CS256-project/CS256-project.runs/synth_1/.Xil/Vivado-1836208-8d920e292c80/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (3#1) [/rhome/forystmj/CS256-project/CS256-project.runs/synth_1/.Xil/Vivado-1836208-8d920e292c80/realtime/clk_wiz_0_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'vga_out' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/vga_out.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'vga_out' (4#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/vga_out.v:23]
 INFO: [Synth 8-6157] synthesizing module 'drawcon' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/drawcon.v:23]
@@ -393,25 +457,25 @@ INFO: [Synth 8-6157] synthesizing module 'bullet_draw' [/rhome/forystmj/CS256-pr
 	Parameter bullet_b bound to: 4'b0011 
 INFO: [Synth 8-6155] done synthesizing module 'bullet_draw' (6#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet_draw.v:23]
 INFO: [Synth 8-6157] synthesizing module 'enemy_draw' [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy_draw.v:23]
-	Parameter enemy_r bound to: 4'b1111 
-	Parameter enemy_g bound to: 4'b1111 
-	Parameter enemy_b bound to: 4'b1111 
+	Parameter enemy_r bound to: 4'b1101 
+	Parameter enemy_g bound to: 4'b0010 
+	Parameter enemy_b bound to: 4'b0010 
 INFO: [Synth 8-6155] done synthesizing module 'enemy_draw' (7#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy_draw.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'drawcon' (8#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/drawcon.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'game_top' (9#1) [/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v:23]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2541.648 ; gain = 18.934 ; free physical = 1374051 ; free virtual = 1511545
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2615.648 ; gain = 92.934 ; free physical = 1364358 ; free virtual = 1504989
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2553.523 ; gain = 30.809 ; free physical = 1374406 ; free virtual = 1511901
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2627.523 ; gain = 104.809 ; free physical = 1364481 ; free virtual = 1505114
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2553.523 ; gain = 30.809 ; free physical = 1374406 ; free virtual = 1511901
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2627.523 ; gain = 104.809 ; free physical = 1364481 ; free virtual = 1505114
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2553.523 ; gain = 0.000 ; free physical = 1374383 ; free virtual = 1511878
+Netlist sorting complete. Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.13 . Memory (MB): peak = 2627.523 ; gain = 0.000 ; free physical = 1365198 ; free virtual = 1505831
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -424,20 +488,20 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/game_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2719.305 ; gain = 0.000 ; free physical = 1374929 ; free virtual = 1512424
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2789.336 ; gain = 0.000 ; free physical = 1364280 ; free virtual = 1504913
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2719.305 ; gain = 0.000 ; free physical = 1374929 ; free virtual = 1512424
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2789.336 ; gain = 0.000 ; free physical = 1364280 ; free virtual = 1504913
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2719.305 ; gain = 196.590 ; free physical = 1374366 ; free virtual = 1511861
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2789.336 ; gain = 266.621 ; free physical = 1364358 ; free virtual = 1504991
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2719.305 ; gain = 196.590 ; free physical = 1374366 ; free virtual = 1511861
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2789.336 ; gain = 266.621 ; free physical = 1364358 ; free virtual = 1504991
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -446,33 +510,32 @@ Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  /rhome/for
 Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  /rhome/forystmj/CS256-project/CS256-project.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 5).
 Applied set_property KEEP_HIERARCHY = SOFT for clock_wizard. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2719.305 ; gain = 196.590 ; free physical = 1374366 ; free virtual = 1511861
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2789.336 ; gain = 266.621 ; free physical = 1364358 ; free virtual = 1504991
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2719.305 ; gain = 196.590 ; free physical = 1374345 ; free virtual = 1511841
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2789.336 ; gain = 266.621 ; free physical = 1364495 ; free virtual = 1505139
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input   11 Bit       Adders := 333   
-	   2 Input   10 Bit       Adders := 61    
-	   2 Input    6 Bit       Adders := 48    
+	   2 Input   11 Bit       Adders := 754   
+	   2 Input   10 Bit       Adders := 82    
+	   2 Input    9 Bit       Adders := 60    
+	   2 Input    7 Bit       Adders := 12    
 +---Registers : 
-	               11 Bit    Registers := 59    
-	               10 Bit    Registers := 27    
-	                6 Bit    Registers := 48    
-	                1 Bit    Registers := 24    
+	               16 Bit    Registers := 16    
+	               11 Bit    Registers := 82    
+	               10 Bit    Registers := 66    
+	                9 Bit    Registers := 60    
+	                7 Bit    Registers := 12    
+	                1 Bit    Registers := 1088  
 +---Muxes : 
-	   3 Input   11 Bit        Muxes := 25    
-	   2 Input   11 Bit        Muxes := 4     
-	   2 Input   10 Bit        Muxes := 4     
-	   3 Input   10 Bit        Muxes := 1     
+	   3 Input   11 Bit        Muxes := 60    
+	   2 Input   11 Bit        Muxes := 8     
 	   2 Input    4 Bit        Muxes := 3     
-	   8 Input    1 Bit        Muxes := 24    
-	   2 Input    1 Bit        Muxes := 2     
-	   5 Input    1 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 194   
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -488,26 +551,260 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-7129] Port cannons_on[3] in module bullet__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cannons_on[2] in module bullet__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cannons_on[1] in module bullet__parameterized2 is either unconnected or has no load
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[0].genblk1[3].bullet/bullet_pos_x0_inferred__0 /\genblk1[0].genblk1[3].bullet/bullet_pos_x_reg[0] )
+WARNING: [Synth 8-3917] design game_top__GB2 has port O2[19] driven by constant 0
+WARNING: [Synth 8-3917] design game_top__GB2 has port O2[18] driven by constant 1
+WARNING: [Synth 8-3917] design game_top__GB2 has port O2[17] driven by constant 0
+WARNING: [Synth 8-3917] design game_top__GB2 has port O2[16] driven by constant 0
+WARNING: [Synth 8-3917] design game_top__GB2 has port O2[15] driven by constant 1
+WARNING: [Synth 8-3917] design game_top__GB2 has port O2[14] driven by constant 0
+WARNING: [Synth 8-3917] design game_top__GB2 has port O2[13] driven by constant 1
+WARNING: [Synth 8-3917] design game_top__GB2 has port O2[12] driven by constant 0
+WARNING: [Synth 8-3917] design game_top__GB2 has port O2[11] driven by constant 1
+WARNING: [Synth 8-3917] design game_top__GB2 has port O2[10] driven by constant 1
+WARNING: [Synth 8-3917] design game_top__GB2 has port O2[9] driven by constant 0
+WARNING: [Synth 8-3917] design game_top__GB2 has port O2[8] driven by constant 1
+WARNING: [Synth 8-3917] design game_top__GB2 has port O2[7] driven by constant 0
+WARNING: [Synth 8-3917] design game_top__GB2 has port O2[6] driven by constant 0
+WARNING: [Synth 8-3917] design game_top__GB2 has port O2[5] driven by constant 1
+WARNING: [Synth 8-3917] design game_top__GB2 has port O2[4] driven by constant 0
+WARNING: [Synth 8-3917] design game_top__GB2 has port O2[3] driven by constant 1
+WARNING: [Synth 8-3917] design game_top__GB2 has port O2[2] driven by constant 0
+WARNING: [Synth 8-3917] design game_top__GB2 has port O2[1] driven by constant 1
+WARNING: [Synth 8-3917] design game_top__GB2 has port O2[0] driven by constant 1
+INFO: [Synth 8-3886] merging instance 'genblk2[1].genblk1[11].enemy/enemy_pos_y_reg[0]' (FDS) to 'genblk2[1].genblk1[11].enemy/enemy_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'genblk2[1].genblk1[11].enemy/enemy_pos_y_reg[1]' (FDS) to 'genblk2[1].genblk1[11].enemy/enemy_pos_y_reg[3]'
+INFO: [Synth 8-3886] merging instance 'genblk2[1].genblk1[11].enemy/enemy_pos_y_reg[2]' (FDS) to 'genblk2[1].genblk1[11].enemy/enemy_pos_y_reg[9]'
+INFO: [Synth 8-3886] merging instance 'genblk2[1].genblk1[11].enemy/enemy_pos_y_reg[3]' (FDS) to 'genblk2[1].genblk1[11].enemy/enemy_pos_y_reg[4]'
+INFO: [Synth 8-3886] merging instance 'genblk2[1].genblk1[11].enemy/enemy_pos_y_reg[4]' (FDS) to 'genblk2[1].genblk1[11].enemy/enemy_pos_y_reg[8]'
+INFO: [Synth 8-3886] merging instance 'genblk2[1].genblk1[11].enemy/enemy_pos_y_reg[5]' (FDR) to 'genblk2[1].genblk1[11].enemy/enemy_pos_y_reg[6]'
+INFO: [Synth 8-3886] merging instance 'genblk2[1].genblk1[11].enemy/enemy_pos_y_reg[6]' (FDR) to 'genblk2[1].genblk1[11].enemy/enemy_pos_y_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk2[1].genblk1[11].enemy /\enemy_pos_y_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\genblk2[1].genblk1[11].enemy /\enemy_pos_y_reg[8] )
+INFO: [Synth 8-3886] merging instance 'genblk2[1].genblk1[12].enemy/enemy_pos_y_reg[0]' (FDS) to 'genblk2[1].genblk1[12].enemy/enemy_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'genblk2[1].genblk1[12].enemy/enemy_pos_y_reg[1]' (FDS) to 'genblk2[1].genblk1[12].enemy/enemy_pos_y_reg[3]'
+INFO: [Synth 8-3886] merging instance 'genblk2[1].genblk1[12].enemy/enemy_pos_y_reg[2]' (FDS) to 'genblk2[1].genblk1[12].enemy/enemy_pos_y_reg[9]'
+INFO: [Synth 8-3886] merging instance 'genblk2[1].genblk1[12].enemy/enemy_pos_y_reg[3]' (FDS) to 'genblk2[1].genblk1[12].enemy/enemy_pos_y_reg[4]'
+INFO: [Synth 8-3886] merging instance 'genblk2[1].genblk1[12].enemy/enemy_pos_y_reg[4]' (FDS) to 'genblk2[1].genblk1[12].enemy/enemy_pos_y_reg[8]'
+INFO: [Synth 8-3886] merging instance 'genblk2[1].genblk1[12].enemy/enemy_pos_y_reg[5]' (FDR) to 'genblk2[1].genblk1[12].enemy/enemy_pos_y_reg[6]'
+INFO: [Synth 8-3886] merging instance 'genblk2[1].genblk1[12].enemy/enemy_pos_y_reg[6]' (FDR) to 'genblk2[1].genblk1[12].enemy/enemy_pos_y_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk2[1].genblk1[12].enemy /\enemy_pos_y_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\genblk2[1].genblk1[12].enemy /\enemy_pos_y_reg[8] )
+INFO: [Synth 8-3886] merging instance 'genblk2[1].genblk1[13].enemy/enemy_pos_y_reg[0]' (FDS) to 'genblk2[1].genblk1[13].enemy/enemy_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'genblk2[1].genblk1[13].enemy/enemy_pos_y_reg[1]' (FDS) to 'genblk2[1].genblk1[13].enemy/enemy_pos_y_reg[3]'
+INFO: [Synth 8-3886] merging instance 'genblk2[1].genblk1[13].enemy/enemy_pos_y_reg[2]' (FDS) to 'genblk2[1].genblk1[13].enemy/enemy_pos_y_reg[9]'
+INFO: [Synth 8-3886] merging instance 'genblk2[1].genblk1[13].enemy/enemy_pos_y_reg[3]' (FDS) to 'genblk2[1].genblk1[13].enemy/enemy_pos_y_reg[4]'
+INFO: [Synth 8-3886] merging instance 'genblk2[1].genblk1[13].enemy/enemy_pos_y_reg[4]' (FDS) to 'genblk2[1].genblk1[13].enemy/enemy_pos_y_reg[8]'
+INFO: [Synth 8-3886] merging instance 'genblk2[1].genblk1[13].enemy/enemy_pos_y_reg[5]' (FDR) to 'genblk2[1].genblk1[13].enemy/enemy_pos_y_reg[6]'
+INFO: [Synth 8-3886] merging instance 'genblk2[1].genblk1[13].enemy/enemy_pos_y_reg[6]' (FDR) to 'genblk2[1].genblk1[13].enemy/enemy_pos_y_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk2[1].genblk1[13].enemy /\enemy_pos_y_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\genblk2[1].genblk1[13].enemy /\enemy_pos_y_reg[8] )
+INFO: [Synth 8-3886] merging instance 'genblk2[1].genblk1[14].enemy/enemy_pos_y_reg[0]' (FDS) to 'genblk2[1].genblk1[14].enemy/enemy_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'genblk2[1].genblk1[14].enemy/enemy_pos_y_reg[1]' (FDS) to 'genblk2[1].genblk1[14].enemy/enemy_pos_y_reg[3]'
+INFO: [Synth 8-3886] merging instance 'genblk2[1].genblk1[14].enemy/enemy_pos_y_reg[2]' (FDS) to 'genblk2[1].genblk1[14].enemy/enemy_pos_y_reg[9]'
+INFO: [Synth 8-3886] merging instance 'genblk2[1].genblk1[14].enemy/enemy_pos_y_reg[3]' (FDS) to 'genblk2[1].genblk1[14].enemy/enemy_pos_y_reg[4]'
+INFO: [Synth 8-3886] merging instance 'genblk2[1].genblk1[14].enemy/enemy_pos_y_reg[4]' (FDS) to 'genblk2[1].genblk1[14].enemy/enemy_pos_y_reg[8]'
+INFO: [Synth 8-3886] merging instance 'genblk2[1].genblk1[14].enemy/enemy_pos_y_reg[5]' (FDR) to 'genblk2[1].genblk1[14].enemy/enemy_pos_y_reg[6]'
+INFO: [Synth 8-3886] merging instance 'genblk2[1].genblk1[14].enemy/enemy_pos_y_reg[6]' (FDR) to 'genblk2[1].genblk1[14].enemy/enemy_pos_y_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk2[1].genblk1[14].enemy /\enemy_pos_y_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\genblk2[1].genblk1[14].enemy /\enemy_pos_y_reg[8] )
+INFO: [Synth 8-3886] merging instance 'genblk2[2].genblk1[15].enemy/enemy_pos_y_reg[0]' (FDS) to 'genblk2[2].genblk1[15].enemy/enemy_pos_y_reg[2]'
+INFO: [Synth 8-3886] merging instance 'genblk2[2].genblk1[15].enemy/enemy_pos_y_reg[1]' (FDS) to 'genblk2[2].genblk1[15].enemy/enemy_pos_y_reg[4]'
+INFO: [Synth 8-3886] merging instance 'genblk2[2].genblk1[15].enemy/enemy_pos_y_reg[2]' (FDS) to 'genblk2[2].genblk1[15].enemy/enemy_pos_y_reg[3]'
+INFO: [Synth 8-3886] merging instance 'genblk2[2].genblk1[15].enemy/enemy_pos_y_reg[3]' (FDS) to 'genblk2[2].genblk1[15].enemy/enemy_pos_y_reg[9]'
+INFO: [Synth 8-3886] merging instance 'genblk2[2].genblk1[15].enemy/enemy_pos_y_reg[4]' (FDS) to 'genblk2[2].genblk1[15].enemy/enemy_pos_y_reg[8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk2[2].genblk1[15].enemy /\enemy_pos_y_reg[5] )
+INFO: [Synth 8-3886] merging instance 'genblk2[2].genblk1[15].enemy/enemy_pos_y_reg[6]' (FDR) to 'genblk2[2].genblk1[15].enemy/enemy_pos_y_reg[7]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\genblk2[2].genblk1[15].enemy /\enemy_pos_y_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[1].genblk1[0].bullet/bullet_pos_x0_inferred__0 /\genblk1[1].genblk1[0].bullet/bullet_pos_x_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[1].genblk1[1].bullet/bullet_pos_x0_inferred__0 /\genblk1[1].genblk1[1].bullet/bullet_pos_x_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk2[1].genblk1[15].enemy/enemy_pos_y_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\genblk2[1].genblk1[15].enemy/enemy_pos_y_reg[8] )
+WARNING: [Synth 8-7129] Port cannons_on[3] in module bullet__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cannons_on[2] in module bullet__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cannons_on[1] in module bullet__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cannons_on[2] in module bullet__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cannons_on[1] in module bullet__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cannons_on[0] in module bullet__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cannons_on[2] in module bullet__parameterized12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cannons_on[1] in module bullet__parameterized12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cannons_on[0] in module bullet__parameterized12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cannons_on[2] in module bullet__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cannons_on[1] in module bullet__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cannons_on[0] in module bullet__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cannons_on[2] in module bullet__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cannons_on[1] in module bullet__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cannons_on[0] in module bullet__parameterized13 is either unconnected or has no load
+INFO: [Synth 8-3886] merging instance 'genblk2[3].genblk1[13].enemy/enemy_pos_y_reg[0]' (FDS) to 'genblk2[3].genblk1[14].enemy/enemy_pos_y_reg[9]'
+INFO: [Synth 8-3886] merging instance 'genblk2[3].genblk1[13].enemy/enemy_pos_y_reg[1]' (FDS) to 'genblk2[3].genblk1[13].enemy/enemy_pos_y_reg[2]'
+INFO: [Synth 8-3886] merging instance 'genblk2[3].genblk1[13].enemy/enemy_pos_y_reg[2]' (FDS) to 'genblk2[3].genblk1[13].enemy/enemy_pos_y_reg[4]'
+INFO: [Synth 8-3886] merging instance 'genblk2[3].genblk1[13].enemy/enemy_pos_y_reg[3]' (FDS) to 'genblk2[3].genblk1[14].enemy/enemy_pos_y_reg[9]'
+INFO: [Synth 8-3886] merging instance 'genblk2[3].genblk1[13].enemy/enemy_pos_y_reg[4]' (FDS) to 'genblk2[3].genblk1[13].enemy/enemy_pos_y_reg[8]'
+INFO: [Synth 8-3886] merging instance 'genblk2[3].genblk1[13].enemy/enemy_pos_y_reg[5]' (FDR) to 'genblk2[3].genblk1[14].enemy/enemy_pos_y_reg[6]'
+INFO: [Synth 8-3886] merging instance 'genblk2[3].genblk1[13].enemy/enemy_pos_y_reg[6]' (FDR) to 'genblk2[3].genblk1[14].enemy/enemy_pos_y_reg[6]'
+INFO: [Synth 8-3886] merging instance 'genblk2[3].genblk1[13].enemy/enemy_pos_y_reg[9]' (FDS) to 'genblk2[3].genblk1[14].enemy/enemy_pos_y_reg[9]'
+INFO: [Synth 8-3886] merging instance 'genblk2[3].genblk1[14].enemy/enemy_pos_y_reg[0]' (FDS) to 'genblk2[3].genblk1[14].enemy/enemy_pos_y_reg[9]'
+INFO: [Synth 8-3886] merging instance 'genblk2[3].genblk1[14].enemy/enemy_pos_y_reg[1]' (FDS) to 'genblk2[3].genblk1[14].enemy/enemy_pos_y_reg[2]'
+INFO: [Synth 8-3886] merging instance 'genblk2[3].genblk1[14].enemy/enemy_pos_y_reg[2]' (FDS) to 'genblk2[3].genblk1[14].enemy/enemy_pos_y_reg[4]'
+INFO: [Synth 8-3886] merging instance 'genblk2[3].genblk1[14].enemy/enemy_pos_y_reg[3]' (FDS) to 'genblk2[3].genblk1[14].enemy/enemy_pos_y_reg[9]'
+INFO: [Synth 8-3886] merging instance 'genblk2[3].genblk1[14].enemy/enemy_pos_y_reg[4]' (FDS) to 'genblk2[3].genblk1[14].enemy/enemy_pos_y_reg[8]'
+INFO: [Synth 8-3886] merging instance 'genblk2[3].genblk1[14].enemy/enemy_pos_y_reg[5]' (FDR) to 'genblk2[3].genblk1[14].enemy/enemy_pos_y_reg[6]'
+INFO: [Synth 8-3886] merging instance 'genblk2[3].genblk1[14].enemy/enemy_pos_y_reg[6]' (FDR) to 'genblk2[3].genblk1[15].enemy/enemy_pos_y_reg[5]'
+INFO: [Synth 8-3886] merging instance 'genblk2[3].genblk1[14].enemy/enemy_pos_y_reg[9]' (FDS) to 'genblk2[3].genblk1[15].enemy/enemy_pos_y_reg[0]'
+INFO: [Synth 8-3886] merging instance 'genblk2[3].genblk1[15].enemy/enemy_pos_y_reg[0]' (FDS) to 'genblk2[3].genblk1[15].enemy/enemy_pos_y_reg[3]'
+INFO: [Synth 8-3886] merging instance 'genblk2[3].genblk1[15].enemy/enemy_pos_y_reg[1]' (FDS) to 'genblk2[3].genblk1[15].enemy/enemy_pos_y_reg[2]'
+INFO: [Synth 8-3886] merging instance 'genblk2[3].genblk1[15].enemy/enemy_pos_y_reg[2]' (FDS) to 'genblk2[3].genblk1[15].enemy/enemy_pos_y_reg[4]'
+INFO: [Synth 8-3886] merging instance 'genblk2[3].genblk1[15].enemy/enemy_pos_y_reg[3]' (FDS) to 'genblk2[3].genblk1[15].enemy/enemy_pos_y_reg[9]'
+INFO: [Synth 8-3886] merging instance 'genblk2[3].genblk1[15].enemy/enemy_pos_y_reg[4]' (FDS) to 'genblk2[3].genblk1[15].enemy/enemy_pos_y_reg[8]'
+INFO: [Synth 8-3886] merging instance 'genblk2[3].genblk1[15].enemy/enemy_pos_y_reg[5]' (FDR) to 'genblk2[3].genblk1[15].enemy/enemy_pos_y_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk2[3].genblk1[15].enemy/enemy_pos_y_reg[6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\genblk2[3].genblk1[15].enemy/enemy_pos_y_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[0].genblk1[2].bullet /bullet_pos_x0_inferred__0/\bullet_pos_x_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[3].genblk1[0].bullet /bullet_pos_x0_inferred__0/\bullet_pos_x_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[3].genblk1[1].bullet /bullet_pos_x0_inferred__0/\bullet_pos_x_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[3].genblk1[2].bullet /bullet_pos_x0_inferred__0/\bullet_pos_x_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[3].genblk1[3].bullet /bullet_pos_x0_inferred__0/\bullet_pos_x_reg[0] )
+WARNING: [Synth 8-3917] design game_top__GB7 has port O5[19] driven by constant 0
+WARNING: [Synth 8-3917] design game_top__GB7 has port O5[18] driven by constant 0
+WARNING: [Synth 8-3917] design game_top__GB7 has port O5[17] driven by constant 0
+WARNING: [Synth 8-3917] design game_top__GB7 has port O5[16] driven by constant 1
+WARNING: [Synth 8-3917] design game_top__GB7 has port O5[15] driven by constant 1
+WARNING: [Synth 8-3917] design game_top__GB7 has port O5[14] driven by constant 1
+WARNING: [Synth 8-3917] design game_top__GB7 has port O5[13] driven by constant 0
+WARNING: [Synth 8-3917] design game_top__GB7 has port O5[12] driven by constant 1
+WARNING: [Synth 8-3917] design game_top__GB7 has port O5[11] driven by constant 0
+WARNING: [Synth 8-3917] design game_top__GB7 has port O5[10] driven by constant 0
+WARNING: [Synth 8-3917] design game_top__GB7 has port O5[9] driven by constant 0
+WARNING: [Synth 8-3917] design game_top__GB7 has port O5[8] driven by constant 0
+WARNING: [Synth 8-3917] design game_top__GB7 has port O5[7] driven by constant 0
+WARNING: [Synth 8-3917] design game_top__GB7 has port O5[6] driven by constant 1
+WARNING: [Synth 8-3917] design game_top__GB7 has port O5[5] driven by constant 1
+WARNING: [Synth 8-3917] design game_top__GB7 has port O5[4] driven by constant 1
+WARNING: [Synth 8-3917] design game_top__GB7 has port O5[3] driven by constant 0
+WARNING: [Synth 8-3917] design game_top__GB7 has port O5[2] driven by constant 1
+WARNING: [Synth 8-3917] design game_top__GB7 has port O5[1] driven by constant 0
+WARNING: [Synth 8-3917] design game_top__GB7 has port O5[0] driven by constant 0
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[0].genblk1[0].bullet/bullet_pos_x0_inferred__0 /\genblk1[0].genblk1[0].bullet/bullet_pos_x_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[0].genblk1[1].bullet/bullet_pos_x0_inferred__0 /\genblk1[0].genblk1[1].bullet/bullet_pos_x_reg[0] )
+INFO: [Synth 8-3886] merging instance 'genblk2[0].genblk1[0].enemy/enemy_pos_y_reg[0]' (FDS) to 'genblk2[0].genblk1[0].enemy/enemy_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'genblk2[0].genblk1[0].enemy/enemy_pos_y_reg[1]' (FDS) to 'genblk2[0].genblk1[0].enemy/enemy_pos_y_reg[3]'
+INFO: [Synth 8-3886] merging instance 'genblk2[0].genblk1[0].enemy/enemy_pos_y_reg[2]' (FDS) to 'genblk2[0].genblk1[14].enemy/enemy_pos_y_reg[2]'
+INFO: [Synth 8-3886] merging instance 'genblk2[0].genblk1[0].enemy/enemy_pos_y_reg[3]' (FDS) to 'genblk2[0].genblk1[0].enemy/enemy_pos_y_reg[4]'
+INFO: [Synth 8-3886] merging instance 'genblk2[0].genblk1[0].enemy/enemy_pos_y_reg[4]' (FDS) to 'genblk2[0].genblk1[0].enemy/enemy_pos_y_reg[8]'
+INFO: [Synth 8-3886] merging instance 'genblk2[0].genblk1[0].enemy/enemy_pos_y_reg[5]' (FDR) to 'genblk2[0].genblk1[0].enemy/enemy_pos_y_reg[6]'
+INFO: [Synth 8-3886] merging instance 'genblk2[0].genblk1[0].enemy/enemy_pos_y_reg[7]' (FDR) to 'genblk2[0].genblk1[14].enemy/enemy_pos_y_reg[7]'
+INFO: [Synth 8-3886] merging instance 'genblk2[0].genblk1[0].enemy/enemy_pos_y_reg[8]' (FDS) to 'genblk2[0].genblk1[0].enemy/enemy_pos_y_reg[9]'
+INFO: [Synth 8-3886] merging instance 'genblk2[0].genblk1[1].enemy/enemy_pos_y_reg[0]' (FDS) to 'genblk2[0].genblk1[1].enemy/enemy_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'genblk2[0].genblk1[1].enemy/enemy_pos_y_reg[1]' (FDS) to 'genblk2[0].genblk1[1].enemy/enemy_pos_y_reg[3]'
+INFO: [Synth 8-3886] merging instance 'genblk2[0].genblk1[1].enemy/enemy_pos_y_reg[2]' (FDS) to 'genblk2[0].genblk1[14].enemy/enemy_pos_y_reg[2]'
+INFO: [Synth 8-3886] merging instance 'genblk2[0].genblk1[1].enemy/enemy_pos_y_reg[3]' (FDS) to 'genblk2[0].genblk1[1].enemy/enemy_pos_y_reg[4]'
+INFO: [Synth 8-3886] merging instance 'genblk2[0].genblk1[1].enemy/enemy_pos_y_reg[4]' (FDS) to 'genblk2[0].genblk1[1].enemy/enemy_pos_y_reg[8]'
+INFO: [Synth 8-3886] merging instance 'genblk2[0].genblk1[1].enemy/enemy_pos_y_reg[5]' (FDR) to 'genblk2[0].genblk1[1].enemy/enemy_pos_y_reg[6]'
+INFO: [Synth 8-3886] merging instance 'genblk2[0].genblk1[1].enemy/enemy_pos_y_reg[7]' (FDR) to 'genblk2[0].genblk1[14].enemy/enemy_pos_y_reg[7]'
+INFO: [Synth 8-3886] merging instance 'genblk2[0].genblk1[1].enemy/enemy_pos_y_reg[8]' (FDS) to 'genblk2[0].genblk1[1].enemy/enemy_pos_y_reg[9]'
+INFO: [Synth 8-3886] merging instance 'genblk2[0].genblk1[2].enemy/enemy_pos_y_reg[0]' (FDS) to 'genblk2[0].genblk1[2].enemy/enemy_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'genblk2[0].genblk1[2].enemy/enemy_pos_y_reg[1]' (FDS) to 'genblk2[0].genblk1[2].enemy/enemy_pos_y_reg[3]'
+INFO: [Synth 8-3886] merging instance 'genblk2[0].genblk1[2].enemy/enemy_pos_y_reg[2]' (FDS) to 'genblk2[0].genblk1[14].enemy/enemy_pos_y_reg[2]'
+INFO: [Synth 8-3886] merging instance 'genblk2[0].genblk1[2].enemy/enemy_pos_y_reg[3]' (FDS) to 'genblk2[0].genblk1[2].enemy/enemy_pos_y_reg[4]'
+INFO: [Synth 8-3886] merging instance 'genblk2[0].genblk1[2].enemy/enemy_pos_y_reg[4]' (FDS) to 'genblk2[0].genblk1[2].enemy/enemy_pos_y_reg[8]'
+INFO: [Synth 8-3886] merging instance 'genblk2[0].genblk1[2].enemy/enemy_pos_y_reg[5]' (FDR) to 'genblk2[0].genblk1[2].enemy/enemy_pos_y_reg[6]'
+INFO: [Synth 8-3886] merging instance 'genblk2[0].genblk1[2].enemy/enemy_pos_y_reg[7]' (FDR) to 'genblk2[0].genblk1[14].enemy/enemy_pos_y_reg[7]'
+INFO: [Synth 8-3886] merging instance 'genblk2[0].genblk1[2].enemy/enemy_pos_y_reg[8]' (FDS) to 'genblk2[0].genblk1[2].enemy/enemy_pos_y_reg[9]'
+INFO: [Synth 8-3886] merging instance 'genblk2[0].genblk1[3].enemy/enemy_pos_y_reg[0]' (FDS) to 'genblk2[0].genblk1[3].enemy/enemy_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'genblk2[0].genblk1[3].enemy/enemy_pos_y_reg[1]' (FDS) to 'genblk2[0].genblk1[3].enemy/enemy_pos_y_reg[3]'
+INFO: [Synth 8-3886] merging instance 'genblk2[0].genblk1[3].enemy/enemy_pos_y_reg[2]' (FDS) to 'genblk2[0].genblk1[14].enemy/enemy_pos_y_reg[2]'
+INFO: [Synth 8-3886] merging instance 'genblk2[0].genblk1[3].enemy/enemy_pos_y_reg[3]' (FDS) to 'genblk2[0].genblk1[3].enemy/enemy_pos_y_reg[4]'
+INFO: [Synth 8-3886] merging instance 'genblk2[0].genblk1[3].enemy/enemy_pos_y_reg[4]' (FDS) to 'genblk2[0].genblk1[3].enemy/enemy_pos_y_reg[8]'
+INFO: [Synth 8-3886] merging instance 'genblk2[0].genblk1[3].enemy/enemy_pos_y_reg[5]' (FDR) to 'genblk2[0].genblk1[3].enemy/enemy_pos_y_reg[6]'
+INFO: [Synth 8-3886] merging instance 'genblk2[0].genblk1[3].enemy/enemy_pos_y_reg[7]' (FDR) to 'genblk2[0].genblk1[14].enemy/enemy_pos_y_reg[7]'
+INFO: [Synth 8-3886] merging instance 'genblk2[0].genblk1[3].enemy/enemy_pos_y_reg[8]' (FDS) to 'genblk2[0].genblk1[3].enemy/enemy_pos_y_reg[9]'
+INFO: [Synth 8-3886] merging instance 'genblk2[0].genblk1[4].enemy/enemy_pos_y_reg[0]' (FDS) to 'genblk2[0].genblk1[4].enemy/enemy_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'genblk2[0].genblk1[4].enemy/enemy_pos_y_reg[1]' (FDS) to 'genblk2[0].genblk1[4].enemy/enemy_pos_y_reg[3]'
+INFO: [Synth 8-3886] merging instance 'genblk2[0].genblk1[4].enemy/enemy_pos_y_reg[2]' (FDS) to 'genblk2[0].genblk1[14].enemy/enemy_pos_y_reg[2]'
+INFO: [Synth 8-3886] merging instance 'genblk2[0].genblk1[4].enemy/enemy_pos_y_reg[3]' (FDS) to 'genblk2[0].genblk1[4].enemy/enemy_pos_y_reg[4]'
+INFO: [Synth 8-3886] merging instance 'genblk2[0].genblk1[4].enemy/enemy_pos_y_reg[4]' (FDS) to 'genblk2[0].genblk1[4].enemy/enemy_pos_y_reg[8]'
+INFO: [Synth 8-3886] merging instance 'genblk2[0].genblk1[4].enemy/enemy_pos_y_reg[5]' (FDR) to 'genblk2[0].genblk1[4].enemy/enemy_pos_y_reg[6]'
+INFO: [Synth 8-3886] merging instance 'genblk2[0].genblk1[4].enemy/enemy_pos_y_reg[7]' (FDR) to 'genblk2[0].genblk1[14].enemy/enemy_pos_y_reg[7]'
+INFO: [Synth 8-3886] merging instance 'genblk2[0].genblk1[4].enemy/enemy_pos_y_reg[8]' (FDS) to 'genblk2[0].genblk1[4].enemy/enemy_pos_y_reg[9]'
+INFO: [Synth 8-3886] merging instance 'genblk2[0].genblk1[5].enemy/enemy_pos_y_reg[0]' (FDS) to 'genblk2[0].genblk1[5].enemy/enemy_pos_y_reg[1]'
+INFO: [Synth 8-3886] merging instance 'genblk2[0].genblk1[5].enemy/enemy_pos_y_reg[1]' (FDS) to 'genblk2[0].genblk1[5].enemy/enemy_pos_y_reg[3]'
+INFO: [Synth 8-3886] merging instance 'genblk2[0].genblk1[5].enemy/enemy_pos_y_reg[2]' (FDS) to 'genblk2[0].genblk1[14].enemy/enemy_pos_y_reg[2]'
+INFO: [Synth 8-3886] merging instance 'genblk2[0].genblk1[5].enemy/enemy_pos_y_reg[3]' (FDS) to 'genblk2[0].genblk1[5].enemy/enemy_pos_y_reg[4]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\genblk2[0].genblk1[15].enemy/enemy_pos_y_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk2[0].genblk1[15].enemy/enemy_pos_y_reg[7] )
+WARNING: [Synth 8-3917] design game_top__GB8 has port O6[39] driven by constant 0
+WARNING: [Synth 8-3917] design game_top__GB8 has port O6[38] driven by constant 1
+WARNING: [Synth 8-3917] design game_top__GB8 has port O6[37] driven by constant 1
+WARNING: [Synth 8-3917] design game_top__GB8 has port O6[36] driven by constant 1
+WARNING: [Synth 8-3917] design game_top__GB8 has port O6[35] driven by constant 1
+WARNING: [Synth 8-3917] design game_top__GB8 has port O6[34] driven by constant 0
+WARNING: [Synth 8-3917] design game_top__GB8 has port O6[33] driven by constant 0
+WARNING: [Synth 8-3917] design game_top__GB8 has port O6[32] driven by constant 0
+WARNING: [Synth 8-3917] design game_top__GB8 has port O6[31] driven by constant 1
+WARNING: [Synth 8-3917] design game_top__GB8 has port O6[30] driven by constant 0
+WARNING: [Synth 8-3917] design game_top__GB8 has port O6[29] driven by constant 0
+WARNING: [Synth 8-3917] design game_top__GB8 has port O6[28] driven by constant 1
+WARNING: [Synth 8-3917] design game_top__GB8 has port O6[27] driven by constant 1
+WARNING: [Synth 8-3917] design game_top__GB8 has port O6[26] driven by constant 1
+WARNING: [Synth 8-3917] design game_top__GB8 has port O6[25] driven by constant 1
+WARNING: [Synth 8-3917] design game_top__GB8 has port O6[24] driven by constant 0
+WARNING: [Synth 8-3917] design game_top__GB8 has port O6[23] driven by constant 0
+WARNING: [Synth 8-3917] design game_top__GB8 has port O6[22] driven by constant 0
+WARNING: [Synth 8-3917] design game_top__GB8 has port O6[21] driven by constant 1
+WARNING: [Synth 8-3917] design game_top__GB8 has port O6[20] driven by constant 0
+WARNING: [Synth 8-3917] design game_top__GB8 has port O6[19] driven by constant 0
+WARNING: [Synth 8-3917] design game_top__GB8 has port O6[18] driven by constant 1
+WARNING: [Synth 8-3917] design game_top__GB8 has port O6[17] driven by constant 1
+WARNING: [Synth 8-3917] design game_top__GB8 has port O6[16] driven by constant 1
+WARNING: [Synth 8-3917] design game_top__GB8 has port O6[15] driven by constant 1
+WARNING: [Synth 8-3917] design game_top__GB8 has port O6[14] driven by constant 0
+WARNING: [Synth 8-3917] design game_top__GB8 has port O6[13] driven by constant 0
+WARNING: [Synth 8-3917] design game_top__GB8 has port O6[12] driven by constant 0
+WARNING: [Synth 8-3917] design game_top__GB8 has port O6[11] driven by constant 1
+WARNING: [Synth 8-3917] design game_top__GB8 has port O6[10] driven by constant 0
+WARNING: [Synth 8-3917] design game_top__GB8 has port O6[9] driven by constant 0
+WARNING: [Synth 8-3917] design game_top__GB8 has port O6[8] driven by constant 1
+WARNING: [Synth 8-3917] design game_top__GB8 has port O6[7] driven by constant 1
+WARNING: [Synth 8-3917] design game_top__GB8 has port O6[6] driven by constant 1
+WARNING: [Synth 8-3917] design game_top__GB8 has port O6[5] driven by constant 1
+WARNING: [Synth 8-3917] design game_top__GB8 has port O6[4] driven by constant 0
+WARNING: [Synth 8-3917] design game_top__GB8 has port O6[3] driven by constant 0
+WARNING: [Synth 8-3917] design game_top__GB8 has port O6[2] driven by constant 0
+WARNING: [Synth 8-3917] design game_top__GB8 has port O6[1] driven by constant 1
+WARNING: [Synth 8-3917] design game_top__GB8 has port O6[0] driven by constant 0
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[2].genblk1[0].bullet/bullet_pos_x0_inferred__0 /\genblk1[2].genblk1[0].bullet/bullet_pos_x_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[2].genblk1[1].bullet/bullet_pos_x0_inferred__0 /\genblk1[2].genblk1[1].bullet/bullet_pos_x_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[2].genblk1[2].bullet/bullet_pos_x0_inferred__0 /\genblk1[2].genblk1[2].bullet/bullet_pos_x_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[2].genblk1[3].bullet/bullet_pos_x0_inferred__0 /\genblk1[2].genblk1[3].bullet/bullet_pos_x_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk2[2].genblk1[14].enemy/enemy_pos_y_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\genblk2[2].genblk1[14].enemy/enemy_pos_y_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk2[2].genblk1[12].enemy/enemy_pos_y_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\genblk2[2].genblk1[12].enemy/enemy_pos_y_reg[8] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:58 ; elapsed = 00:01:02 . Memory (MB): peak = 2728.961 ; gain = 206.246 ; free physical = 1373916 ; free virtual = 1511425
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:53 ; elapsed = 00:01:19 . Memory (MB): peak = 2789.336 ; gain = 266.621 ; free physical = 1360020 ; free virtual = 1500699
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:02 ; elapsed = 00:01:06 . Memory (MB): peak = 2734.898 ; gain = 212.184 ; free physical = 1374401 ; free virtual = 1511910
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:59 ; elapsed = 00:01:26 . Memory (MB): peak = 2789.336 ; gain = 266.621 ; free physical = 1360305 ; free virtual = 1501015
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:03 ; elapsed = 00:01:07 . Memory (MB): peak = 2734.898 ; gain = 212.184 ; free physical = 1374846 ; free virtual = 1512355
+Finished Timing Optimization : Time (s): cpu = 00:01:04 ; elapsed = 00:01:30 . Memory (MB): peak = 2789.336 ; gain = 266.621 ; free physical = 1360083 ; free virtual = 1500794
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:07 ; elapsed = 00:01:11 . Memory (MB): peak = 2750.914 ; gain = 228.199 ; free physical = 1374129 ; free virtual = 1511638
+Finished Technology Mapping : Time (s): cpu = 00:01:10 ; elapsed = 00:01:40 . Memory (MB): peak = 2807.270 ; gain = 284.555 ; free physical = 1359424 ; free virtual = 1500140
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -525,37 +822,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:09 ; elapsed = 00:01:13 . Memory (MB): peak = 2750.914 ; gain = 228.199 ; free physical = 1374635 ; free virtual = 1512144
+Finished IO Insertion : Time (s): cpu = 00:01:15 ; elapsed = 00:01:46 . Memory (MB): peak = 2814.324 ; gain = 291.609 ; free physical = 1359687 ; free virtual = 1500425
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:09 ; elapsed = 00:01:13 . Memory (MB): peak = 2750.914 ; gain = 228.199 ; free physical = 1374569 ; free virtual = 1512079
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:16 ; elapsed = 00:01:46 . Memory (MB): peak = 2814.324 ; gain = 291.609 ; free physical = 1359684 ; free virtual = 1500422
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:11 ; elapsed = 00:01:14 . Memory (MB): peak = 2750.914 ; gain = 228.199 ; free physical = 1373978 ; free virtual = 1511487
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:19 ; elapsed = 00:01:49 . Memory (MB): peak = 2814.324 ; gain = 291.609 ; free physical = 1359435 ; free virtual = 1500174
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:11 ; elapsed = 00:01:14 . Memory (MB): peak = 2750.914 ; gain = 228.199 ; free physical = 1373978 ; free virtual = 1511487
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:19 ; elapsed = 00:01:50 . Memory (MB): peak = 2814.324 ; gain = 291.609 ; free physical = 1359485 ; free virtual = 1500223
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 2750.914 ; gain = 228.199 ; free physical = 1373978 ; free virtual = 1511487
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:19 ; elapsed = 00:01:50 . Memory (MB): peak = 2814.324 ; gain = 291.609 ; free physical = 1359516 ; free virtual = 1500254
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 2750.914 ; gain = 228.199 ; free physical = 1373978 ; free virtual = 1511487
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:19 ; elapsed = 00:01:50 . Memory (MB): peak = 2814.324 ; gain = 291.609 ; free physical = 1359664 ; free virtual = 1500402
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -574,38 +871,39 @@ Report Cell Usage:
 +------+--------+------+
 |1     |clk_wiz |     1|
 |2     |BUFG    |     1|
-|3     |CARRY4  |  1997|
-|4     |LUT1    |   331|
-|5     |LUT2    |  2954|
-|6     |LUT3    |   512|
-|7     |LUT4    |  5414|
-|8     |LUT5    |  1960|
-|9     |LUT6    |  2424|
-|10    |FDRE    |   570|
-|11    |FDSE    |   318|
-|12    |IBUF    |    10|
+|3     |CARRY4  |  4741|
+|4     |LUT1    |   176|
+|5     |LUT2    |  5204|
+|6     |LUT3    |  4635|
+|7     |LUT4    | 11811|
+|8     |LUT5    |  4625|
+|9     |LUT6    |  7608|
+|10    |FDRE    |  2434|
+|11    |FDSE    |   837|
+|12    |IBUF    |     6|
 |13    |OBUF    |    14|
 +------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 2750.914 ; gain = 228.199 ; free physical = 1373978 ; free virtual = 1511487
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:19 ; elapsed = 00:01:50 . Memory (MB): peak = 2814.324 ; gain = 291.609 ; free physical = 1359664 ; free virtual = 1500402
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:08 ; elapsed = 00:01:13 . Memory (MB): peak = 2750.914 ; gain = 62.418 ; free physical = 1374208 ; free virtual = 1511718
-Synthesis Optimization Complete : Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 2750.922 ; gain = 228.199 ; free physical = 1374208 ; free virtual = 1511718
+Synthesis finished with 0 errors, 0 critical warnings and 98 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:19 ; elapsed = 00:01:48 . Memory (MB): peak = 2818.234 ; gain = 133.707 ; free physical = 1364043 ; free virtual = 1504781
+Synthesis Optimization Complete : Time (s): cpu = 00:01:23 ; elapsed = 00:01:51 . Memory (MB): peak = 2818.234 ; gain = 295.520 ; free physical = 1364050 ; free virtual = 1504780
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.14 . Memory (MB): peak = 2750.922 ; gain = 0.000 ; free physical = 1374056 ; free virtual = 1511566
-INFO: [Netlist 29-17] Analyzing 1997 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00.34 ; elapsed = 00:00:00.34 . Memory (MB): peak = 2818.234 ; gain = 0.000 ; free physical = 1364124 ; free virtual = 1504854
+INFO: [Netlist 29-17] Analyzing 4741 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2782.930 ; gain = 0.000 ; free physical = 1374979 ; free virtual = 1512488
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2862.348 ; gain = 0.000 ; free physical = 1363952 ; free virtual = 1504682
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-147 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+331 Infos, 98 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:20 ; elapsed = 00:01:22 . Memory (MB): peak = 2782.930 ; gain = 268.828 ; free physical = 1375114 ; free virtual = 1512623
+synth_design: Time (s): cpu = 00:01:32 ; elapsed = 00:02:02 . Memory (MB): peak = 2862.348 ; gain = 348.246 ; free physical = 1364102 ; free virtual = 1504831
 INFO: [Common 17-1381] The checkpoint '/rhome/forystmj/CS256-project/CS256-project.runs/synth_1/game_top.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2894.363 ; gain = 32.016 ; free physical = 1363972 ; free virtual = 1504709
 INFO: [runtcl-4] Executing : report_utilization -file game_top_utilization_synth.rpt -pb game_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Nov 20 16:33:31 2023...
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 23 01:48:00 2023...

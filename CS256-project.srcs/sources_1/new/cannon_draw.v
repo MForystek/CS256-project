@@ -26,8 +26,8 @@ module cannon_draw #(parameter CANNON_NUM = 0) (
     );
     assign draw_cannon_x = draw_x >= `CANNON_OFFSET_X
         && draw_x <= `CANNON_OFFSET_X + `CANNON_WIDTH;
-    assign draw_cannon_y = draw_y >= `CANNON_OFFSET_Y + `CANNON_HEIGHT*CANNON_NUM + `CANNON_DISTANCE*CANNON_NUM + 10'd1 
-        && draw_y <= `CANNON_OFFSET_Y + `CANNON_HEIGHT*(CANNON_NUM+1) + `CANNON_DISTANCE*CANNON_NUM + 10'd1;
+    assign draw_cannon_y = draw_y >= `CANNON_OFFSET_Y + `CANNON_HEIGHT*CANNON_NUM + `CANNON_DISTANCE*CANNON_NUM 
+        && draw_y <= `CANNON_OFFSET_Y + `CANNON_HEIGHT*(CANNON_NUM+1) + `CANNON_DISTANCE*CANNON_NUM;
     
     localparam [3:0] cannon_r = 4'hE;
     localparam [3:0] cannon_g = 4'hB;

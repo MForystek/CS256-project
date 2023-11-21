@@ -30,9 +30,9 @@ module enemy_draw(
     assign draw_enemy_x = draw_x >= enemy_pos_x && draw_x <= enemy_pos_x + `ENEMY_WIDTH;
     assign draw_enemy_y = draw_y >= enemy_pos_y && draw_y <= enemy_pos_y + `ENEMY_HEIGHT;
     
-    localparam [3:0] enemy_r = 4'hF;
-    localparam [3:0] enemy_g = 4'hF;
-    localparam [3:0] enemy_b = 4'hF;
+    localparam [3:0] enemy_r = 4'hD;
+    localparam [3:0] enemy_g = 4'h2;
+    localparam [3:0] enemy_b = 4'h2;
     
     assign enemy_rgb = !killed && draw_enemy_x && draw_enemy_y ? {enemy_r, enemy_g, enemy_b} : 12'h0;
 endmodule

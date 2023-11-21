@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-| Date         : Mon Nov 20 16:34:25 2023
+| Date         : Thu Nov 23 01:49:20 2023
 | Host         : 8d920e292c80 running 64-bit Ubuntu 20.04.6 LTS
 | Command      : report_control_sets -verbose -file game_top_control_sets_placed.rpt
 | Design       : game_top
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |   112 |
-|    Minimum number of control sets                        |   112 |
+| Total control sets                                       |   234 |
+|    Minimum number of control sets                        |   234 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |   576 |
+| Unused register locations in slices containing registers |   665 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,15 +39,15 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |   112 |
+| Total control sets |   234 |
 | >= 0 to < 4        |     0 |
-| >= 4 to < 6        |    27 |
-| >= 6 to < 8        |    21 |
-| >= 8 to < 10       |    56 |
-| >= 10 to < 12      |     3 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |   141 |
+| >= 8 to < 10       |    55 |
+| >= 10 to < 12      |     2 |
 | >= 12 to < 14      |     0 |
 | >= 14 to < 16      |     0 |
-| >= 16              |     5 |
+| >= 16              |    36 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
 
@@ -58,12 +58,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              24 |           21 |
+| No           | No                    | No                     |             553 |          376 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |             622 |          297 |
-| Yes          | No                    | No                     |              17 |           11 |
+| No           | Yes                   | No                     |            1542 |          964 |
+| Yes          | No                    | No                     |             512 |          346 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |             225 |           78 |
+| Yes          | Yes                   | No                     |             664 |          212 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -73,118 +73,240 @@ Table of Contents
 +-----------------------------+----------------------------------------------------------+-----------------------------------------------------------+------------------+----------------+--------------+
 |         Clock Signal        |                       Enable Signal                      |                      Set/Reset Signal                     | Slice Load Count | Bel Load Count | Bels / Slice |
 +-----------------------------+----------------------------------------------------------+-----------------------------------------------------------+------------------+----------------+--------------+
-|  logclk_reg_BUFG[16]        |                                                          | genblk2[0].genblk1[4].enemy/killed[4]                     |                2 |              4 |         2.00 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk2[2].genblk1[0].enemy/killed[12]                    |                3 |              4 |         1.33 |
-|  logclk_reg_BUFG[16]        | genblk1[1].genblk1[1].bullet/bullet_timer[3]_i_2__0_n_0  | genblk1[1].genblk1[1].bullet/bullet_timer[3]_i_1__6_n_0   |                1 |              4 |         4.00 |
-|  logclk_reg_BUFG[16]        | genblk1[2].genblk1[1].bullet/bullet_timer[3]_i_2__1_n_0  | genblk1[2].genblk1[7].bullet/SR[0]                        |                1 |              4 |         4.00 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk2[2].genblk1[1].enemy/killed__0[13]                 |                3 |              4 |         1.33 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk2[0].genblk1[1].enemy/killed[1]                     |                3 |              4 |         1.33 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk2[2].genblk1[2].enemy/killed__0[14]                 |                2 |              4 |         2.00 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk2[0].genblk1[5].enemy/killed[5]                     |                2 |              4 |         2.00 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk2[2].genblk1[4].enemy/killed[16]                    |                2 |              4 |         2.00 |
-|  logclk_reg_BUFG[16]        | block_pos_x[9]_i_1_n_0                                   | block_pos_x[10]_i_1_n_0                                   |                3 |              4 |         1.33 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk2[2].genblk1[5].enemy/killed[17]                    |                2 |              4 |         2.00 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk2[3].genblk1[0].enemy/killed[18]                    |                2 |              4 |         2.00 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk2[3].genblk1[5].enemy/killed__0[23]                 |                2 |              4 |         2.00 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk2[3].genblk1[1].enemy/killed[19]                    |                2 |              4 |         2.00 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk2[3].genblk1[2].enemy/killed[20]                    |                2 |              4 |         2.00 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk2[3].genblk1[4].enemy/killed[22]                    |                2 |              4 |         2.00 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk2[0].genblk1[3].enemy/killed[3]                     |                2 |              4 |         2.00 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk2[3].genblk1[3].enemy/killed[21]                    |                2 |              4 |         2.00 |
-|  logclk_reg_BUFG[16]        | genblk1[0].genblk1[1].bullet/bullet_timer[3]_i_2_n_0     | genblk1[0].genblk1[7].bullet/SR[0]                        |                1 |              4 |         4.00 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk2[0].genblk1[2].enemy/killed[2]                     |                3 |              4 |         1.33 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk2[0].genblk1[0].enemy/killed[0]                     |                3 |              4 |         1.33 |
-|  logclk_reg_BUFG[16]        | genblk1[3].genblk1[1].bullet/bullet_timer[3]_i_2__2_n_0  | genblk1[3].genblk1[7].bullet/SR[0]                        |                1 |              4 |         4.00 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk2[2].genblk1[3].enemy/killed__0[15]                 |                2 |              4 |         2.00 |
-|  logclk_reg_BUFG[16]        | genblk1[2].genblk1[2].bullet/bullet_timer[4]_i_1__14_n_0 | genblk1[2].genblk1[7].bullet/SR[0]                        |                2 |              5 |         2.50 |
-|  logclk_reg_BUFG[16]        | genblk1[1].genblk1[2].bullet/bullet_timer[4]_i_2_n_0     | genblk1[1].genblk1[6].bullet/SR[0]                        |                2 |              5 |         2.50 |
-|  logclk_reg_BUFG[16]        | genblk1[0].genblk1[2].bullet/bullet_timer[4]_i_1__13_n_0 | genblk1[0].genblk1[7].bullet/SR[0]                        |                2 |              5 |         2.50 |
-|  logclk_reg_BUFG[16]        | genblk1[3].genblk1[2].bullet/bullet_timer[4]_i_1__22_n_0 | genblk1[3].genblk1[7].bullet/SR[0]                        |                2 |              5 |         2.50 |
-|  logclk_reg_BUFG[16]        | genblk1[3].genblk1[6].bullet/bullet_timer[5]_i_1__15_n_0 | genblk1[3].genblk1[7].bullet/SR[0]                        |                2 |              6 |         3.00 |
-|  logclk_reg_BUFG[16]        | genblk1[3].genblk1[5].bullet/bullet_timer[5]_i_1__14_n_0 | genblk1[3].genblk1[7].bullet/SR[0]                        |                2 |              6 |         3.00 |
-|  logclk_reg_BUFG[16]        | genblk1[0].genblk1[4].bullet/bullet_timer[5]_i_2__13_n_0 | genblk1[0].genblk1[5].bullet/SR[0]                        |                1 |              6 |         6.00 |
-|  logclk_reg_BUFG[16]        | genblk1[0].genblk1[6].bullet/bullet_timer[5]_i_1__5_n_0  | genblk1[0].genblk1[7].bullet/SR[0]                        |                2 |              6 |         3.00 |
-|  logclk_reg_BUFG[16]        | genblk1[2].genblk1[7].bullet/sel__0                      | genblk1[2].genblk1[7].bullet/SR[0]                        |                2 |              6 |         3.00 |
-|  logclk_reg_BUFG[16]        | genblk1[2].genblk1[4].bullet/bullet_timer[5]_i_1__8_n_0  | genblk1[2].genblk1[7].bullet/SR[0]                        |                2 |              6 |         3.00 |
-|  logclk_reg_BUFG[16]        | genblk1[2].genblk1[6].bullet/bullet_timer[5]_i_1__10_n_0 | genblk1[2].genblk1[7].bullet/SR[0]                        |                2 |              6 |         3.00 |
-|  logclk_reg_BUFG[16]        | genblk1[2].genblk1[3].bullet/bullet_timer[5]_i_1__7_n_0  | genblk1[2].genblk1[7].bullet/SR[0]                        |                2 |              6 |         3.00 |
-|  logclk_reg_BUFG[16]        | genblk1[0].genblk1[3].bullet/bullet_timer[5]_i_1__4_n_0  | genblk1[0].genblk1[7].bullet/SR[0]                        |                2 |              6 |         3.00 |
-|  logclk_reg_BUFG[16]        | genblk1[1].genblk1[5].bullet/bullet_timer[5]_i_1__1_n_0  | genblk1[1].genblk1[6].bullet/SR[0]                        |                2 |              6 |         3.00 |
-|  logclk_reg_BUFG[16]        | genblk1[1].genblk1[3].bullet/bullet_timer[5]_i_1_n_0     | genblk1[1].genblk1[6].bullet/SR[0]                        |                3 |              6 |         2.00 |
-|  logclk_reg_BUFG[16]        | genblk1[1].genblk1[6].bullet/bullet_timer[5]_i_1__2_n_0  | genblk1[1].genblk1[6].bullet/SR[0]                        |                2 |              6 |         3.00 |
-|  logclk_reg_BUFG[16]        | genblk1[1].genblk1[7].bullet/sel                         | genblk1[1].genblk1[6].bullet/SR[0]                        |                2 |              6 |         3.00 |
-|  logclk_reg_BUFG[16]        | genblk1[0].genblk1[5].bullet/bullet_timer[5]_i_1__18_n_0 | genblk1[0].genblk1[5].bullet/SR[0]                        |                2 |              6 |         3.00 |
-|  logclk_reg_BUFG[16]        | genblk1[2].genblk1[5].bullet/bullet_timer[5]_i_1__9_n_0  | genblk1[2].genblk1[7].bullet/SR[0]                        |                2 |              6 |         3.00 |
-|  logclk_reg_BUFG[16]        | genblk1[3].genblk1[3].bullet/bullet_timer[5]_i_1__12_n_0 | genblk1[3].genblk1[7].bullet/SR[0]                        |                3 |              6 |         2.00 |
-|  logclk_reg_BUFG[16]        | genblk1[3].genblk1[4].bullet/bullet_timer[5]_i_1__13_n_0 | genblk1[3].genblk1[7].bullet/SR[0]                        |                2 |              6 |         3.00 |
-|  logclk_reg_BUFG[16]        | genblk1[1].genblk1[4].bullet/bullet_timer[5]_i_1__0_n_0  | genblk1[1].genblk1[6].bullet/SR[0]                        |                2 |              6 |         3.00 |
-|  logclk_reg_BUFG[16]        | genblk1[0].genblk1[7].bullet/bullet_timer[5]_i_1__6_n_0  | genblk1[0].genblk1[7].bullet/SR[0]                        |                2 |              6 |         3.00 |
-|  logclk_reg_BUFG[16]        | genblk1[3].genblk1[7].bullet/sel__1                      | genblk1[3].genblk1[7].bullet/SR[0]                        |                2 |              6 |         3.00 |
-|  logclk_reg_BUFG[16]        | block_pos_x[9]_i_1_n_0                                   |                                                           |                5 |              7 |         1.40 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk2[3].genblk1[4].enemy/enemy_pos_x[10]_i_1__3_n_0    |                4 |              9 |         2.25 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk1[0].genblk1[1].bullet/bullet_pos_x[10]_i_1__5_n_0  |                6 |              9 |         1.50 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk2[3].genblk1[5].enemy/enemy_pos_x[10]_i_1__2_n_0    |                3 |              9 |         3.00 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk2[0].genblk1[4].enemy/enemy_pos_x[10]_i_1__18_n_0   |                3 |              9 |         3.00 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk2[0].genblk1[5].enemy/enemy_pos_x[10]_i_1__17_n_0   |                5 |              9 |         1.80 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk2[1].genblk1[0].enemy/enemy_pos_x[10]_i_1__16_n_0   |                3 |              9 |         3.00 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk2[1].genblk1[1].enemy/enemy_pos_x[10]_i_1__15_n_0   |                3 |              9 |         3.00 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk2[1].genblk1[2].enemy/enemy_pos_x[10]_i_1__14_n_0   |                5 |              9 |         1.80 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk2[1].genblk1[3].enemy/enemy_pos_x[10]_i_1__13_n_0   |                3 |              9 |         3.00 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk2[1].genblk1[4].enemy/enemy_pos_x[10]_i_1__12_n_0   |                3 |              9 |         3.00 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk1[3].genblk1[0].bullet/bullet_pos_x[10]_i_1__30_n_0 |                4 |              9 |         2.25 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk2[0].genblk1[2].enemy/enemy_pos_x[10]_i_1__20_n_0   |                3 |              9 |         3.00 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk1[3].genblk1[3].bullet/bullet_pos_x[10]_i_1__23_n_0 |                4 |              9 |         2.25 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk1[0].genblk1[6].bullet/bullet_pos_x[10]_i_1__8_n_0  |                5 |              9 |         1.80 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk1[0].genblk1[7].bullet/bullet_pos_x[10]_i_1__9_n_0  |                5 |              9 |         1.80 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk1[1].genblk1[0].bullet/bullet_pos_x[10]_i_1__19_n_0 |                3 |              9 |         3.00 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk2[2].genblk1[2].enemy/enemy_pos_x[10]_i_1__0_n_0    |                3 |              9 |         3.00 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk1[1].genblk1[1].bullet/bullet_pos_x[10]_i_1__10_n_0 |                3 |              9 |         3.00 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk1[2].genblk1[2].bullet/bullet_pos_x[10]_i_1__12_n_0 |                6 |              9 |         1.50 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk1[1].genblk1[6].bullet/bullet_pos_x[10]_i_1__3_n_0  |                4 |              9 |         2.25 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk2[2].genblk1[0].enemy/enemy_pos_x[10]_i_1__10_n_0   |                3 |              9 |         3.00 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk1[3].genblk1[2].bullet/bullet_pos_x[10]_i_1__22_n_0 |                5 |              9 |         1.80 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk1[3].genblk1[7].bullet/clear__0                     |                4 |              9 |         2.25 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk1[3].genblk1[4].bullet/bullet_pos_x[10]_i_1__24_n_0 |                5 |              9 |         1.80 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk2[0].genblk1[3].enemy/enemy_pos_x[10]_i_1__19_n_0   |                3 |              9 |         3.00 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk1[2].genblk1[6].bullet/bullet_pos_x[10]_i_1__16_n_0 |                4 |              9 |         2.25 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk1[2].genblk1[1].bullet/bullet_pos_x[10]_i_1__11_n_0 |                5 |              9 |         1.80 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk1[2].genblk1[5].bullet/bullet_pos_x[10]_i_1__15_n_0 |                6 |              9 |         1.50 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk2[1].genblk1[5].enemy/enemy_pos_x[10]_i_1__11_n_0   |                3 |              9 |         3.00 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk1[0].genblk1[5].bullet/bullet_pos_x[10]_i_1__29_n_0 |                3 |              9 |         3.00 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk1[1].genblk1[4].bullet/bullet_pos_x[10]_i_1__1_n_0  |                4 |              9 |         2.25 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk1[0].genblk1[2].bullet/bullet_pos_x[10]_i_1__6_n_0  |                5 |              9 |         1.80 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk2[0].genblk1[1].enemy/enemy_pos_x[10]_i_1__21_n_0   |                3 |              9 |         3.00 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk2[0].genblk1[0].enemy/enemy_pos_x[10]_i_1__22_n_0   |                5 |              9 |         1.80 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk2[2].genblk1[4].enemy/enemy_pos_x[10]_i_1__4_n_0    |                4 |              9 |         2.25 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk1[1].genblk1[2].bullet/bullet_pos_x[10]_i_1_n_0     |                4 |              9 |         2.25 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk2[3].genblk1[3].enemy/enemy_pos_x[10]_i_1__9_n_0    |                5 |              9 |         1.80 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk2[3].genblk1[2].enemy/enemy_pos_x[10]_i_1__8_n_0    |                4 |              9 |         2.25 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk2[3].genblk1[1].enemy/enemy_pos_x[10]_i_1__7_n_0    |                3 |              9 |         3.00 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk2[3].genblk1[0].enemy/enemy_pos_x[10]_i_1__6_n_0    |                3 |              9 |         3.00 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk2[2].genblk1[5].enemy/enemy_pos_x[10]_i_1__5_n_0    |                4 |              9 |         2.25 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk1[0].genblk1[0].bullet/bullet_pos_x[10]_i_1__18_n_0 |                3 |              9 |         3.00 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk1[1].genblk1[5].bullet/bullet_pos_x[10]_i_1__2_n_0  |                4 |              9 |         2.25 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk1[1].genblk1[3].bullet/bullet_pos_x[10]_i_1__0_n_0  |                4 |              9 |         2.25 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk1[0].genblk1[3].bullet/bullet_pos_x[10]_i_1__7_n_0  |                4 |              9 |         2.25 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk1[2].genblk1[0].bullet/bullet_pos_x[10]_i_1__20_n_0 |                4 |              9 |         2.25 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk1[2].genblk1[4].bullet/bullet_pos_x[10]_i_1__14_n_0 |                5 |              9 |         1.80 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk1[0].genblk1[4].bullet/bullet_pos_x[10]_i_1__28_n_0 |                5 |              9 |         1.80 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk1[3].genblk1[6].bullet/bullet_pos_x[10]_i_1__26_n_0 |                5 |              9 |         1.80 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk2[2].genblk1[1].enemy/enemy_pos_x[10]_i_1__1_n_0    |                4 |              9 |         2.25 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk1[3].genblk1[5].bullet/bullet_pos_x[10]_i_1__25_n_0 |                5 |              9 |         1.80 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk2[2].genblk1[3].enemy/enemy_pos_x[10]_i_1_n_0       |                3 |              9 |         3.00 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk1[1].genblk1[7].bullet/clear                        |                3 |              9 |         3.00 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk1[2].genblk1[7].bullet/bullet_pos_x[10]_i_1__17_n_0 |                6 |              9 |         1.50 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk1[3].genblk1[1].bullet/bullet_pos_x[10]_i_1__21_n_0 |                5 |              9 |         1.80 |
-|  logclk_reg_BUFG[16]        |                                                          | genblk1[2].genblk1[3].bullet/bullet_pos_x[10]_i_1__13_n_0 |                5 |              9 |         1.80 |
-|  logclk_reg_BUFG[16]        | block_pos_y[9]_i_1_n_0                                   |                                                           |                6 |             10 |         1.67 |
-|  clock_wizard/inst/clk_out1 | vga/vcount[9]_i_2_n_0                                    | vga/vcount[9]_i_1_n_0                                     |                4 |             10 |         2.50 |
-|  clock_wizard/inst/clk_out1 |                                                          | vga/hcount[10]_i_1_n_0                                    |                5 |             11 |         2.20 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[1].genblk1[9].enemy/enemy_pos_x[10]_i_1__6_n_0    |                3 |              6 |         2.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[3].genblk1[6].enemy/enemy_pos_x[10]_i_1__25_n_0   |                4 |              6 |         1.50 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[0].genblk1[4].enemy/enemy_pos_x[10]_i_1__37_n_0   |                2 |              6 |         3.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[1].genblk1[14].enemy/killed[30]                   |                4 |              6 |         1.50 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[1].genblk1[14].enemy/enemy_pos_x[10]_i_1__0_n_0   |                4 |              6 |         1.50 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[1].genblk1[13].enemy/killed[29]                   |                4 |              6 |         1.50 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[1].genblk1[13].enemy/enemy_pos_x[10]_i_1_n_0      |                3 |              6 |         2.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[1].genblk1[12].enemy/killed[28]                   |                3 |              6 |         2.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[1].genblk1[12].enemy/enemy_pos_x[10]_i_1__2_n_0   |                4 |              6 |         1.50 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[1].genblk1[11].enemy/killed[27]                   |                4 |              6 |         1.50 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[1].genblk1[11].enemy/enemy_pos_x[10]_i_1__3_n_0   |                4 |              6 |         1.50 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[1].genblk1[10].enemy/killed[26]                   |                3 |              6 |         2.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[1].genblk1[10].enemy/enemy_pos_x[10]_i_1__5_n_0   |                3 |              6 |         2.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[1].genblk1[9].enemy/killed[25]                    |                3 |              6 |         2.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[1].genblk1[15].enemy/enemy_pos_x[10]_i_1__4_n_0   |                5 |              6 |         1.20 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[1].genblk1[8].enemy/killed[24]                    |                3 |              6 |         2.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[1].genblk1[8].enemy/enemy_pos_x[10]_i_1__7_n_0    |                3 |              6 |         2.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[1].genblk1[7].enemy/killed[23]                    |                4 |              6 |         1.50 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[1].genblk1[7].enemy/enemy_pos_x[10]_i_1__8_n_0    |                2 |              6 |         3.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[1].genblk1[6].enemy/SS[0]                         |                3 |              6 |         2.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[1].genblk1[6].enemy/enemy_pos_x[10]_i_1__9_n_0    |                4 |              6 |         1.50 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[1].genblk1[5].enemy/killed[21]                    |                4 |              6 |         1.50 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[1].genblk1[5].enemy/enemy_pos_x[10]_i_1__10_n_0   |                4 |              6 |         1.50 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[1].genblk1[4].enemy/killed[20]                    |                4 |              6 |         1.50 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[1].genblk1[4].enemy/enemy_pos_x[10]_i_1__11_n_0   |                3 |              6 |         2.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[1].genblk1[3].enemy/killed[19]                    |                5 |              6 |         1.20 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[1].genblk1[3].enemy/enemy_pos_x[10]_i_1__12_n_0   |                2 |              6 |         3.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[2].genblk1[7].enemy/enemy_pos_x[10]_i_1__51_n_0   |                3 |              6 |         2.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[2].genblk1[14].enemy/enemy_pos_x[10]_i_1__48_n_0  |                3 |              6 |         2.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[2].genblk1[15].enemy/enemy_pos_x[10]_i_1__1_n_0   |                2 |              6 |         3.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[2].genblk1[13].enemy/enemy_pos_x[10]_i_1__54_n_0  |                2 |              6 |         3.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[2].genblk1[12].enemy/enemy_pos_x[10]_i_1__62_n_0  |                5 |              6 |         1.20 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[3].genblk1[0].enemy/enemy_pos_x[10]_i_1__31_n_0   |                4 |              6 |         1.50 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[2].genblk1[11].enemy/enemy_pos_x[10]_i_1__61_n_0  |                3 |              6 |         2.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[2].genblk1[10].enemy/enemy_pos_x[10]_i_1__60_n_0  |                5 |              6 |         1.20 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[3].genblk1[1].enemy/enemy_pos_x[10]_i_1__30_n_0   |                4 |              6 |         1.50 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[2].genblk1[9].enemy/enemy_pos_x[10]_i_1__53_n_0   |                3 |              6 |         2.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[0].genblk1[5].enemy/enemy_pos_x[10]_i_1__38_n_0   |                3 |              6 |         2.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[3].genblk1[2].enemy/enemy_pos_x[10]_i_1__29_n_0   |                2 |              6 |         3.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[2].genblk1[8].enemy/enemy_pos_x[10]_i_1__52_n_0   |                2 |              6 |         3.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[0].genblk1[3].enemy/enemy_pos_x[10]_i_1__36_n_0   |                2 |              6 |         3.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[0].genblk1[6].enemy/enemy_pos_x[10]_i_1__39_n_0   |                3 |              6 |         2.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[2].genblk1[6].enemy/enemy_pos_x[10]_i_1__50_n_0   |                2 |              6 |         3.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[2].genblk1[5].enemy/enemy_pos_x[10]_i_1__49_n_0   |                2 |              6 |         3.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[3].genblk1[3].enemy/enemy_pos_x[10]_i_1__28_n_0   |                4 |              6 |         1.50 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[2].genblk1[4].enemy/enemy_pos_x[10]_i_1__59_n_0   |                5 |              6 |         1.20 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[2].genblk1[3].enemy/enemy_pos_x[10]_i_1__58_n_0   |                2 |              6 |         3.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[3].genblk1[4].enemy/enemy_pos_x[10]_i_1__27_n_0   |                5 |              6 |         1.20 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[2].genblk1[2].enemy/enemy_pos_x[10]_i_1__57_n_0   |                3 |              6 |         2.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[2].genblk1[1].enemy/enemy_pos_x[10]_i_1__56_n_0   |                5 |              6 |         1.20 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[3].genblk1[5].enemy/enemy_pos_x[10]_i_1__26_n_0   |                4 |              6 |         1.50 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[2].genblk1[0].enemy/enemy_pos_x[10]_i_1__55_n_0   |                5 |              6 |         1.20 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[1].genblk1[15].enemy/killed[31]                   |                3 |              6 |         2.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[1].genblk1[2].enemy/enemy_pos_x[10]_i_1__13_n_0   |                3 |              6 |         2.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[0].genblk1[9].enemy/enemy_pos_x[10]_i_1__42_n_0   |                2 |              6 |         3.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[0].genblk1[10].enemy/enemy_pos_x[10]_i_1__43_n_0  |                2 |              6 |         3.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[0].genblk1[8].enemy/enemy_pos_x[10]_i_1__41_n_0   |                2 |              6 |         3.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[3].genblk1[15].enemy/enemy_pos_x[10]_i_1__18_n_0  |                4 |              6 |         1.50 |
+|  logclk_reg_BUFG[16]        | genblk2[3].genblk1[1].enemy/enemy_timer[5]_i_1__29_n_0   | genblk2[2].genblk1[1].enemy/btn_c                         |                2 |              6 |         3.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[3].genblk1[14].enemy/enemy_pos_x[10]_i_1__17_n_0  |                4 |              6 |         1.50 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[3].genblk1[13].enemy/enemy_pos_x[10]_i_1__16_n_0  |                3 |              6 |         2.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[0].genblk1[7].enemy/enemy_pos_x[10]_i_1__40_n_0   |                2 |              6 |         3.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[3].genblk1[12].enemy/enemy_pos_x[10]_i_1__24_n_0  |                3 |              6 |         2.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[3].genblk1[11].enemy/enemy_pos_x[10]_i_1__23_n_0  |                2 |              6 |         3.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[0].genblk1[0].enemy/enemy_pos_x[10]_i_1__33_n_0   |                2 |              6 |         3.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[0].genblk1[1].enemy/enemy_pos_x[10]_i_1__34_n_0   |                3 |              6 |         2.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[3].genblk1[10].enemy/enemy_pos_x[10]_i_1__22_n_0  |                4 |              6 |         1.50 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[0].genblk1[2].enemy/enemy_pos_x[10]_i_1__35_n_0   |                3 |              6 |         2.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[0].genblk1[11].enemy/enemy_pos_x[10]_i_1__44_n_0  |                2 |              6 |         3.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[0].genblk1[12].enemy/enemy_pos_x[10]_i_1__45_n_0  |                3 |              6 |         2.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[1].genblk1[1].enemy/killed[17]                    |                4 |              6 |         1.50 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[1].genblk1[1].enemy/enemy_pos_x[10]_i_1__14_n_0   |                4 |              6 |         1.50 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[1].genblk1[2].enemy/killed[18]                    |                3 |              6 |         2.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[1].genblk1[0].enemy/killed[16]                    |                5 |              6 |         1.20 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[1].genblk1[0].enemy/enemy_pos_x[10]_i_1__15_n_0   |                4 |              6 |         1.50 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[3].genblk1[7].enemy/enemy_pos_x[10]_i_1__19_n_0   |                4 |              6 |         1.50 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[0].genblk1[15].enemy/enemy_pos_x[10]_i_1__32_n_0  |                2 |              6 |         3.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[0].genblk1[14].enemy/enemy_pos_x[10]_i_1__47_n_0  |                2 |              6 |         3.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[3].genblk1[9].enemy/enemy_pos_x[10]_i_1__21_n_0   |                3 |              6 |         2.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[3].genblk1[8].enemy/enemy_pos_x[10]_i_1__20_n_0   |                3 |              6 |         2.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[0].genblk1[13].enemy/enemy_pos_x[10]_i_1__46_n_0  |                3 |              6 |         2.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[3].genblk1[1].enemy/killed[49]                    |                4 |              7 |         1.75 |
+|  logclk_reg_BUFG[16]        | genblk1[2].genblk1[2].bullet/bullet_timer[6]_i_2__9_n_0  | genblk1[2].genblk1[2].bullet/bullet_timer[6]_i_1__9_n_0   |                2 |              7 |         3.50 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[3].genblk1[2].enemy/killed[50]                    |                3 |              7 |         2.33 |
+|  logclk_reg_BUFG[16]        | genblk1[1].genblk1[2].bullet/bullet_timer[6]_i_2__0_n_0  | genblk1[1].genblk1[2].bullet/bullet_timer[6]_i_1__0_n_0   |                2 |              7 |         3.50 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[0].genblk1[10].enemy/SR[0]                        |                3 |              7 |         2.33 |
+|  logclk_reg_BUFG[16]        | genblk1[2].genblk1[3].bullet/bullet_timer[6]_i_2__10_n_0 | genblk1[2].genblk1[3].bullet/bullet_timer[6]_i_1__8_n_0   |                2 |              7 |         3.50 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[2].genblk1[15].enemy/killed[47]                   |                5 |              7 |         1.40 |
+|  logclk_reg_BUFG[16]        | genblk1[0].genblk1[2].bullet/can_count_up                | genblk1[0].genblk1[2].bullet/reset_timer                  |                2 |              7 |         3.50 |
+|  logclk_reg_BUFG[16]        | genblk1[2].genblk1[1].bullet/sel__4                      | genblk1[2].genblk1[1].bullet/bullet_timer[6]_i_1__10_n_0  |                2 |              7 |         3.50 |
+|  logclk_reg_BUFG[16]        | genblk1[1].genblk1[3].bullet/bullet_timer[6]_i_2__1_n_0  | genblk1[1].genblk1[3].bullet/bullet_timer[6]_i_1__1_n_0   |                2 |              7 |         3.50 |
+|  logclk_reg_BUFG[16]        | genblk1[3].genblk1[1].bullet/can_count_up                | genblk1[3].genblk1[1].bullet/reset_timer                  |                2 |              7 |         3.50 |
+|  logclk_reg_BUFG[16]        | genblk1[3].genblk1[2].bullet/can_count_up                | genblk1[3].genblk1[2].bullet/reset_timer                  |                2 |              7 |         3.50 |
+|  logclk_reg_BUFG[16]        | genblk1[3].genblk1[3].bullet/can_count_up                | genblk1[3].genblk1[3].bullet/reset_timer                  |                2 |              7 |         3.50 |
+|  logclk_reg_BUFG[16]        | genblk1[1].genblk1[1].bullet/bullet_timer[6]_i_2__2_n_0  | genblk1[1].genblk1[1].bullet/bullet_timer[6]_i_1__2_n_0   |                2 |              7 |         3.50 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[3].genblk1[0].enemy/killed[48]                    |                5 |              7 |         1.40 |
+|  logclk_reg_BUFG[16]        | genblk1[0].genblk1[3].bullet/can_count_up__0             | genblk1[0].genblk1[3].bullet/reset_timer__0               |                2 |              7 |         3.50 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[0].genblk1[7].enemy/killed[7]                     |                4 |              7 |         1.75 |
+|  logclk_reg_BUFG[16]        | genblk1[0].genblk1[1].bullet/sel__3                      | genblk1[0].genblk1[1].bullet/bullet_timer[6]_i_1__7_n_0   |                2 |              7 |         3.50 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[3].genblk1[6].enemy/killed[54]                    |                4 |              7 |         1.75 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[3].genblk1[7].enemy/killed[55]                    |                3 |              7 |         2.33 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[3].genblk1[8].enemy/killed[56]                    |                4 |              7 |         1.75 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[3].genblk1[9].enemy/killed[57]                    |                3 |              7 |         2.33 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[3].genblk1[10].enemy/killed[58]                   |                5 |              7 |         1.40 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[3].genblk1[11].enemy/killed[59]                   |                5 |              7 |         1.40 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[3].genblk1[12].enemy/killed[60]                   |                3 |              7 |         2.33 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[0].genblk1[9].enemy/killed[9]                     |                3 |              7 |         2.33 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[3].genblk1[5].enemy/killed[53]                    |                4 |              7 |         1.75 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[3].genblk1[13].enemy/killed[61]                   |                4 |              7 |         1.75 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[3].genblk1[4].enemy/killed[52]                    |                4 |              7 |         1.75 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[3].genblk1[14].enemy/killed[62]                   |                6 |              7 |         1.17 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[3].genblk1[3].enemy/killed[51]                    |                4 |              7 |         1.75 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[3].genblk1[15].enemy/killed[63]                   |                3 |              7 |         2.33 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[0].genblk1[8].enemy/killed[8]                     |                4 |              7 |         1.75 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[0].genblk1[6].enemy/killed[6]                     |                4 |              7 |         1.75 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[2].genblk1[13].enemy/killed[45]                   |                4 |              7 |         1.75 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[0].genblk1[0].enemy/killed[0]                     |                3 |              7 |         2.33 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[0].genblk1[1].enemy/killed[1]                     |                4 |              7 |         1.75 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[0].genblk1[2].enemy/killed[2]                     |                5 |              7 |         1.40 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[0].genblk1[11].enemy/killed[11]                   |                3 |              7 |         2.33 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[0].genblk1[12].enemy/killed[12]                   |                4 |              7 |         1.75 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[0].genblk1[13].enemy/killed[13]                   |                5 |              7 |         1.40 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[0].genblk1[14].enemy/killed[14]                   |                3 |              7 |         2.33 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[0].genblk1[15].enemy/killed[15]                   |                3 |              7 |         2.33 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[0].genblk1[3].enemy/killed[3]                     |                4 |              7 |         1.75 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[0].genblk1[4].enemy/killed[4]                     |                4 |              7 |         1.75 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[2].genblk1[0].enemy/killed[32]                    |                4 |              7 |         1.75 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[2].genblk1[14].enemy/killed[46]                   |                4 |              7 |         1.75 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[2].genblk1[1].enemy/killed[33]                    |                5 |              7 |         1.40 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[2].genblk1[3].enemy/killed[35]                    |                4 |              7 |         1.75 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[2].genblk1[12].enemy/killed[44]                   |                4 |              7 |         1.75 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[2].genblk1[11].enemy/killed[43]                   |                4 |              7 |         1.75 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[2].genblk1[10].enemy/killed[42]                   |                5 |              7 |         1.40 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[2].genblk1[9].enemy/killed[41]                    |                3 |              7 |         2.33 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[0].genblk1[5].enemy/killed[5]                     |                4 |              7 |         1.75 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[2].genblk1[8].enemy/killed[40]                    |                3 |              7 |         2.33 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[2].genblk1[7].enemy/killed[39]                    |                3 |              7 |         2.33 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[2].genblk1[6].enemy/killed[38]                    |                4 |              7 |         1.75 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[2].genblk1[5].enemy/killed[37]                    |                4 |              7 |         1.75 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[2].genblk1[4].enemy/killed[36]                    |                3 |              7 |         2.33 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[2].genblk1[2].enemy/killed[34]                    |                4 |              7 |         1.75 |
+|  logclk_reg_BUFG[16]        | genblk2[2].genblk1[4].enemy/enemy_timer[7]_i_1__57_n_0   | genblk2[2].genblk1[1].enemy/btn_c                         |                3 |              8 |         2.67 |
+|  logclk_reg_BUFG[16]        | genblk2[1].genblk1[4].enemy/enemy_timer[7]_i_1__14_n_0   | genblk2[2].genblk1[1].enemy/btn_c                         |                2 |              8 |         4.00 |
+|  logclk_reg_BUFG[16]        | genblk2[3].genblk1[4].enemy/sel__2                       | genblk2[2].genblk1[1].enemy/btn_c                         |                2 |              8 |         4.00 |
+|  logclk_reg_BUFG[16]        | genblk2[1].genblk1[13].enemy/can_count_up                | genblk2[2].genblk1[1].enemy/btn_c                         |                3 |              8 |         2.67 |
+|  logclk_reg_BUFG[16]        | genblk2[0].genblk1[4].enemy/enemy_timer[7]_i_1__43_n_0   | genblk2[2].genblk1[1].enemy/btn_c                         |                2 |              8 |         4.00 |
+|  logclk_reg_BUFG[16]        | genblk2[2].genblk1[5].enemy/enemy_timer[8]_i_1__47_n_0   | genblk2[2].genblk1[1].enemy/btn_c                         |                4 |              9 |         2.25 |
+|  logclk_reg_BUFG[16]        | genblk2[0].genblk1[10].enemy/enemy_timer[8]_i_1__31_n_0  | genblk2[2].genblk1[1].enemy/btn_c                         |                2 |              9 |         4.50 |
+|  logclk_reg_BUFG[16]        | genblk2[0].genblk1[1].enemy/enemy_timer[8]_i_1__39_n_0   | genblk2[2].genblk1[1].enemy/btn_c                         |                3 |              9 |         3.00 |
+|  logclk_reg_BUFG[16]        | genblk2[0].genblk1[2].enemy/enemy_timer[8]_i_1__38_n_0   | genblk2[2].genblk1[1].enemy/btn_c                         |                3 |              9 |         3.00 |
+|  logclk_reg_BUFG[16]        | genblk2[0].genblk1[11].enemy/enemy_timer[8]_i_1__30_n_0  | genblk2[2].genblk1[1].enemy/btn_c                         |                3 |              9 |         3.00 |
+|  logclk_reg_BUFG[16]        | genblk2[0].genblk1[12].enemy/enemy_timer[8]_i_1__29_n_0  | genblk2[2].genblk1[1].enemy/btn_c                         |                2 |              9 |         4.50 |
+|  logclk_reg_BUFG[16]        | genblk2[0].genblk1[13].enemy/enemy_timer[8]_i_1__28_n_0  | genblk2[2].genblk1[1].enemy/btn_c                         |                4 |              9 |         2.25 |
+|  logclk_reg_BUFG[16]        | genblk2[0].genblk1[14].enemy/enemy_timer[8]_i_1__27_n_0  | genblk2[2].genblk1[1].enemy/btn_c                         |                3 |              9 |         3.00 |
+|  logclk_reg_BUFG[16]        | genblk2[0].genblk1[15].enemy/enemy_timer[8]_i_1__26_n_0  | genblk2[2].genblk1[1].enemy/btn_c                         |                3 |              9 |         3.00 |
+|  logclk_reg_BUFG[16]        | genblk2[1].genblk1[1].enemy/enemy_timer[8]_i_1__3_n_0    | genblk2[2].genblk1[1].enemy/btn_c                         |                3 |              9 |         3.00 |
+|  logclk_reg_BUFG[16]        | genblk2[1].genblk1[2].enemy/enemy_timer[8]_i_1__4_n_0    | genblk2[2].genblk1[1].enemy/btn_c                         |                3 |              9 |         3.00 |
+|  logclk_reg_BUFG[16]        | genblk2[1].genblk1[3].enemy/enemy_timer[8]_i_1__5_n_0    | genblk2[2].genblk1[1].enemy/btn_c                         |                3 |              9 |         3.00 |
+|  logclk_reg_BUFG[16]        | genblk2[1].genblk1[15].enemy/enemy_timer[8]_i_1__12_n_0  | genblk2[2].genblk1[1].enemy/btn_c                         |                3 |              9 |         3.00 |
+|  logclk_reg_BUFG[16]        | genblk2[0].genblk1[3].enemy/enemy_timer[8]_i_1__37_n_0   | genblk2[2].genblk1[1].enemy/btn_c                         |                3 |              9 |         3.00 |
+|  logclk_reg_BUFG[16]        | genblk2[1].genblk1[5].enemy/enemy_timer[8]_i_1__6_n_0    | genblk2[2].genblk1[1].enemy/btn_c                         |                4 |              9 |         2.25 |
+|  logclk_reg_BUFG[16]        | genblk2[2].genblk1[3].enemy/sel__5                       | genblk2[2].genblk1[1].enemy/btn_c                         |                3 |              9 |         3.00 |
+|  logclk_reg_BUFG[16]        | genblk2[1].genblk1[6].enemy/enemy_timer[8]_i_1__7_n_0    | genblk2[2].genblk1[1].enemy/btn_c                         |                3 |              9 |         3.00 |
+|  logclk_reg_BUFG[16]        | genblk2[1].genblk1[7].enemy/sel                          | genblk2[2].genblk1[1].enemy/btn_c                         |                3 |              9 |         3.00 |
+|  logclk_reg_BUFG[16]        | genblk2[1].genblk1[8].enemy/enemy_timer[8]_i_1__9_n_0    | genblk2[2].genblk1[1].enemy/btn_c                         |                3 |              9 |         3.00 |
+|  logclk_reg_BUFG[16]        | genblk2[1].genblk1[9].enemy/enemy_timer[8]_i_1__10_n_0   | genblk2[2].genblk1[1].enemy/btn_c                         |                3 |              9 |         3.00 |
+|  logclk_reg_BUFG[16]        | genblk2[1].genblk1[10].enemy/enemy_timer[8]_i_1__11_n_0  | genblk2[2].genblk1[1].enemy/btn_c                         |                3 |              9 |         3.00 |
+|  logclk_reg_BUFG[16]        | genblk2[2].genblk1[2].enemy/enemy_timer[8]_i_1__49_n_0   | genblk2[2].genblk1[1].enemy/btn_c                         |                3 |              9 |         3.00 |
+|  logclk_reg_BUFG[16]        | genblk2[2].genblk1[1].enemy/enemy_timer[8]_i_1__48_n_0   | genblk2[2].genblk1[1].enemy/btn_c                         |                3 |              9 |         3.00 |
+|  logclk_reg_BUFG[16]        | genblk2[3].genblk1[5].enemy/enemy_timer[8]_i_1__24_n_0   | genblk2[2].genblk1[1].enemy/btn_c                         |                3 |              9 |         3.00 |
+|  logclk_reg_BUFG[16]        | genblk2[2].genblk1[6].enemy/enemy_timer[8]_i_1__46_n_0   | genblk2[2].genblk1[1].enemy/btn_c                         |                3 |              9 |         3.00 |
+|  logclk_reg_BUFG[16]        | genblk2[2].genblk1[7].enemy/enemy_timer[8]_i_1__45_n_0   | genblk2[2].genblk1[1].enemy/btn_c                         |                3 |              9 |         3.00 |
+|  logclk_reg_BUFG[16]        | genblk2[2].genblk1[8].enemy/enemy_timer[8]_i_1__44_n_0   | genblk2[2].genblk1[1].enemy/btn_c                         |                2 |              9 |         4.50 |
+|  logclk_reg_BUFG[16]        | genblk2[0].genblk1[5].enemy/enemy_timer[8]_i_1__36_n_0   | genblk2[2].genblk1[1].enemy/btn_c                         |                3 |              9 |         3.00 |
+|  logclk_reg_BUFG[16]        | genblk2[2].genblk1[9].enemy/enemy_timer[8]_i_1__43_n_0   | genblk2[2].genblk1[1].enemy/btn_c                         |                3 |              9 |         3.00 |
+|  logclk_reg_BUFG[16]        | genblk2[2].genblk1[10].enemy/enemy_timer[8]_i_1__51_n_0  | genblk2[2].genblk1[1].enemy/btn_c                         |                3 |              9 |         3.00 |
+|  logclk_reg_BUFG[16]        | genblk2[2].genblk1[11].enemy/enemy_timer[8]_i_1__52_n_0  | genblk2[2].genblk1[1].enemy/btn_c                         |                3 |              9 |         3.00 |
+|  logclk_reg_BUFG[16]        | genblk2[2].genblk1[12].enemy/enemy_timer[8]_i_1__53_n_0  | genblk2[2].genblk1[1].enemy/btn_c                         |                3 |              9 |         3.00 |
+|  logclk_reg_BUFG[16]        | genblk2[2].genblk1[13].enemy/enemy_timer[8]_i_1__42_n_0  | genblk2[2].genblk1[1].enemy/btn_c                         |                3 |              9 |         3.00 |
+|  logclk_reg_BUFG[16]        | genblk2[2].genblk1[14].enemy/enemy_timer[8]_i_1__41_n_0  | genblk2[2].genblk1[1].enemy/btn_c                         |                3 |              9 |         3.00 |
+|  logclk_reg_BUFG[16]        | genblk2[3].genblk1[2].enemy/enemy_timer[8]_i_1__22_n_0   | genblk2[2].genblk1[1].enemy/btn_c                         |                2 |              9 |         4.50 |
+|  logclk_reg_BUFG[16]        | genblk2[0].genblk1[6].enemy/enemy_timer[8]_i_1__35_n_0   | genblk2[2].genblk1[1].enemy/btn_c                         |                4 |              9 |         2.25 |
+|  logclk_reg_BUFG[16]        | genblk2[3].genblk1[3].enemy/enemy_timer[8]_i_1__23_n_0   | genblk2[2].genblk1[1].enemy/btn_c                         |                3 |              9 |         3.00 |
+|  logclk_reg_BUFG[16]        | genblk2[0].genblk1[9].enemy/enemy_timer[8]_i_1__32_n_0   | genblk2[2].genblk1[1].enemy/btn_c                         |                3 |              9 |         3.00 |
+|  logclk_reg_BUFG[16]        | genblk2[3].genblk1[6].enemy/enemy_timer[8]_i_1__25_n_0   | genblk2[2].genblk1[1].enemy/btn_c                         |                3 |              9 |         3.00 |
+|  logclk_reg_BUFG[16]        | genblk2[3].genblk1[7].enemy/sel__1                       | genblk2[2].genblk1[1].enemy/btn_c                         |                3 |              9 |         3.00 |
+|  logclk_reg_BUFG[16]        | genblk2[3].genblk1[8].enemy/enemy_timer[8]_i_1__17_n_0   | genblk2[2].genblk1[1].enemy/btn_c                         |                2 |              9 |         4.50 |
+|  logclk_reg_BUFG[16]        | genblk2[3].genblk1[9].enemy/enemy_timer[8]_i_1__18_n_0   | genblk2[2].genblk1[1].enemy/btn_c                         |                4 |              9 |         2.25 |
+|  logclk_reg_BUFG[16]        | genblk2[3].genblk1[10].enemy/enemy_timer[8]_i_1__19_n_0  | genblk2[2].genblk1[1].enemy/btn_c                         |                3 |              9 |         3.00 |
+|  logclk_reg_BUFG[16]        | genblk2[3].genblk1[11].enemy/enemy_timer[8]_i_1__20_n_0  | genblk2[2].genblk1[1].enemy/btn_c                         |                3 |              9 |         3.00 |
+|  logclk_reg_BUFG[16]        | genblk2[3].genblk1[12].enemy/enemy_timer[8]_i_1__21_n_0  | genblk2[2].genblk1[1].enemy/btn_c                         |                2 |              9 |         4.50 |
+|  logclk_reg_BUFG[16]        | genblk2[0].genblk1[7].enemy/enemy_timer[8]_i_1__34_n_0   | genblk2[2].genblk1[1].enemy/btn_c                         |                2 |              9 |         4.50 |
+|  logclk_reg_BUFG[16]        | genblk2[3].genblk1[13].enemy/sel__0                      | genblk2[2].genblk1[1].enemy/btn_c                         |                3 |              9 |         3.00 |
+|  logclk_reg_BUFG[16]        | genblk2[3].genblk1[14].enemy/enemy_timer[8]_i_1__14_n_0  | genblk2[2].genblk1[1].enemy/btn_c                         |                3 |              9 |         3.00 |
+|  logclk_reg_BUFG[16]        | genblk2[3].genblk1[15].enemy/enemy_timer[8]_i_1__15_n_0  | genblk2[2].genblk1[1].enemy/btn_c                         |                3 |              9 |         3.00 |
+|  logclk_reg_BUFG[16]        | genblk2[0].genblk1[8].enemy/enemy_timer[8]_i_1__33_n_0   | genblk2[2].genblk1[1].enemy/btn_c                         |                2 |              9 |         4.50 |
+|  clock_wizard/inst/clk_out1 | vga/vcount[9]_i_2_n_0                                    | vga/vcount[9]_i_1_n_0                                     |                2 |             10 |         5.00 |
+|  clock_wizard/inst/clk_out1 |                                                          | vga/hcount[10]_i_1_n_0                                    |                4 |             11 |         2.75 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk1[2].genblk1[2].bullet/hit_enemy[15]_i_1__12_n_0    |               12 |             16 |         1.33 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk1[2].genblk1[3].bullet/hit_enemy[15]_i_1__13_n_0    |               15 |             16 |         1.07 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk1[0].genblk1[0].bullet/hit_enemy[15]_i_1__10_n_0    |               14 |             16 |         1.14 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk1[0].genblk1[1].bullet/hit_enemy[15]_i_1__9_n_0     |               14 |             16 |         1.14 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk1[0].genblk1[2].bullet/hit_enemy[15]_i_1__8_n_0     |               16 |             16 |         1.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk1[3].genblk1[0].bullet/hit_enemy[15]_i_1__7_n_0     |               16 |             16 |         1.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk1[3].genblk1[1].bullet/hit_enemy[15]_i_1__6_n_0     |               16 |             16 |         1.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk1[3].genblk1[2].bullet/hit_enemy[15]_i_1__4_n_0     |               16 |             16 |         1.00 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk1[3].genblk1[3].bullet/hit_enemy[15]_i_1__5_n_0     |               14 |             16 |         1.14 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk1[0].genblk1[3].bullet/hit_enemy[15]_i_1_n_0        |               15 |             16 |         1.07 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk1[2].genblk1[1].bullet/hit_enemy[15]_i_1__11_n_0    |               14 |             16 |         1.14 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk1[1].genblk1[3].bullet/hit_enemy[15]_i_1__1_n_0     |               14 |             16 |         1.14 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk1[1].genblk1[1].bullet/hit_enemy[15]_i_1__3_n_0     |               15 |             16 |         1.07 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk1[2].genblk1[0].bullet/hit_enemy[15]_i_1__14_n_0    |               13 |             16 |         1.23 |
 |  clock_wizard/inst/clk_out2 |                                                          | logclk[0]_i_1_n_0                                         |                5 |             17 |         3.40 |
-|  logclk_reg_BUFG[16]        |                                                          | vga/clear                                                 |               18 |             18 |         1.00 |
-|  logclk_reg_BUFG[16]        |                                                          |                                                           |               21 |             24 |         1.14 |
-|  clock_wizard/inst/clk_out1 | vga/curr_y0                                              | vga/clear                                                 |                9 |             25 |         2.78 |
-|  clock_wizard/inst/clk_out1 | vga/curr_x0                                              | vga/clear                                                 |                9 |             30 |         3.33 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk1[0].genblk1[1].bullet/bullet_pos_x[10]_i_1__9_n_0  |               11 |             17 |         1.55 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk1[0].genblk1[0].bullet/bullet_pos_x[10]_i_1__10_n_0 |               11 |             19 |         1.73 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk1[1].genblk1[2].bullet/bullet_pos_x[10]_i_1__0_n_0  |               14 |             22 |         1.57 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk1[1].genblk1[3].bullet/clear                        |               14 |             22 |         1.57 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk1[2].genblk1[1].bullet/clear__1                     |               13 |             22 |         1.69 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk1[1].genblk1[1].bullet/clear__0                     |               12 |             23 |         1.92 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk1[2].genblk1[2].bullet/bullet_pos_x[10]_i_1__12_n_0 |               16 |             23 |         1.44 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk1[2].genblk1[3].bullet/bullet_pos_x[10]_i_1__13_n_0 |               14 |             23 |         1.64 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk1[2].genblk1[0].bullet/bullet_pos_x[10]_i_1__14_n_0 |               15 |             24 |         1.60 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk1[1].genblk1[0].bullet/bullet_pos_x[10]_i_1__3_n_0  |               15 |             25 |         1.67 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk1[0].genblk1[2].bullet/bullet_pos_x0                |                9 |             26 |         2.89 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk1[3].genblk1[2].bullet/bullet_pos_x0                |               18 |             26 |         1.44 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk1[0].genblk1[3].bullet/bullet_pos_x0__32            |               15 |             26 |         1.73 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk1[3].genblk1[1].bullet/bullet_pos_x0                |               16 |             27 |         1.69 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk1[3].genblk1[3].bullet/bullet_pos_x0                |               18 |             27 |         1.50 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk1[3].genblk1[0].bullet/bullet_pos_x0                |               19 |             30 |         1.58 |
+|  clock_wizard/inst/clk_out1 | vga/curr_y0                                              | vga/bullet_pos_x3                                         |                9 |             30 |         3.33 |
+|  clock_wizard/inst/clk_out1 | vga/curr_x0                                              | vga/bullet_pos_x3                                         |               16 |             44 |         2.75 |
+|  logclk_reg_BUFG[16]        |                                                          | genblk2[2].genblk1[1].enemy/btn_c                         |               73 |             92 |         1.26 |
+|  logclk_reg_BUFG[16]        | genblk2[2].genblk1[15].enemy/rst                         |                                                           |              346 |            512 |         1.48 |
+|  logclk_reg_BUFG[16]        |                                                          |                                                           |              376 |            553 |         1.47 |
 +-----------------------------+----------------------------------------------------------+-----------------------------------------------------------+------------------+----------------+--------------+
 
 
