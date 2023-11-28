@@ -25,7 +25,7 @@ module prng_tb;
     reg clk;
     reg rst;
     
-    wire [`DELAY_SIZE-1:0] rnd;
+    wire [`ENEMY_DELAY_SIZE-1:0] rnd;
     
     prng uut (.clk(clk), .rst(rst), .rnd(rnd));
     
@@ -45,7 +45,7 @@ module prng_tb;
     end
     
     initial begin
-        $display("clock rnd");
-        $monitor("%b,%b", clk, rnd);
+        // $display("clock rnd");
+        // $monitor("%b,%b", clk, rnd);
     end      
 endmodule

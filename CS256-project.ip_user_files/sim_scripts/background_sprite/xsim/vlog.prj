@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../CS256-project.gen/sources_1/ip/background_sprite/sim/background_sprite.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

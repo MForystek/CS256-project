@@ -24,30 +24,28 @@
 `include <constants.v>
 
 
-module prng (
+module prng #(parameter SEED = `RNG_SIZE'hF) (
     input clk, input rst,
-    output reg [`DELAY_SIZE-1:0] rnd
+    output reg [`RNG_SIZE-1:0] rnd
     );
 
-    reg [`DELAY_SIZE-1:0] random, random_next;
-    reg [3:0] count, count_next; //to keep track of the shifts register size >= log2(DELAY_SIZE)
+    reg [`RNG_SIZE-1:0] random;
+    reg [`LOG_RNG_SIZE-1:0] count; //to keep track of the shifts register size >= log2(RNG_SIZE)
 
-    wire feedback = random[15] ^ random[14];
+    wire feedback = random[15] ^ random[14] ^ random[12] ^ random[3];
 
     always @ (posedge clk) begin
         if (!rst) begin
-            random <= `DELAY_SIZE'hF; //An LFSR cannot have an all 0 state, thus reset to FF
-            count <= 4'd0;
-        end else begin
-            random <= random_next;
-            count <= count_next;
+            random <= SEED; //An LFSR cannot have an all 0 state, thus reset to SEED
+            count <= `LOG_RNG_SIZE'd0;
+        end else begin           
+            random <= {random[`RNG_SIZE-2:0], feedback}; //shift left the xor'd every posedge clock
+            count <= count + 1'b1;
             
-            random_next <= {random[`DELAY_SIZE-2:0], feedback}; //shift left the xor'd every posedge clock
-            count_next <= count + 1'b1;
-            
-            if (count == `DELAY_SIZE)
-                count <= 4'd0;
-                rnd <= random; //assign the random number to output after DELAY_SIZE shifts
+            if (count == `RNG_SIZE) begin
+                count <= `LOG_RNG_SIZE'd0;
+                rnd <= random; //assign the random number to output after RNG_SIZE shifts
+            end
         end
     end
     

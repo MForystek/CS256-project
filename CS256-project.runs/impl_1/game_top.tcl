@@ -134,10 +134,14 @@ OPTRACE "set parameters" START { }
   set_property parent.project_path /rhome/forystmj/CS256-project/CS256-project.xpr [current_project]
   set_property ip_output_repo /rhome/forystmj/CS256-project/CS256-project.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  set_property XPM_LIBRARIES XPM_CDC [current_project]
+  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
   add_files -quiet /rhome/forystmj/CS256-project/CS256-project.runs/synth_1/game_top.dcp
+  read_ip -quiet /rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/ip/enemy1_sprite/enemy1_sprite.xci
+  read_ip -quiet /rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/ip/bullet_sprite/bullet_sprite.xci
+  read_ip -quiet /rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/ip/cannon_sprite/cannon_sprite.xci
+  read_ip -quiet /rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/ip/background_sprite/background_sprite.xci
   read_ip -quiet /rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
 OPTRACE "read constraints: implementation" START { }
   read_xdc /rhome/forystmj/CS256-project/CS256-project.srcs/constrs_1/imports/CS256-project/nexys-a7-100t-master.xdc
@@ -305,7 +309,7 @@ set rc [catch {
   create_msg_db write_bitstream.pb
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }
-  set_property XPM_LIBRARIES XPM_CDC [current_project]
+  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
   catch { write_mem_info -force -no_partial_mmi game_top.mmi }
 OPTRACE "write_bitstream setup" END { }
 OPTRACE "write_bitstream" START { }
