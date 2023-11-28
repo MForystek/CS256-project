@@ -10,7 +10,7 @@ module drawsprite(
     // may need to read from the .coe file's dimensions
     parameter SPRITE_WIDTH = 88;
     parameter SPRITE_HEIGHT = 108;
-    parameter SPRITE_ADDR_WIDTH = 11;
+    parameter SPRITE_ADDR_WIDTH = 16;
 
     wire [11:0] sprite_data_out;
     reg [SPRITE_ADDR_WIDTH-1:0] address;
@@ -23,7 +23,7 @@ module drawsprite(
 
     parameter BACKGROUND_WIDTH = 799;
     parameter BACKGROUND_HEIGHT = 1279;
-    parameter BACKGROUND_ADDR_WIDTH = 11;
+    parameter BACKGROUND_ADDR_WIDTH = 20;
 
     wire [11:0] background_data_out;
     reg [BACKGROUND_ADDR_WIDTH-1:0] background_address;
