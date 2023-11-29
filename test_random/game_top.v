@@ -129,44 +129,24 @@ module game_top(
     wire [`CANNONS_NUM*`ENEMIES_PER_CANNON-1:0] killed;
     wire [`CANNONS_NUM*`ENEMIES_PER_CANNON-1:0] gameover;
     assign global_gameover = |gameover;
-
-    function is_in_random_list;
-        input [N-1:0] number;
-        input integer index;
-        integer j;
-        begin
-            is_in_random_list = 0;
-            for (j = 0; j < index; j = j + 1) begin
-                if (random_numbers[j] == number) begin
-                    is_in_random_list = 1;
-                    break;
-                end
-            end
-        end
-    endfunction
-
-    reg [N-1:0] random_numbers[`CANNONS_NUM * `ENEMIES_PER_CANNON - 1:0];
-    // generate_random_list #(.num_bits(N), .SEED(10'b1010101010), .POS(5)) generate_random_list (
-    //     .clk(logclk[16]), .rst(rst),
-    //     .random_number(random_numbers[count]));
     
+    localparam [`CANNONS_NUM * `ENEMIES_PER_CANNON - 1:0] random_number_list = `RANDOM_ENEMY_LIST;
+    wire enemy_index;
+    wire is_in_random_list;
     generate
         genvar k; genvar l;
         for (k = 0; k < `CANNONS_NUM; k = k + 1) begin
             for (l = 0; l < `ENEMIES_PER_CANNON; l = l + 1) begin
-                int enemy_index = k * `ENEMIES_PER_CANNON + l;
-                if (is_in_random_list(enemy_index, random_number_list)) begin
-                    enemy #(.TOWARDS_CANNON(k), .ENEMY_NUM(l)) enemy (
-                        .logclk(logclk[16]), .rst(rst), .btn_c(btn_c),
-                        .line_bullet_pos_x(all_bullet_pos_x[11*`BULLETS_PER_CANNON*k +: 11*`BULLETS_PER_CANNON]),
-                        .enemy_pos_x(enemy_pos_x[k][l]), .enemy_pos_y(enemy_pos_y[k][l]),
-                        .global_gameover(global_gameover),
-                        .killed(killed[`ENEMIES_PER_CANNON*k + l]), .gameover(gameover[`ENEMIES_PER_CANNON*k + l]));
-                    assign all_enemy_pos_x[11*`ENEMIES_PER_CANNON*k+11*l +: 11] = enemy_pos_x[k][l];
-                    assign all_enemy_pos_y[10*`ENEMIES_PER_CANNON*k+10*l +: 10] = enemy_pos_y[k][l];
-                end else begin
-                    // Skip or assign default values
-                end
+                assign enemy_index = k * `ENEMIES_PER_CANNON + l;
+                enemy #(.TOWARDS_CANNON(k), .ENEMY_NUM(l)) enemy (
+                    .logclk(logclk[16]), .rst(rst), .btn_c(btn_c),
+                    .line_bullet_pos_x(all_bullet_pos_x[11*`BULLETS_PER_CANNON*k +: 11*`BULLETS_PER_CANNON]),
+                    .enemy_pos_x(enemy_pos_x[k][l]), .enemy_pos_y(enemy_pos_y[k][l]),
+                    .global_gameover(global_gameover),
+                    .is_in_random_list(random_number_list[enemy_index]),
+                    .killed(killed[`ENEMIES_PER_CANNON*k + l]), .gameover(gameover[`ENEMIES_PER_CANNON*k + l]));
+                assign all_enemy_pos_x[11*`ENEMIES_PER_CANNON*k+11*l +: 11] = enemy_pos_x[k][l];
+                assign all_enemy_pos_y[10*`ENEMIES_PER_CANNON*k+10*l +: 10] = enemy_pos_y[k][l];
             end
         end
     endgenerate
