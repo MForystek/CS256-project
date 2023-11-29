@@ -21,8 +21,8 @@ module drawsprite(
         .douta(sprite_data_out)
     );
 
-    parameter BACKGROUND_WIDTH = 799;
-    parameter BACKGROUND_HEIGHT = 1279;
+    parameter BACKGROUND_WIDTH = 1279;
+    parameter BACKGROUND_HEIGHT = 799;
     parameter BACKGROUND_ADDR_WIDTH = 20;
 
     wire [11:0] background_data_out;
@@ -44,7 +44,6 @@ module drawsprite(
             blue_sprite <= sprite_data_out[3:0];
         end else begin
             // Output background color or keep the pixel transparent
-            // background_address <= (next_pixel_y * BACKGROUND_WIDTH) + next_pixel_x;
             background_address <= ((next_pixel_y >> 1) * (BACKGROUND_WIDTH >> 1)) + (next_pixel_x >> 1);
             red_sprite <= background_data_out[11:8];
             green_sprite <= background_data_out[7:4];
