@@ -24,13 +24,11 @@
 // TODO - Game ends when the enemy_pos_x + enemt_width intersects with the cannon_pos_x + cannon_width
 // TODO - Figure out the way for random timer for group of enemies
 // TODO - Display on the FPGA digits display the number of enemies and bullets left
-module enemy #(
-        parameter TOWARDS_CANNON = 0, 
-        parameter ENEMY_NUM = 0
-    )(
+module enemy #(parameter TOWARDS_CANNON = 0, parameter ENEMY_NUM = 0)(
     input logclk, input rst, input btn_c,
     input [11*`BULLETS_PER_CANNON-1:0] line_bullet_pos_x,
     input global_gameover,
+    input is_in_random_list,
     output reg [10:0] enemy_pos_x, output reg [9:0] enemy_pos_y,
     output reg killed, output gameover
     );
