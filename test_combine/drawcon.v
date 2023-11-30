@@ -21,8 +21,8 @@
 `include <constants.v>
 
 module drawcon(
-    input wire clk,
     //input [10:0] block_pos_x, input [9:0] block_pos_y,
+    input pixclk,
     input [11*`CANNONS_NUM*`BULLETS_PER_CANNON-1:0] all_bullet_pos_x,
     input [10*`CANNONS_NUM*`BULLETS_PER_CANNON-1:0] all_bullet_pos_y,
     input [11*`CANNONS_NUM*`ENEMIES_PER_CANNON-1:0] all_enemy_pos_x,
@@ -34,14 +34,34 @@ module drawcon(
 // ----------------------------------------------------------------------------------------------------------    
 // Background
 // ----------------------------------------------------------------------------------------------------------    
-    localparam [11:0] BACKGROUND_RGB = 12'h485;
+    reg [11:0] background_rgb = 12'h485;
+    
+    parameter BACKGROUND_ADDR_WIDTH = 20;
+
+    wire [11:0] background_data_out;
+    reg [BACKGROUND_ADDR_WIDTH-1:0] background_address;
+
+    background_sprite background_sprite1 (
+        .clka(pixclk),
+        .addra(background_address),
+        .douta(background_data_out)
+    );
+    reg [10:0] next_pixel_x;
+    reg [9:0] next_pixel_y;
+    always @(posedge pixclk) begin
+        next_pixel_x <= draw_x + 11'd2; // Account for 2 clock cycle delay
+        next_pixel_y <= draw_y;
+        
+        background_address <= ((next_pixel_y >> 3) * (`WIDTH >> 3)) + (next_pixel_x >> 3);
+        background_rgb <= background_data_out;
+    end
     
 // ----------------------------------------------------------------------------------------------------------    
 // Frame
 // ----------------------------------------------------------------------------------------------------------
     wire draw_frame = draw_x < `FRAME_WIDTH || draw_x > `WIDTH - `FRAME_WIDTH 
                      || draw_y < `FRAME_HEIGHT || draw_y > `HEIGHT - `FRAME_HEIGHT;
-    wire [11:0] frame_rgb = draw_frame ? 12'hFFF : 12'h000;
+    wire [11:0] frame_rgb = draw_frame ? 12'h000 : `MASK;
     
 // ----------------------------------------------------------------------------------------------------------
 // Moving block
@@ -59,7 +79,7 @@ module drawcon(
         genvar h;
         for (h = 0; h < `CANNONS_NUM; h = h + 1) begin
             cannon_draw #(.CANNON_NUM(h)) cannon_draw (
-                .clk(clk),
+                .pixclk(pixclk),
                 .draw_x(draw_x), .draw_y(draw_y),
                 .cannon_rgb(cannon_rgb[h]));
         end
@@ -77,7 +97,7 @@ module drawcon(
         for (i = 0; i < `CANNONS_NUM; i = i + 1) begin
             for (j = 0; j < `BULLETS_PER_CANNON; j = j + 1) begin
                 bullet_draw bullet_draw(
-                    .clk(clk),
+                    .pixclk(pixclk),
                     .draw_x(draw_x), .draw_y(draw_y),
                     .bullet_pos_x(all_bullet_pos_x[11*`BULLETS_PER_CANNON*i+11*j +: 11]),
                     .bullet_pos_y(all_bullet_pos_y[10*`BULLETS_PER_CANNON*i+10*j +: 10]),
@@ -100,7 +120,7 @@ module drawcon(
         for (k = 0; k < `CANNONS_NUM; k = k + 1) begin
             for (l = 0; l < `ENEMIES_PER_CANNON; l = l + 1) begin
                 enemy_draw enemy_draw(
-                    .clk(clk),
+                    .pixclk(pixclk),
                     .draw_x(draw_x), .draw_y(draw_y),
                     .enemy_pos_x(all_enemy_pos_x[11*`ENEMIES_PER_CANNON*k+11*l +: 11]),
                     .enemy_pos_y(all_enemy_pos_y[10*`ENEMIES_PER_CANNON*k+10*l +: 10]),
@@ -119,27 +139,27 @@ module drawcon(
     
     integer ii; integer jj;
     always @ * begin
-        rgb = BACKGROUND_RGB;
+        rgb = background_rgb;
         
         for (ii = 0; ii < `CANNONS_NUM; ii = ii + 1) begin
             for (jj = 0; jj < `ENEMIES_PER_CANNON; jj = jj + 1) begin
-                if (enemy_rgb[ii][jj] != 12'h0) rgb = enemy_rgb[ii][jj];
+                if (enemy_rgb[ii][jj] != `MASK) rgb = enemy_rgb[ii][jj];
             end 
         end
         
         for (ii = 0; ii < `CANNONS_NUM; ii = ii + 1) begin
             for (jj = 0; jj < `BULLETS_PER_CANNON; jj = jj + 1) begin
-                if (bullet_rgb[ii][jj] != 12'h0) rgb = bullet_rgb[ii][jj];
+                if (bullet_rgb[ii][jj] != `MASK) rgb = bullet_rgb[ii][jj];
             end
         end
         
-        if (frame_rgb != 12'h0) rgb = frame_rgb;
+        if (frame_rgb != `MASK) rgb = frame_rgb;
         
         for (ii = 0; ii < `CANNONS_NUM; ii = ii + 1) begin
-            if (cannon_rgb[ii] != 12'h0) rgb = cannon_rgb[ii];
+            if (cannon_rgb[ii] != `MASK) rgb = cannon_rgb[ii];
         end
         
-        //if (block_rgb != 12'h0) rgb = block_rgb;
+        //if (block_rgb != `MASK) rgb = block_rgb;
     end
     
     assign {r, g, b} = rgb;
