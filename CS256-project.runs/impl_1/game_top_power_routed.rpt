@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-| Date             : Thu Nov 30 12:06:30 2023
+| Date             : Thu Nov 30 12:20:55 2023
 | Host             : 25da8ddd604d running 64-bit Ubuntu 20.04.6 LTS
 | Command          : report_power -file game_top_power_routed.rpt -pb game_top_power_summary_routed.pb -rpx game_top_power_routed.rpx
 | Design           : game_top
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.460        |
+| Total On-Chip Power (W)  | 0.398        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.355        |
-| Device Static (W)        | 0.105        |
+| Dynamic (W)              | 0.295        |
+| Device Static (W)        | 0.103        |
 | Effective TJA (C/W)      | 4.6          |
-| Max Ambient (C)          | 82.9         |
-| Junction Temperature (C) | 27.1         |
+| Max Ambient (C)          | 83.2         |
+| Junction Temperature (C) | 26.8         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,21 +52,20 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.021 |        6 |       --- |             --- |
-| Slice Logic    |     0.094 |    55755 |       --- |             --- |
-|   LUT as Logic |     0.088 |    25853 |     63400 |           40.78 |
-|   CARRY4       |     0.005 |     6819 |     15850 |           43.02 |
-|   Register     |    <0.001 |     8920 |    126800 |            7.03 |
-|   BUFG         |    <0.001 |        2 |        32 |            6.25 |
-|   F7/F8 Muxes  |    <0.001 |        1 |     63400 |           <0.01 |
-|   Others       |     0.000 |      910 |       --- |             --- |
-| Signals        |     0.071 |    25884 |       --- |             --- |
-| Block RAM      |     0.016 |    119.5 |       135 |           88.52 |
+| Clocks         |     0.015 |        6 |       --- |             --- |
+| Slice Logic    |     0.070 |    41912 |       --- |             --- |
+|   LUT as Logic |     0.066 |    19288 |     63400 |           30.42 |
+|   CARRY4       |     0.004 |     5123 |     15850 |           32.32 |
+|   Register     |    <0.001 |     6795 |    126800 |            5.36 |
+|   BUFG         |    <0.001 |        3 |        32 |            9.38 |
+|   Others       |     0.000 |      691 |       --- |             --- |
+| Signals        |     0.051 |    19398 |       --- |             --- |
+| Block RAM      |     0.013 |       91 |       135 |           67.41 |
 | MMCM           |     0.094 |        1 |         6 |           16.67 |
-| DSPs           |     0.037 |       72 |       240 |           30.00 |
-| I/O            |     0.022 |       36 |       210 |           17.14 |
-| Static Power   |     0.105 |          |           |                 |
-| Total          |     0.460 |          |           |                 |
+| DSPs           |     0.031 |       54 |       240 |           22.50 |
+| I/O            |     0.020 |       35 |       210 |           16.67 |
+| Static Power   |     0.103 |          |           |                 |
+| Total          |     0.398 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -76,7 +75,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.257 |       0.237 |      0.020 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.198 |       0.180 |      0.019 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.071 |       0.053 |      0.018 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.010 |       0.006 |      0.004 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -85,7 +84,7 @@ Table of Contents
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vccbram   |       1.000 |     0.005 |       0.001 |      0.003 |       NA    | Unspecified | NA         |
+| Vccbram   |       1.000 |     0.004 |       0.001 |      0.002 |       NA    | Unspecified | NA         |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |       NA    | Unspecified | NA         |
@@ -148,32 +147,36 @@ Table of Contents
 +---------------------------------------+-----------+
 | Name                                  | Power (W) |
 +---------------------------------------+-----------+
-| game_top                              |     0.355 |
+| game_top                              |     0.295 |
 |   clock_wizard                        |     0.094 |
 |     inst                              |     0.094 |
-|   drawcon                             |     0.081 |
+|   drawcon                             |     0.065 |
 |     background_sprite                 |     0.004 |
 |       U0                              |     0.004 |
-|     genblk1[0].cannon_draw            |     0.003 |
-|       cannon_sprite                   |     0.003 |
 |     genblk1[1].cannon_draw            |     0.003 |
 |       cannon_sprite                   |     0.003 |
 |     genblk1[2].cannon_draw            |     0.004 |
 |       cannon_sprite                   |     0.003 |
 |     genblk1[3].cannon_draw            |     0.004 |
 |       cannon_sprite                   |     0.003 |
-|     genblk2[1].genblk1[3].bullet_draw |     0.001 |
-|     genblk3[0].genblk1[4].enemy_draw  |     0.001 |
-|     genblk3[0].genblk1[7].enemy_draw  |     0.001 |
-|     genblk3[1].genblk1[6].enemy_draw  |     0.001 |
+|     genblk2[1].genblk1[0].bullet_draw |     0.001 |
+|     genblk3[1].genblk1[1].enemy_draw  |     0.001 |
+|     genblk3[1].genblk1[2].enemy_draw  |     0.001 |
+|     genblk3[1].genblk1[3].enemy_draw  |     0.001 |
+|     genblk3[1].genblk1[7].enemy_draw  |     0.001 |
+|     genblk3[1].genblk1[8].enemy_draw  |     0.001 |
+|     genblk3[1].genblk1[9].enemy_draw  |     0.001 |
+|     genblk3[2].genblk1[10].enemy_draw |     0.001 |
 |     genblk3[2].genblk1[11].enemy_draw |     0.001 |
-|     genblk3[2].genblk1[7].enemy_draw  |     0.001 |
-|     genblk3[2].genblk1[8].enemy_draw  |     0.001 |
-|     genblk3[3].genblk1[1].enemy_draw  |     0.001 |
-|   genblk1[0].genblk1[0].bullet        |     0.002 |
-|   genblk1[0].genblk1[1].bullet        |     0.002 |
-|   genblk1[0].genblk1[2].bullet        |     0.002 |
-|   genblk1[0].genblk1[3].bullet        |     0.002 |
+|     genblk3[2].genblk1[12].enemy_draw |     0.001 |
+|     genblk3[2].genblk1[13].enemy_draw |     0.001 |
+|     genblk3[2].genblk1[14].enemy_draw |     0.001 |
+|     genblk3[2].genblk1[15].enemy_draw |     0.001 |
+|     genblk3[2].genblk1[3].enemy_draw  |     0.001 |
+|     genblk3[2].genblk1[9].enemy_draw  |     0.001 |
+|     genblk3[3].genblk1[10].enemy_draw |     0.001 |
+|     genblk3[3].genblk1[11].enemy_draw |     0.001 |
+|     genblk3[3].genblk1[7].enemy_draw  |     0.001 |
 |   genblk1[1].genblk1[0].bullet        |     0.002 |
 |   genblk1[1].genblk1[1].bullet        |     0.002 |
 |   genblk1[1].genblk1[2].bullet        |     0.002 |
@@ -186,38 +189,22 @@ Table of Contents
 |   genblk1[3].genblk1[1].bullet        |     0.002 |
 |   genblk1[3].genblk1[2].bullet        |     0.002 |
 |   genblk1[3].genblk1[3].bullet        |     0.002 |
-|   genblk2[0].genblk1[0].enemy         |     0.002 |
-|   genblk2[0].genblk1[10].enemy        |     0.002 |
-|   genblk2[0].genblk1[11].enemy        |     0.002 |
-|   genblk2[0].genblk1[12].enemy        |     0.002 |
-|   genblk2[0].genblk1[13].enemy        |     0.002 |
-|   genblk2[0].genblk1[14].enemy        |     0.002 |
-|   genblk2[0].genblk1[15].enemy        |     0.002 |
-|   genblk2[0].genblk1[1].enemy         |     0.002 |
-|   genblk2[0].genblk1[2].enemy         |     0.002 |
-|   genblk2[0].genblk1[3].enemy         |     0.001 |
-|   genblk2[0].genblk1[4].enemy         |     0.002 |
-|   genblk2[0].genblk1[5].enemy         |     0.011 |
-|   genblk2[0].genblk1[6].enemy         |     0.002 |
-|   genblk2[0].genblk1[7].enemy         |     0.001 |
-|   genblk2[0].genblk1[8].enemy         |     0.002 |
-|   genblk2[0].genblk1[9].enemy         |     0.002 |
 |   genblk2[1].genblk1[0].enemy         |     0.001 |
 |   genblk2[1].genblk1[10].enemy        |     0.002 |
 |   genblk2[1].genblk1[11].enemy        |     0.002 |
 |   genblk2[1].genblk1[12].enemy        |     0.001 |
-|   genblk2[1].genblk1[13].enemy        |     0.002 |
+|   genblk2[1].genblk1[13].enemy        |     0.001 |
 |   genblk2[1].genblk1[14].enemy        |     0.001 |
 |   genblk2[1].genblk1[15].enemy        |     0.002 |
-|   genblk2[1].genblk1[1].enemy         |     0.002 |
-|   genblk2[1].genblk1[2].enemy         |     0.002 |
-|   genblk2[1].genblk1[3].enemy         |     0.002 |
+|   genblk2[1].genblk1[1].enemy         |     0.001 |
+|   genblk2[1].genblk1[2].enemy         |     0.001 |
+|   genblk2[1].genblk1[3].enemy         |     0.001 |
 |   genblk2[1].genblk1[4].enemy         |     0.002 |
-|   genblk2[1].genblk1[5].enemy         |     0.002 |
-|   genblk2[1].genblk1[6].enemy         |     0.002 |
+|   genblk2[1].genblk1[5].enemy         |     0.007 |
+|   genblk2[1].genblk1[6].enemy         |     0.001 |
 |   genblk2[1].genblk1[7].enemy         |     0.002 |
 |   genblk2[1].genblk1[8].enemy         |     0.002 |
-|   genblk2[1].genblk1[9].enemy         |     0.002 |
+|   genblk2[1].genblk1[9].enemy         |     0.001 |
 |   genblk2[2].genblk1[0].enemy         |     0.002 |
 |   genblk2[2].genblk1[10].enemy        |     0.002 |
 |   genblk2[2].genblk1[11].enemy        |     0.002 |
@@ -229,28 +216,28 @@ Table of Contents
 |   genblk2[2].genblk1[2].enemy         |     0.002 |
 |   genblk2[2].genblk1[3].enemy         |     0.002 |
 |   genblk2[2].genblk1[4].enemy         |     0.002 |
-|   genblk2[2].genblk1[5].enemy         |     0.002 |
+|   genblk2[2].genblk1[5].enemy         |     0.001 |
 |   genblk2[2].genblk1[6].enemy         |     0.002 |
-|   genblk2[2].genblk1[7].enemy         |     0.001 |
+|   genblk2[2].genblk1[7].enemy         |     0.002 |
 |   genblk2[2].genblk1[8].enemy         |     0.002 |
 |   genblk2[2].genblk1[9].enemy         |     0.002 |
 |   genblk2[3].genblk1[0].enemy         |     0.001 |
-|   genblk2[3].genblk1[10].enemy        |     0.001 |
+|   genblk2[3].genblk1[10].enemy        |     0.002 |
 |   genblk2[3].genblk1[11].enemy        |     0.002 |
 |   genblk2[3].genblk1[12].enemy        |     0.002 |
-|   genblk2[3].genblk1[13].enemy        |     0.001 |
+|   genblk2[3].genblk1[13].enemy        |     0.002 |
 |   genblk2[3].genblk1[14].enemy        |     0.001 |
 |   genblk2[3].genblk1[15].enemy        |     0.001 |
-|   genblk2[3].genblk1[1].enemy         |     0.002 |
+|   genblk2[3].genblk1[1].enemy         |     0.001 |
 |   genblk2[3].genblk1[2].enemy         |     0.002 |
 |   genblk2[3].genblk1[3].enemy         |     0.001 |
 |   genblk2[3].genblk1[4].enemy         |     0.002 |
-|   genblk2[3].genblk1[5].enemy         |     0.002 |
-|   genblk2[3].genblk1[6].enemy         |     0.002 |
-|   genblk2[3].genblk1[7].enemy         |     0.002 |
-|   genblk2[3].genblk1[8].enemy         |     0.001 |
-|   genblk2[3].genblk1[9].enemy         |     0.001 |
-|   vga                                 |     0.009 |
+|   genblk2[3].genblk1[5].enemy         |     0.001 |
+|   genblk2[3].genblk1[6].enemy         |     0.001 |
+|   genblk2[3].genblk1[7].enemy         |     0.001 |
+|   genblk2[3].genblk1[8].enemy         |     0.002 |
+|   genblk2[3].genblk1[9].enemy         |     0.002 |
+|   vga                                 |     0.007 |
 +---------------------------------------+-----------+
 
 

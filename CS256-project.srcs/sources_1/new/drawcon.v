@@ -77,7 +77,7 @@ module drawcon(
     
     generate
         genvar h;
-        for (h = 0; h < `CANNONS_NUM; h = h + 1) begin
+        for (h = 1; h < `CANNONS_NUM; h = h + 1) begin
             cannon_draw #(.CANNON_NUM(h)) cannon_draw (
                 .pixclk(pixclk),
                 .draw_x(draw_x), .draw_y(draw_y),
@@ -94,7 +94,7 @@ module drawcon(
     
     generate
         genvar i; genvar j;
-        for (i = 0; i < `CANNONS_NUM; i = i + 1) begin
+        for (i = 1; i < `CANNONS_NUM; i = i + 1) begin
             for (j = 0; j < `BULLETS_PER_CANNON; j = j + 1) begin
                 bullet_draw bullet_draw(
                     .pixclk(pixclk),
@@ -117,7 +117,7 @@ module drawcon(
     
     generate
         genvar k; genvar l;
-        for (k = 0; k < `CANNONS_NUM; k = k + 1) begin
+        for (k = 1; k < `CANNONS_NUM; k = k + 1) begin
             for (l = 0; l < `ENEMIES_PER_CANNON; l = l + 1) begin
                 enemy_draw enemy_draw(
                     .pixclk(pixclk),
@@ -141,13 +141,13 @@ module drawcon(
     always @ * begin
         rgb = background_rgb;
         
-        for (ii = 0; ii < `CANNONS_NUM; ii = ii + 1) begin
+        for (ii = 1; ii < `CANNONS_NUM; ii = ii + 1) begin
             for (jj = 0; jj < `ENEMIES_PER_CANNON; jj = jj + 1) begin
                 if (enemy_rgb[ii][jj] != `MASK) rgb = enemy_rgb[ii][jj];
             end 
         end
         
-        for (ii = 0; ii < `CANNONS_NUM; ii = ii + 1) begin
+        for (ii = 1; ii < `CANNONS_NUM; ii = ii + 1) begin
             for (jj = 0; jj < `BULLETS_PER_CANNON; jj = jj + 1) begin
                 if (bullet_rgb[ii][jj] != `MASK) rgb = bullet_rgb[ii][jj];
             end
@@ -155,7 +155,7 @@ module drawcon(
         
         if (frame_rgb != `MASK) rgb = frame_rgb;
         
-        for (ii = 0; ii < `CANNONS_NUM; ii = ii + 1) begin
+        for (ii = 1; ii < `CANNONS_NUM; ii = ii + 1) begin
             if (cannon_rgb[ii] != `MASK) rgb = cannon_rgb[ii];
         end
         

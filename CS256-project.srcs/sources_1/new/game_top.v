@@ -105,7 +105,7 @@ module game_top(
     
     generate
         genvar i; genvar j;
-        for (i = 0; i < `CANNONS_NUM; i = i + 1) begin
+        for (i = 1; i < `CANNONS_NUM; i = i + 1) begin
             for (j = 0; j < `BULLETS_PER_CANNON; j = j + 1) begin
                 bullet #(.FROM_CANNON(i), .BULLET_NUM(j)) bullet (
                     .logclk(logclk[16]), .rst(rst), .btn_c(btn_c), .cannons_on(cannons_on),
@@ -147,11 +147,10 @@ module game_top(
         else
             enemy_mask = enemy_mask; 
     end
-    //wire [`ENEMY_DELAY_SIZE-1:0] enemy_mask = enemy_mask == `ENEMY_DELAY_SIZE'd0 && rnd != enemy_mask ? rnd : enemy_mask;
-    
+        
     generate
         genvar k; genvar l;
-        for (k = 0; k < `CANNONS_NUM; k = k + 1) begin
+        for (k = 1; k < `CANNONS_NUM; k = k + 1) begin
             for (l = 0; l < `ENEMIES_PER_CANNON; l = l + 1) begin
                 enemy #(.TOWARDS_CANNON(k), .ENEMY_NUM(l)) enemy (
                     .logclk(logclk[16]), .rst(rst), .btn_c(btn_c),
@@ -185,7 +184,7 @@ module game_top(
     always @ (killed) begin
         if (!global_gameover) begin
             killed_num = 16'd0;
-            for (ki = 0; ki < `CANNONS_NUM*`ENEMIES_PER_CANNON; ki = ki + 1) begin
+            for (ki = `ENEMIES_PER_CANNON; ki < `CANNONS_NUM*`ENEMIES_PER_CANNON; ki = ki + 1) begin
                 killed_num[3:0] = killed_num[3:0] > 4'd9 ? 4'd0 : killed_num[3:0] + killed[ki];
                 if (killed_num[3:0] > 4'd9) begin
                     killed_num[7:4] = killed_num[7:4] > 4'd9 ? 4'd0 : killed_num[7:4] + 1'b1;
@@ -200,7 +199,7 @@ module game_top(
         end
     end
     
-    assign victory = killed_num == `CANNONS_NUM*`ENEMIES_PER_CANNON ? 1'b1 : 1'b0;
+    assign victory = killed_num == (`CANNONS_NUM-1)*`ENEMIES_PER_CANNON ? 1'b1 : 1'b0;
     
     wire [19:0] text = global_gameover == 1'b1
         ? {5'd14, 5'd17, 5'd13, 5'd31}  // End
