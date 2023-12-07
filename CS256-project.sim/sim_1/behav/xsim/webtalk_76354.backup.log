@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Nov 29 21:35:08 2023
+# Process ID: 76354
+# Current directory: /rhome/forystmj/CS256-project/CS256-project.sim/sim_1/behav/xsim
+# Command line: wbtcv -mode batch -source /rhome/forystmj/CS256-project/CS256-project.sim/sim_1/behav/xsim/xsim.dir/random_delays_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /rhome/forystmj/CS256-project/CS256-project.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: /rhome/forystmj/CS256-project/CS256-project.sim/sim_1/behav/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /rhome/forystmj/CS256-project/CS256-project.sim/sim_1/behav/xsim/xsim.dir/random_delays_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Nov 29 21:35:09 2023...

@@ -1,25 +1,6 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 11/17/2023 10:59:32 PM
-// Design Name: 
-// Module Name: game_top_tb
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
 
-module game_top_tb();
+module game_top_tb;
     reg clk; reg rst;
     reg btn_u; reg btn_d; reg btn_l; reg btn_r; reg btn_c;
     reg [3:0] cannons_on;

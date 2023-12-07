@@ -71,9 +71,6 @@ proc create_report { reportName command } {
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 32
-set_msg_config -id {Common 17-41} -limit 10000000
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
@@ -83,7 +80,7 @@ set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir /rhome/forystmj/CS256-project/CS256-project.cache/wt [current_project]
 set_property parent.project_path /rhome/forystmj/CS256-project/CS256-project.xpr [current_project]
-set_property XPM_LIBRARIES XPM_CDC [current_project]
+set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:nexys-a7-100t:part0:1.0 [current_project]
@@ -91,12 +88,36 @@ set_property ip_output_repo /rhome/forystmj/CS256-project/CS256-project.cache/ip
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
+add_files /rhome/forystmj/CS256-project/sprites/cannon.coe
+add_files /rhome/forystmj/CS256-project/sprites/bullet.coe
+add_files /rhome/forystmj/CS256-project/sprites/enemy1.coe
+add_files /rhome/forystmj/CS256-project/sprites/background.coe
 read_verilog -library xil_defaultlib {
   /rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/constants.v
+  /rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet.v
+  /rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/bullet_draw.v
+  /rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/cannon_draw.v
   /rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/drawcon.v
+  /rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy.v
+  /rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/enemy_draw.v
+  /rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/multidigit.v
+  /rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/prng.v
+  /rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/sevenseg.v
   /rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/vga_out.v
   /rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/game_top.v
 }
+read_ip -quiet /rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/ip/enemy1_sprite/enemy1_sprite.xci
+set_property used_in_implementation false [get_files -all /rhome/forystmj/CS256-project/CS256-project.gen/sources_1/ip/enemy1_sprite/enemy1_sprite_ooc.xdc]
+
+read_ip -quiet /rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/ip/bullet_sprite/bullet_sprite.xci
+set_property used_in_implementation false [get_files -all /rhome/forystmj/CS256-project/CS256-project.gen/sources_1/ip/bullet_sprite/bullet_sprite_ooc.xdc]
+
+read_ip -quiet /rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/ip/cannon_sprite/cannon_sprite.xci
+set_property used_in_implementation false [get_files -all /rhome/forystmj/CS256-project/CS256-project.gen/sources_1/ip/cannon_sprite/cannon_sprite_ooc.xdc]
+
+read_ip -quiet /rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/ip/background_sprite/background_sprite.xci
+set_property used_in_implementation false [get_files -all /rhome/forystmj/CS256-project/CS256-project.gen/sources_1/ip/background_sprite/background_sprite_ooc.xdc]
+
 read_ip -quiet /rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
 set_property used_in_implementation false [get_files -all /rhome/forystmj/CS256-project/CS256-project.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
 set_property used_in_implementation false [get_files -all /rhome/forystmj/CS256-project/CS256-project.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
@@ -114,6 +135,8 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 read_xdc /rhome/forystmj/CS256-project/CS256-project.srcs/constrs_1/imports/CS256-project/nexys-a7-100t-master.xdc
 set_property used_in_implementation false [get_files /rhome/forystmj/CS256-project/CS256-project.srcs/constrs_1/imports/CS256-project/nexys-a7-100t-master.xdc]
 
+read_xdc dont_touch.xdc
+set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
