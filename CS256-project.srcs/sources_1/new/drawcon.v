@@ -8,7 +8,6 @@ module drawcon(
     input [10*`CANNONS_NUM*`BULLETS_PER_CANNON-1:0] all_bullet_pos_y,
     input [11*`CANNONS_NUM*`ENEMIES_PER_CANNON-1:0] all_enemy_pos_x,
     input [10*`CANNONS_NUM*`ENEMIES_PER_CANNON-1:0] all_enemy_pos_y,
-    input [`CANNONS_NUM*`ENEMIES_PER_CANNON-1:0] killed,
     input [10:0] draw_x, input [9:0] draw_y,
     output [3:0] r, output [3:0] g, output [3:0] b
     );
@@ -98,7 +97,6 @@ module drawcon(
                     .draw_x(draw_x), .draw_y(draw_y),
                     .enemy_pos_x(all_enemy_pos_x[11*`ENEMIES_PER_CANNON*k+11*l +: 11]),
                     .enemy_pos_y(all_enemy_pos_y[10*`ENEMIES_PER_CANNON*k+10*l +: 10]),
-                    .killed(killed[`ENEMIES_PER_CANNON*k + l]),
                     .enemy_rgb(enemy_rgb[k][l]));
                 assign enemy_pos_x[k][l] = all_enemy_pos_x[11*`ENEMIES_PER_CANNON*k+11*l +: 11];
                 assign enemy_pos_y[k][l] = all_enemy_pos_y[10*`ENEMIES_PER_CANNON*k+10*l +: 10];

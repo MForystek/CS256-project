@@ -6,7 +6,6 @@ module enemy_draw(
     input pixclk,
     input [10:0] draw_x, input [9:0] draw_y,
     input [10:0] enemy_pos_x, input [9:0] enemy_pos_y,
-    input killed,
     output reg [11:0] enemy_rgb
     );
     

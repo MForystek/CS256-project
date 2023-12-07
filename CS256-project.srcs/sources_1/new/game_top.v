@@ -111,7 +111,6 @@ module game_top(
     drawcon drawcon(.pixclk(pixclk),
                     .all_bullet_pos_x(all_bullet_pos_x), .all_bullet_pos_y(all_bullet_pos_y),
                     .all_enemy_pos_x(all_enemy_pos_x), .all_enemy_pos_y(all_enemy_pos_y),
-                    .killed(killed),
                     .draw_x(curr_x), .draw_y(curr_y),
                     .r(red), .g(green), .b(blue));
                     
