@@ -72,18 +72,18 @@ module game_top(
     wire [`CANNONS_NUM*`ENEMIES_PER_CANNON-1:0] gameover;
     assign global_gameover = |gameover;
     
-    wire [`ENEMY_DELAY_SIZE-1:0] rnd;
+    wire [`ENEMIES_TOTAL_NUM-1:0] rnd;
     prng #(.SEED(`RNG_SIZE'hF)) prng1(.clk(clk), .rst(rst), .rnd(rnd[15:0]));
     prng #(.SEED(`RNG_SIZE'h3)) prng2(.clk(clk), .rst(rst), .rnd(rnd[31:16]));
     prng #(.SEED(`RNG_SIZE'h5)) prng3(.clk(clk), .rst(rst), .rnd(rnd[47:32]));
     prng #(.SEED(`RNG_SIZE'hB)) prng4(.clk(clk), .rst(rst), .rnd(rnd[63:48]));
     
-    reg [`ENEMY_DELAY_SIZE-1:0] enemy_mask;
+    reg [`ENEMIES_TOTAL_NUM-1:0] enemy_mask;
     
     always @ * begin
         if (!rst || btn_c)
-            enemy_mask = `ENEMY_DELAY_SIZE'd0;
-        else if (enemy_mask == `ENEMY_DELAY_SIZE'd0 && rnd != enemy_mask)
+            enemy_mask = `ENEMIES_TOTAL_NUM'd0;
+        else if (enemy_mask == `ENEMIES_TOTAL_NUM'd0 && rnd != enemy_mask)
             enemy_mask = rnd;
         else
             enemy_mask = enemy_mask; 
