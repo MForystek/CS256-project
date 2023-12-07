@@ -16,10 +16,12 @@ module vga_out(
         end else begin
             if (hcount >= 11'd1679) begin
                 hcount <= 11'd0;
-                if (vcount >= 10'd827) vcount <= 10'd0;
-                else vcount <= vcount + 1'b1;
-            end
-            else hcount <= hcount + 1'b1;
+                if (vcount >= 10'd827) 
+                    vcount <= 10'd0;
+                else 
+                    vcount <= vcount + 1'b1;
+            end else
+                hcount <= hcount + 1'b1;
         end
     end
     
@@ -31,7 +33,7 @@ module vga_out(
             if (hcount >= 11'd336 - 11'd1 && hcount <= 11'd1615 - 11'd1)
                 curr_x <= hcount - 11'd335;
             if (vcount >= 10'd27 - 10'd1 && vcount <= 10'd826 - 10'd1 && hcount == 11'd1679)
-                curr_y <= vcount - 10'd26;
+                curr_y <= vcount - 10'd26; 
         end
     end
     

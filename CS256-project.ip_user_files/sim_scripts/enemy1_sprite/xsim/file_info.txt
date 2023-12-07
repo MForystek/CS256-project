@@ -1,2 +1,0 @@
-enemy1_sprite.v,verilog,xil_defaultlib,../../../../CS256-project.gen/sources_1/ip/enemy1_sprite/sim/enemy1_sprite.v,
-glbl.v,Verilog,xil_defaultlib,glbl.v

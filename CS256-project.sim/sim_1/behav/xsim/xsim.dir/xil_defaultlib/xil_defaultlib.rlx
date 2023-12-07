@@ -1,9 +1,0 @@
-0.7
-2020.2
-Nov 18 2020
-09:20:35
-/rhome/forystmj/CS256-project/CS256-project.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
-/rhome/forystmj/CS256-project/CS256-project.srcs/sim_1/new/random_delays_tb.v,1701283485,verilog,,,,random_delays_tb,,,,,,,,
-/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/constants.v,1701279090,verilog,,,,,,,,,,,,
-/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/prng.v,1701283590,verilog,,/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/random_delays.v,/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/constants.v,prng,,,,,,,,
-/rhome/forystmj/CS256-project/CS256-project.srcs/sources_1/new/random_delays.v,1701283684,verilog,,/rhome/forystmj/CS256-project/CS256-project.srcs/sim_1/new/random_delays_tb.v,,random_delays,,,,,,,,

@@ -1,2 +1,0 @@
-bullet_sprite.v,verilog,xil_defaultlib,../../../../CS256-project.gen/sources_1/ip/bullet_sprite/sim/bullet_sprite.v,
-glbl.v,Verilog,xil_defaultlib,glbl.v

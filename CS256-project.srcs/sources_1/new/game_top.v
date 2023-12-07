@@ -44,15 +44,6 @@ module game_top(
     wire [11*`CANNONS_NUM*`BULLETS_PER_CANNON-1:0] all_bullet_pos_x;
     wire [10*`CANNONS_NUM*`BULLETS_PER_CANNON-1:0] all_bullet_pos_y;
     
-    reg [9:0] bullets_left;
-    
-    always @ (posedge logclk) begin
-        if (!rst || btn_c)
-            bullets_left <= 10'd`ENEMIES_PER_CANNON*10'd`CANNONS_NUM + 10'd`ADDITIONAL_BULLETS;
-        else if (bullets_left > 1'b0)
-            bullets_left <= bullets_left - 1'b1;
-    end
-    
     generate
         genvar i; genvar j;
         for (i = 1; i < `CANNONS_NUM; i = i + 1) begin
@@ -147,8 +138,6 @@ module game_top(
             end
         end
     end
-    
-    assign victory = killed_num == (`CANNONS_NUM-1)*`ENEMIES_PER_CANNON ? 1'b1 : 1'b0;
     
     wire [19:0] text = global_gameover == 1'b1
         ? {5'd14, 5'd17, 5'd13, 5'd31}  // End

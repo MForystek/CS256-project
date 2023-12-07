@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
-// Liner Feedback Shift Register (LFSR)
-// Initial source: https://simplefpga.blogspot.com/2013/02/random-number-generator-in-verilog-fpga.html, access: November 23rd, 2023
+// Linear Feedback Shift Register (LFSR)
+// Initial source: https://simplefpga.blogspot.com/2013/02/random-number-generator-in-verilog-fpga.html, access: December 7th, 2023
 `include <constants.v>
 
 module prng #(parameter SEED = `RNG_SIZE'hF) (

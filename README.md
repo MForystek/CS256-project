@@ -8,7 +8,7 @@ Project written in Verilog for the FPGA board Nexys A7-100T using Vivado from Xi
 bullet - 0.15  
 cannon - 0.5  
 enemy1 - 0.65  
-background - TODO
+background - 0.125
 
 ### Clock wizard desired frequency:
 clk_out_1(pixclk) - 83.46  
