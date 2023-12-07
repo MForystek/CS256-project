@@ -1,23 +1,4 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 11/22/2023 11:43:17 PM
-// Design Name: 
-// Module Name: bullet_tb
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
 
 module bullet_tb;
     reg logclk; 
@@ -41,4 +22,5 @@ module bullet_tb;
         #15 rst = 1'b1;
     end 
     always #5 logclk = ~logclk;
+    
 endmodule

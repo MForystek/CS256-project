@@ -1,24 +1,4 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 11/29/2023 12:03:15 AM
-// Design Name: 
-// Module Name: multidigit
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
 
 module multidigit(
     input clk, input rst,
@@ -38,7 +18,7 @@ module multidigit(
     
     always @ (posedge clk) begin
         if (!rst) 
-            position <= 19'b0000000000000000000;
+            position <= 19'd0;
         else
             position <= position + 1'b1;
     end
@@ -83,4 +63,5 @@ module multidigit(
             end
         endcase
     end
+    
 endmodule

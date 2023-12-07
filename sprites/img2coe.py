@@ -45,7 +45,6 @@ def img2coe(image_path, coe_file_path, width=None, height=None):
     print('COE file generated at: {}'.format(coe_file_path))
 
 
-# Example usage
 if __name__ == '__main__':
     print("Usage:\n {} <path_to_image> <out_filename>.coe".format(sys.argv[0]))
     print("Or\n {}".format(sys.argv[0]))
@@ -56,13 +55,4 @@ if __name__ == '__main__':
         img2coe('res_bullet.png', 'bullet.coe')
         img2coe('res_cannon.png', 'cannon.coe')
         img2coe('res_enemy1.jpeg', 'enemy1.coe')
-
-
-# Compression rates:
-# bullet - 0.15
-# cannon - 0.5
-# enemy1 - 0.65
-
-# Clock wizard values:
-# clk_out_1(pixclk) - 83.46
-# clk_out_2(logclk) - 4.687
+        

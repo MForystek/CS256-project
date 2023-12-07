@@ -1,23 +1,5 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 10/30/2023 04:54:39 PM
-// Design Name: 
-// Module Name: game_top
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
+
 `include <constants.v>
 
 module game_top(
@@ -52,38 +34,6 @@ module game_top(
         else
             logclk <= logclk + 1'b1;
     end
-
-// ----------------------------------------------------------------------------------------------------------
-// Moving block
-// ----------------------------------------------------------------------------------------------------------    
-//    reg [10:0] block_pos_x;
-//    reg [9:0] block_pos_y;
-    
-//    always @ (posedge logclk[16]) begin
-//        if (rst || btn_c) begin
-//            block_pos_x <= 11'd623;
-//            block_pos_y <= 10'd383;
-//        end else begin
-//            if (btn_u)
-//                block_pos_y <= block_pos_y <= `FRAME_HEIGHT + 10'd1 ? `FRAME_WIDTH + 10'd1 : block_pos_y - `BLOCK_SPEED_Y;
-//            else if (btn_d)
-//                block_pos_y <= block_pos_y >= `HEIGHT - `FRAME_HEIGHT - `BLOCK_HEIGHT - 10'd1 ? `HEIGHT - `FRAME_HEIGHT - `BLOCK_HEIGHT - 10'd1 : block_pos_y + `BLOCK_SPEED_Y;
-//            else if (block_pos_y <= `FRAME_HEIGHT + 10'd1)
-//                block_pos_y <= `FRAME_HEIGHT + 10'd1;
-//            else if (block_pos_y >= `HEIGHT - `FRAME_HEIGHT - `BLOCK_HEIGHT - 10'd1)
-//                block_pos_y <=  `HEIGHT - `FRAME_HEIGHT - `BLOCK_HEIGHT - 10'd1;
-            
-//            if (btn_l)
-//                block_pos_x <= block_pos_x <= `FRAME_WIDTH + 11'd1 ? `FRAME_WIDTH + 11'd1 : block_pos_x - `BLOCK_SPEED_X;
-//            else if (btn_r)
-//                block_pos_x <= block_pos_x >= `WIDTH - `FRAME_WIDTH - `BLOCK_WIDTH - 11'd1 ? `WIDTH - `FRAME_WIDTH - `BLOCK_WIDTH - 11'd1 : block_pos_x + `BLOCK_SPEED_X;
-//            else if (block_pos_x <= `FRAME_WIDTH + 11'd1)
-//                block_pos_x <= `FRAME_WIDTH + 11'd1;
-//            else if (block_pos_x >= `WIDTH - `FRAME_WIDTH - `BLOCK_WIDTH - 11'd1)
-//                block_pos_x <= `WIDTH - `FRAME_WIDTH - `BLOCK_WIDTH - 11'd1;
-//        end
-//    end
-
 
 // ----------------------------------------------------------------------------------------------------------    
 // Shooting bullets
@@ -167,8 +117,7 @@ module game_top(
 // ----------------------------------------------------------------------------------------------------------    
 // Instanciating Drawcon 
 // ----------------------------------------------------------------------------------------------------------    
-    drawcon drawcon(//.block_pos_x(block_pos_x), .block_pos_y(block_pos_y),
-                    .pixclk(pixclk),
+    drawcon drawcon(.pixclk(pixclk),
                     .all_bullet_pos_x(all_bullet_pos_x), .all_bullet_pos_y(all_bullet_pos_y),
                     .all_enemy_pos_x(all_enemy_pos_x), .all_enemy_pos_y(all_enemy_pos_y),
                     .killed(killed),
@@ -212,4 +161,5 @@ module game_top(
         .dig6(text[14:10]), .dig7(text[19:15]),
         .a(a), .b(b), .c(c), .d(d),
         .e(e), .f(f), .g(g), .an(an));
+        
 endmodule

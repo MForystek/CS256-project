@@ -1,24 +1,4 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 11/28/2023 11:47:03 PM
-// Design Name: 
-// Module Name: sevenseg
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
 
 module sevenseg (
     input [4:0] num,
@@ -35,6 +15,7 @@ module sevenseg (
     assign e = digit[2];
     assign f = digit[1];
     assign g = digit[0];
+
 endmodule
 
 module sevenseg_unified(input [4:0] num, output reg [6:0] digit);
@@ -65,4 +46,5 @@ module sevenseg_unified(input [4:0] num, output reg [6:0] digit);
                 default : digit = 7'b1111111; // _
             endcase
         end
+        
 endmodule

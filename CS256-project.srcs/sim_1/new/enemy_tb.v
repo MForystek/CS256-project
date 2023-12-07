@@ -1,26 +1,6 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 11/23/2023 01:07:13 AM
-// Design Name: 
-// Module Name: enemy_tb
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
 
-
-module enemy_tb();
+module enemy_tb;
     reg logclk;
     reg rst;
     reg btn_c;
@@ -44,4 +24,5 @@ module enemy_tb();
         #15 rst = 1'b1;
     end 
     always #5 logclk = ~logclk;
+
 endmodule

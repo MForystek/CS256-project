@@ -1,27 +1,8 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 11/02/2023 02:03:01 PM
-// Design Name: 
-// Module Name: drawcon
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
+
 `include <constants.v>
 
 module drawcon(
-    //input [10:0] block_pos_x, input [9:0] block_pos_y,
     input pixclk,
     input [11*`CANNONS_NUM*`BULLETS_PER_CANNON-1:0] all_bullet_pos_x,
     input [10*`CANNONS_NUM*`BULLETS_PER_CANNON-1:0] all_bullet_pos_y,
@@ -62,13 +43,6 @@ module drawcon(
     wire draw_frame = draw_x < `FRAME_WIDTH || draw_x > `WIDTH - `FRAME_WIDTH 
                      || draw_y < `FRAME_HEIGHT || draw_y > `HEIGHT - `FRAME_HEIGHT;
     wire [11:0] frame_rgb = draw_frame ? 12'h000 : `MASK;
-    
-// ----------------------------------------------------------------------------------------------------------
-// Moving block
-// ----------------------------------------------------------------------------------------------------------
-//    wire draw_block = draw_x >= block_pos_x && draw_x <= block_pos_x + `BLOCK_WIDTH
-//                     && draw_y >= block_pos_y && draw_y <= block_pos_y + `BLOCK_HEIGHT;
-//    wire [11:0] block_rgb = draw_block ? 12'hE22 : 12'h000;
     
 // ----------------------------------------------------------------------------------------------------------    
 // Cannons
@@ -158,8 +132,6 @@ module drawcon(
         for (ii = 1; ii < `CANNONS_NUM; ii = ii + 1) begin
             if (cannon_rgb[ii] != `MASK) rgb = cannon_rgb[ii];
         end
-        
-        //if (block_rgb != `MASK) rgb = block_rgb;
     end
     
     assign {r, g, b} = rgb;

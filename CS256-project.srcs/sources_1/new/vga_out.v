@@ -1,24 +1,4 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 10/30/2023 01:17:22 PM
-// Design Name: 
-// Module Name: vga_out
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
 
 module vga_out(
     input clk, input rst, input [3:0] red, input [3:0] green, input [3:0] blue,
@@ -67,4 +47,5 @@ module vga_out(
     assign pix_b = hcount >= 11'd336 && hcount <= 11'd1615
         && vcount >= 10'd27 && vcount <= 10'd826
         ? blue : 4'd0;
+        
 endmodule

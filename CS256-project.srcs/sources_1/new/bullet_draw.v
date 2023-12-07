@@ -1,23 +1,5 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 11/20/2023 12:14:33 AM
-// Design Name: 
-// Module Name: bullet_draw
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
+
 `include <constants.v>
 
 module bullet_draw(
@@ -55,9 +37,4 @@ module bullet_draw(
         end
     end
     
-//    localparam [3:0] bullet_r = 4'h3;
-//    localparam [3:0] bullet_g = 4'h3;
-//    localparam [3:0] bullet_b = 4'h3;
-    
-//    assign bullet_rgb = draw_bullet_x && draw_bullet_y ? {bullet_r, bullet_g, bullet_b} : `MASK;
 endmodule
